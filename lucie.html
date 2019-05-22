@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <title>Startseite</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header-->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header clearfix">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="img/Lebenslauf_Valerie%20Grappendorf.pdf" target="_blank">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für Handy -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Projektintro -->
+  <div class="lucieintro">
+    <h1>Lucies Diamond</h1>
+    <p>an interactive mirror experience</p>
+  </div>
+
+  <!-- Bildkasten -->
+  <div class="luciebild clearfix">
+    <img src="lucie.png" alt="Lucie">
+  </div>
+
+  <!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projinfo-container">
+    <section class="projcolumns clearfix">
+      <article>
+        <div class="projinfo">
+          <h3>Role</h3>
+          <p>Ideation,<br>coding/prototyping<br>the interactions</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Timeline</h3>
+          <p>February 2018<br>(4 weeks Project)<br>2nd Semester</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Team</h3>
+          <p>Ethan Günther<br>Ferdinand Sorg<br>Rifat Erdogan</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Tools</h3>
+          <p>Javascript, Tracking.js,<br>(HTML, CSS, Illustrator,<br>Premiere Pro</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+
+  <!-- Grauer Task Kasten  -->
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <h3>What’s the best way to learn programming? Right. Learning by doing!</h3>
+      <p>This motto was the birthour of Lucy’s Diamond, our interactive mirror
+        experience.
+        Compared to my other projects, this one is not solving any specific problem.
+        It’s just about interaction, fun and deepening our javascript skillset.
+        Our goal was to create a unique experience for the user by letting him interact with his webcam.</p>
+    </div>
+  </div>
+
+  <!-- Navbar für Projekte -->
+  <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#interaction">Interaction</a></li>
+        <li><a href="#result">Result</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
+  <div id="research"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">01</span>
+      <span id="chaptername">Research</span>
+    </p>
+  </div>
+  <!-- Researchkapitel -->
+  <div class="contentProjects">
+    <div class="col-sm-12 kleinesbild">
+      <img id="researchpic" src="img/lucie/research.png" alt="Lucie">
+    </div>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <p>Wir wollten uns nah an das Grundkonzept des Spiegels halten und daher Effekte durch verschiedene
+        Anordnungen von Bildausschnitten und Drehungen kreieren. Unser Konzept sollte etwas sein, dass man
+        bis zu einem bestimmten Punkt auch mit einem herkömmlichen Spiegel konstruieren könnte.
+        Allgemein war es unser Ziel, den Benutzer lange zu fesseln und diesen die Interaktionen durch
+        intuitive Bewegungen entdecken zu lassen. Für diese Zielsetzung empfanden wir eine Art des Kaleidoskops
+        als optimale Lösung.</p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="concept"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">02</span>
+      <span id="chaptername">Concept</span>
+    </p>
+  </div>
+  <!-- Konzept -->
+  <div class="concept">
+    <div class="luciegif clearfix">
+      <img src="luciegif.gif" alt="Lucie">
+    </div>
+    <div class="contentProjects">
+      <div class="col-sm-12">
+        <p>Ein Kaleidoskop baut sich aus einer geraden Anzahl aus Dreiecken auf, die aneinander in einem Kreis
+          angeordnet
+          sind. Zwei Dreiecke nebeneinander bilden ein Paar, das gespiegelt ist. Jedes dieser Dreiecke zeigt einen
+          Ausschnitt des Videos, sodass sich die Person vor dem Spiegel mehrfach sieht.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="interaction"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">03</span>
+      <span id="chaptername">Interaction</span>
+    </p>
+  </div>
+  <!-- Interaction -->
+  <div class="interaction">
+    <div class="interactionpic clearfix">
+      <img id="brille" src="img/lucie/brille.png">
+    </div>
+    <div class="contentProjects">
+      <div class="col-sm-12 contentProjects">
+        <p>Damit der Nutzer vor dem Spiegel mit dem Kaleidoskop interagieren kann, muss dieser erkannt werden.
+          Hierzu gibt es eine Brille mit einem farbigen Element am Steg. Diese gelbe Farbe wird getrackt,
+          um festzustellen, wo sich die Person befindet und welche Bewegungen sie macht. Dabei wird die
+          horizontale/ vertikale Position sowie Distanz des Benutzers von der Kamera getrackt. Durch die Brille
+          hat man als Nutzer außerdem dass Gefühl, dass die Effekte nur durch die Brille erkennbar sind, da diese
+          erst beim aufsetzten der Brille starten.</p>
+      </div>
+    </div>
+  </div>
+  <div class="interactiongif">
+    <div class="w3-content w3-display-container">
+      <img class="mySlides" src="img/lucie/distanz.gif">
+      <img class="mySlides" src="img/lucie/drehung.gif">
+      <img class="mySlides" src="img/lucie/farbverlauf.gif">
+      <img class="mySlides" src="img/lucie/helligkeit.gif">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-aqua" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-aqua" onclick="plusDivs(1)">&#10095;</div>
+      </div>
+      <div class="kreisanzeige">
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="result"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">04</span>
+      <span id="chaptername">Result</span>
+    </p>
+  </div>
+  <!-- Result -->
+  <div class="result">
+    <div class="responsive-video">
+      <iframe src="https://player.vimeo.com/video/307535033" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+        allowFullScreen></iframe>
+    </div>
+    <div class="resulttext">
+      <p>Catch something yellow and try it out by yourself! </p>
+      <a href=""><img src="icons/github.png" alt="Github"></a>
+    </div>
+  </div>
+
+
+
+  <!-- further projects -->
+  <div class="more clearfix">
+    <div id="projects"></div>
+    <div class="columns-container">
+      <section class="columns clearfix">
+        <h1>View more Projects</h1>
+        <a href="lucie.html">
+          <article>
+            <div class="proj lucie">
+              <div class="overlayproj">
+                <h2>Lucies Diamond</h2>
+                <h3>an interactive mirror experience</h3>
+                <!-- <h4>Focus on technical implementation & prototyping</h4> -->
+              </div>
+            </div>
+          </article>
+        </a>
+        <article>
+          <div class="proj">
+          </div>
+        </article>
+        <article>
+          <div class="proj">
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="credit">
+      <div class="pos-center">
+        <a href=""><img src="icons/github.png" alt="Github"></a>
+        <a href=""><img src="icons/mail.png" alt="Mail"></a>
+        <a href=""><img src="icons/linkedin.png" alt="Linkedin"></a>
+      </div>
+      <div class="pos-center">
+        <p>&copy;Valerie Grappendorf 2019<a href=""> Impressum</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    //Navbar for mobile view
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+
+    //Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+
+  </script>
+
+
+</body>
+
+</html>
