@@ -345,9 +345,11 @@ a {
     align-items: center;
     text-align: center;
 }
-.credit {
+.pos-center p {
     padding-left: 4%;
     padding-right: 4%;
+}
+.credit {
     margin-top: 5%;
 }
 .credit img {
