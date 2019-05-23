@@ -727,10 +727,31 @@ a {
     }
     /*Lucie*/
     /*Rolle, Zeit, etc. Ansicht*/
+    .lucieintro h1 {
+        padding-top: 15%;
+        padding-bottom: 1%;
+    }
     .projcolumns article {
         width: 100%;
     }
     .projnav {
+        display: none;
+    }
+    .luciebild img {
+        margin-left: 25%;
+        width: 50%;
+    }
+    .luciegif img {
+        margin-left: 0%;
+        width: 100%;
+    }
+    #brille {
+        width: 80%;
+    }
+    .taskcontainer h3 {
+        line-height: 1.8;
+    }
+    .resulttext {
         display: none;
     }
 }
