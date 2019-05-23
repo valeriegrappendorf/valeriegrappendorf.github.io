@@ -725,4 +725,9 @@ a {
     .legal {
         margin-top: 10%;
     }
+    /*Lucie*/
+    /*Rolle, Zeit, etc. Ansicht*/
+    .projcolumns article {
+        width: 100%;
+    }
 }
