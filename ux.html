@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <title>Startseite</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header-->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header clearfix">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="img/Lebenslauf_Valerie%20Grappendorf.pdf" target="_blank">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für Handy -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Projektintro -->
+  <div class="intro">
+    <h1>Connectivity for local crafts</h1>
+    <p>Demonstration model for optometrists</p>
+  </div>
+
+  <!-- Bildkasten -->
+  <div class="intropic uxintro clearfix">
+    <img src="img/ux/uxintro.png" alt="Lucie">
+  </div>
+
+  <!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projinfo-container">
+    <section class="projcolumns clearfix">
+      <article>
+        <div class="projinfo">
+          <h3>Role<span> so far</span></h3>
+          <p>Research,<br>Ideation,<br>Prototype</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Timeline<span> so far</span></h3>
+          <p>March-today<br>(4 months Project)<br>4th Semester</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Team</h3>
+          <p>Xuan Le,<br>Florian Trah<br></p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Tools<span> so far</span></h3>
+          <p>Sketch,<br>Figma,<br>Premiere Pro</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+
+  <!-- Grauer Task Kasten  -->
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <h3><span>Die Digitalisierung ist im vollen Gange.</span> Aber auch im lokalen Handwerk?</h3>
+      <p>Was sind dort die momentanen Pain Points, unmet needs and goals? <br>
+        Durch welche Methoden können wir diese herausfinden? <br>
+        Könnten diese durch einen Schritt in richtig Digitalisierung gelöst werden? </p>
+    </div>
+  </div>
+
+  <!-- Navbar für Projekte -->
+  <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a href="#1">Empathy</a></li>
+        <li><a href="#2">Synthesis</a></li>
+        <li><a href="#3">Ideation</a></li>
+        <li><a href="#4">Problem</a></li>
+        <li><a href="#result">Prototype</a></li>
+        <li><a href="#result">Solution</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
+  <div id="1"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">01</span>
+      <span id="chaptername">Empathy</span>
+    </p>
+  </div>
+  <!-- Empathy -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop">
+        <img id="uxempathypic" src="img/ux/test.png" alt="test">
+      </div>
+      <div class="crop">
+        <img id="researchpic" src="img/ux/glasses.png" alt="Lucie">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Prozess</h3>
+      <p>Wir interviewten Optiker sowie deren Kunden und absolvierten mehrere Praktika,
+        in Form von einem Day in a life, um tiefe Einblicke in diese uns zuvor noch
+        unbekannte Branche zu halten. </p>
+      <h3>Top insight</h3>
+      <div class="quote">
+        <p>„Wir brauchen keine weiteren Messmodule, sondern Demonstrationsmodule für die Kunden.“ - Optiker</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="2"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">02</span>
+      <span id="chaptername">Synthesis</span>
+    </p>
+  </div>
+  <!-- Synthesis -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop">
+        <img id="uxempathypic" src="img/ux/customer.png" alt="test">
+      </div>
+      <div class="crop">
+        <img id="researchpic" src="img/ux/optician.png" alt="Lucie">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Prozess</h3>
+      <p>Durch unsere Rechere erkannten wir die Wünsche/Bedürfnisse der Mitarbeiter sowie die der Kunden.
+        Um diese auf einen Blick zu haben, visualiserten wir sie in einer <span>Empathy Map</span>. Da unser Fokus auf
+        den
+        lokalen Optikern lag, beschäftigten wir uns außerdem mit der Analyse der Vor sowie Nachteile der
+        lokalen Flilalien, der Ketten und dem Onlinehandel.</p>
+      <h3>Top insight</h3>
+      <p>1. Die professionele und lokale Beratung ist das Auszeichnungsmerkmal der lokalen Filialen. <br>
+        2. Es gibt eine immens Große Auswahl an verschiedenen Gläsern, Filtern, Gestellen und Preiskategorien,
+        welche der Kunde kaum erfassen kann. Die Kunden verstehen oft den gehobeneren Preis nicht und nutzen
+        somit das Potential des Marktes nicht aus. Der Verkäufer verkauft daher billigere Brillen und der
+        Kunde kann sein Sehpotential nicht ausnutzen. </p>
+    </div>
+  </div>
+
+  <!-- Grauer HMW Kasten  -->
+  <div class="HMW clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <h3><span>A design question emerged ...</span></h3>
+      <p>How might we help the customer to find the perfect glasses and at
+        the same time help the optometrists to prove/demonstrate the quality of their products? </p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">03</span>
+      <span id="chaptername">Ideation</span>
+    </p>
+  </div>
+  <!-- Ideation -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <!-- <div class="crop">
+          <img id="uxempathypic" src="img/ux/customer.png" alt="test">
+        </div> -->
+      <img id="researchpic" src="img/ux/ideation.png" alt="Lucie">
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Prozess</h3>
+      <p>Wir kreatierten unsere ersten Ideen durch die Methode Crazy 8 und besprachen
+        unsere Favoriten mit einem lokalen Optiker. Durch sein Hintergrundwissen und
+        unsere zuvor ausgearbeiteten Pain Points, konnten wir unsere Idee vertiefen und festigen. </p>
+      <h3>Top insight</h3>
+      <p>1. Man kann nicht alle Eigenschaften einer Brille simulieren.
+        2. Das Hauptproblem der Kunden ist es, sich für die für ihn optimale
+        Kategorie von Gleitsichtbrillen zu entscheiden. </p>
+      <h3>Decition</h3>
+      <p>Nach einigen Iterationen entschieden wir uns dafür, ein <span>Demonstrationsmodul
+          für Gleitsichtbrillen</span> zu entwickeln. </p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="4"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">04</span>
+      <span id="chaptername">Problem</span>
+    </p>
+  </div>
+  <!-- Problem -->
+  <div class="HMW nomarging clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <h3><span>The Problem</span></h3>
+      <p>Gleitsichtbrillen kosten zwischen 200 - 1400 Euro. Aber warum?
+        Wie beweisen Optiker die Qualität bei diesen immensen Preisunterschieden? </p>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p>Momentan zeigen Optiker ihren Kunden Beispielfotos, wie ihr Sichtbereich mit der 
+        jeweiligen Brille aussehen würde. Darunter können sich diese jedoch oft nichts vorstellen 
+        und greifen daher öfter zum günstigeren Modell. Dadurch wird das Potential des Marktes 
+        nicht genutzt. Kunden empfinden ihr Sichtfeld im Nachhinein of als zu eingeschränkt und 
+        auch die Optiker können den Kunden die Qualität und den gerechtfertiten Preis nicht beweisen . 
+        </p>
+    </div>
+  </div>
+
+
+   <!-- Kapitelübersicht -->
+   <div id="4"></div>
+   <div class="chapter">
+     <p>
+       <span id="chapternumber">05</span>
+       <span id="chaptername">Prototyp</span>
+     </p>
+   </div>
+   <!-- Prototyp -->
+   <div class="contentProjects">
+      <div class="col-sm-12">
+        <img id="researchpic" src="img/ux/prototyp.png" alt="Lucie">
+      </div>
+    </div>
+   <div class="contentProjects description">
+     <div class="col-sm-12">
+       <p>Unser Ziel ist es, ein Produkt zu entwickeln, mit welchem der Kunde seine neue Gleitsichtbrille 
+         realitätsnah in VR sowie AR testen kann. Er soll dabei mit seiner Sicht interagieren können und 
+         diese während der Übertragung verändern können. Hiermit kann sich der Kunde seine optimale 
+         Brille selbst definieren.  
+         </p>
+     </div>
+   </div>
+
+
+     <!-- Further steps -->
+     <br> <br> <br> <br> <br> <br>
+     <div class="textmitte">
+        <h3>... further steps in progress</h3>
+      </div>
+      <div class="projinfo-container">
+          <section class="projcolumns clearfix">
+            <article>
+            </article>
+            <article>
+              <div class="projinfo">
+                <h3>Next steps</h3>
+                <p>Vertiefung des Konzeptes<br>Prototyping<br>Usertest<br>Technische Umsetzung</p>
+              </div>
+            </article>
+            <article>
+              <div class="projinfo">
+                <h3>Questions to answer</h3>
+                <p>Was setzten wir alles um? <br>
+                    Was kann man überhaupt simulieren? <br>
+                    Interaktion mit der VR/AR? <br>
+                    Wie kann er das Sichtfeld verändern?</p>
+              </div>
+            </article>
+            <article>
+            </article>
+          </section>
+        </div>
+
+
+
+
+  <!-- further projects -->
+  <div class="more clearfix">
+    <div id="projects"></div>
+    <div class="columns-container">
+      <section class="columns clearfix">
+        <h1>View more Projects</h1>
+        <a href="lucie.html">
+            <article>
+              <div class="proj mainpagekastenschrift lucie">
+                <div class="overlayproj luciehover">
+                  <h2>Lucies Diamond</h2>
+                  <h3>An interactive mirror experience</h3>
+                  <!-- <h4>Focus on technical implementation & prototyping</h4> -->
+                </div>
+              </div>
+            </article>
+          </a>
+        <article>
+          <div class="proj">
+          </div>
+        </article>
+        <article>
+          <div class="proj">
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="credit">
+      <div class="pos-center">
+        <a href=""><img src="img/icons/github.png" alt="Github"></a>
+        <a href=""><img src="img/icons/mail.png" alt="Mail"></a>
+        <a href=""><img src="img/icons/linkedin.png" alt="Linkedin"></a>
+      </div>
+      <div class="pos-center">
+        <p>&copy;Valerie Grappendorf 2019<a href=""> Impressum</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    //Navbar for mobile view
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+
+    //Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+
+  </script>
+
+
+</body>
+
+</html>

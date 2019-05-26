@@ -41,8 +41,42 @@ a {
 }
 
 
-
+.crop {
+    float: left;
+    width: 50%;
+    height: calc((100vw - 20px) * 0.32);
+    overflow: hidden;
+}
+.crop img {
+    width: 50%;
+    /* margin: -75px 0 0 -100px; */
+}
+.crop_abstandoben {
+    float: left;
+    width: 50%;
+    height: calc((100vw - 20px) * 0.32);
+    overflow: hidden;
+    margin-top: 5rem;
+}
+.crop_abstandoben img {
+    width: 50%;
+    /* margin: -75px 0 0 -100px; */
+}
+.cropsmall {
+    margin-top: 5rem;
+    float: left;
+    width: 50%;
+    height: calc((100vw - 20px) * 0.27);
+    overflow: hidden;
+}
+.cropsmall img {
+    width: 50%;
+    /* margin: -75px 0 0 -100px; */
+}
 /*Grit*/
+.textmitte {
+    text-align: center;
+}
 .col-sm-4,
 .col-sm-5,
 .col-sm-6,
@@ -58,6 +92,9 @@ a {
 .contentProjects {
     overflow: hidden;
 }
+.contentProjects span {
+    font-weight: 500;
+}
 .contentProjects img {
     width: 100%;
     /* margin-top: 1.667rem !important;
@@ -66,12 +103,12 @@ a {
     display: block;
 }
 .contentProjects p,
-.contentProjects h3 {
+.contentProjects h3,
+.contentProjects h1{
     /*Hier wird die Breite des Textblockes eingestellt*/
     max-width: 70rem;
     margin: auto;
-    margin-top: 0%;
-    padding-top: 4rem;
+    margin-top: 4rem;
 }
 .small-padding-h3-p p,
 .small-padding-h3-p h3 {
@@ -79,6 +116,21 @@ a {
 }
 .kleinesbild img{ 
     max-width: 70rem;
+}
+.quote p{
+    border-left: 2px solid transparent;
+    border-left-color: black;
+    padding-left: 20px;
+    margin-top: 2rem;
+}
+.description{
+    margin-top: 2rem; /*es soll zusammen 4 sein also 2 +2 = 2*/
+}
+.description p{
+    margin-top: 2rem;
+}
+.description h3{
+    margin-top: 4rem;
 }
 
 
@@ -268,23 +320,31 @@ a {
     display: block;
     padding-top: 80%;
 }
-
-/* Speziell für Lucies Diamond */
-.lucie {
-    background: #131F2E url(../lucie.png) center no-repeat;
-    background-size: 50%;
-}
-.lucie h2 {
+.mainpagekastenschrift h2 {
     color: transparent;
     padding-top: 20%;
     font-weight: 500;
 }
-.lucie h3 {
+.mainpagekastenschrift h3 {
     font-weight: 200;
     font-size: 20px;
     margin-top: -2%;
     /*Ausgleich von oben*/
     color: transparent;
+}
+
+/* Speziell für Projekte */
+.lucie {
+    background: #131F2E url(../img/lucie/lucie.png) center no-repeat;
+    background-size: 50%;
+}
+.ux {
+    background: #FF8383 url(../img/ux/uxintro.png) center no-repeat;
+    background-size: 70%;
+}
+.toolset {
+    background: rgb(0, 131, 124) url(../img/method/toolset.png) center no-repeat;
+    background-size: 30%;
 }
 
 /* Hover über Projektansicht */
@@ -294,7 +354,6 @@ a {
     width: 100%;
     opacity: 0;
     transition: 0.8s ease;
-    background-color: #131F2E;
     border-radius: 10px;
 }
 .proj:hover .overlayproj {
@@ -308,7 +367,16 @@ a {
 .proj:hover h3 {
     color: white;
 }
-
+/*Für einzelne Projekte*/
+.luciehover {
+    background-color: #131F2E;
+}
+.uxhover {
+    background-color: #FF8383;
+}
+.toolsethover {
+    background-color: rgb(0, 131, 124);
+}
 
 
 /*Footer*/
@@ -374,25 +442,45 @@ a {
 /*Projekte*/
 
 /*Lucies Diamond*/
-.lucieintro {
+.intro {
     margin-top: 20%;
     margin-left: 4%;
 }
-.lucieintro h1{
+.intro h1{
     margin-bottom: 0.8%
 }
-/*Luciebild*/
-.luciebild {
+/*intropic*/
+.intropic {
     margin-top: 5%;
     position: relative;
     width: 100%;
-    background: #101926;
 }
-.luciebild img {
+.intropic img {
     padding-top: 7%;
     padding-bottom: 7%;
-    margin-left: 37%;
+}
+.lucieintro {
+    background: #101926;
+}
+.lucieintro img{
     width: 20%;
+    margin-left: 37%;
+}
+.uxintro {
+    background: #FF8383;
+}
+.uxintro img{
+    background: #FF8383;
+    width: 50%;
+    margin-left: 25%;
+}
+.methodintro {
+    background: rgb(0, 131, 124);
+}
+.methodintro img{
+    background: rgb(0, 131, 124);
+    width: 20%;
+    margin-left: 38%;
 }
 
 /*Infos über das Projekt*/
@@ -410,16 +498,41 @@ a {
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
+.projinfo span {
+    color: #B4B4B4;
+}
 
 /*Taskcontainer*/
 .taskcontainer {
     position: relative;
     margin: 5% 0 5% 0;
-    padding: 10% 0 10% 0;
+    padding: 6% 0 10% 0;
     width: 100%;
     background: #FAFAFA;
 }
+.tools {
+    background: none;
+}
+/*HMW Container*/
+.HMW {
+    position: relative;
+    margin: 5% 0 5% 0;
+    padding: 6% 0 10% 0;
+    text-align: center;
+    width: 100%;
+    background: #FAFAFA;
+}
+.nomarging {
+    margin: 0% 0 0% 0;
 
+}
+.HMW h3{
+    font-weight: 300;
+    color: grey;
+}
+.HMW p{
+    font-weight: 500;
+}
 /*Kapitelüberschrift*/
 .chapter {
     padding-left: 4%;
@@ -535,7 +648,7 @@ a {
 
 
 
-
+/* UX*/
 .more {
     margin-top: 10%;
     width: 100%;
@@ -543,9 +656,36 @@ a {
 }
 
 
-
-
-
+/*About Me*/
+.aboutmebild {
+    padding-top: 10%;
+    padding-bottom: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.aboutmebild img{
+    margin-left: 4%;
+    float: right;
+    width: 50%;
+}
+#mehead {
+    color: black;
+    font-size: 70px;
+    font-weight: 450;
+}
+#metext {
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 1.8;
+}
+#metext a {
+    font-weight: 500;
+    text-decoration: none;
+}
+#check {
+    width: 19px;
+    padding-right: 5px;
+}
 
 /*Weitere Einstellungen*/
 
@@ -677,8 +817,6 @@ a {
         font-size: 25px;
         font-weight: 100;
     }
-
-
     /* Veränderrung der Projektansicht */
     .columns article {
         width: 100%;
@@ -686,6 +824,15 @@ a {
     }
     .proj:before {
         padding-top: 50%;
+    }
+    /*About Me Page*/
+    .aboutmebild img{
+        margin-left: 4%;
+        float: right;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
     }
 }
 
@@ -727,7 +874,7 @@ a {
     }
     /*Lucie*/
     /*Rolle, Zeit, etc. Ansicht*/
-    .lucieintro h1 {
+    .intro h1 {
         padding-top: 15%;
         padding-bottom: 1%;
     }
@@ -737,7 +884,7 @@ a {
     .projnav {
         display: none;
     }
-    .luciebild img {
+    .intropic img {
         margin-left: 25%;
         width: 50%;
     }

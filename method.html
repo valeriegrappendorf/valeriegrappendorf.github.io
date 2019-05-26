@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <title>Startseite</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header-->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header clearfix">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="img/Lebenslauf_Valerie%20Grappendorf.pdf" target="_blank">About me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für Handy -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Projektintro -->
+  <div class="intro">
+    <h1>My Toolset</h1>
+    <p>Deeper insights in my design prozess</p>
+  </div>
+
+  <!-- Bildkasten -->
+  <div class="intropic methodintro clearfix">
+    <img src="img/method/toolset.png" alt="Lucie">
+  </div>
+
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p>The design thinking process is a great approach for a elaborated project.
+        I want to use this page to give you deeper insights into my proceedings and show
+        you a selection of the methods which often support me and my teams to get to our goal.
+        Across all those steps it is important to say that it is never a straight prozess.
+        We sometimes have to jump back and forth and often iterate individual steps. And in
+        general not every methods fits to every projects. It is also our task to evaluate which
+        ones will be the most productive ones for this specific case. <br> <br> </p>
+    </div>
+  </div>
+
+  <!-- Navbar für Projekte -->
+  <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a href="#1">Empathy</a></li>
+        <li><a href="#2">Synthesis</a></li>
+        <li><a href="#3">Ideation</a></li>
+        <li><a href="#4">Prototype</a></li>
+        <li><a href="#result">Test</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+  <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
+  <div id="1"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">01</span>
+      <span id="chaptername">Empathy</span>
+    </p>
+  </div>
+  <!-- Empathy -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop">
+        <img id="uxempathypic" src="img/method/Empathy/empathy.png" alt="test">
+      </div>
+      <div class="crop">
+        <img id="researchpic" src="img/method/Empathy/cultureprobe.jpeg" alt="Lucie">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Day in a life | Be your own customer | Culture Probe</h3>
+      <p>As a first step I want to know who I am designing for and realize and feel the needs of my users.</p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="2"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">02</span>
+      <span id="chaptername">Synthesis</span>
+    </p>
+  </div>
+  <!-- Synthesis -->
+  <div class="interactiongif">
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="img/method/Synthesis/postit1.JPG">
+        <img class="mySlides" src="img/method/Synthesis/postit2.JPG">
+        <img class="mySlides" src="img/method/Synthesis/optician.png">
+        <img class="mySlides" src="img/method/Synthesis/persona.png">
+        <img class="mySlides" src="img/method/Synthesis/storyboard.png">
+        <img class="mySlides" src="img/method/Synthesis/interactionmap.png">
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-aqua" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-aqua" onclick="plusDivs(1)">&#10095;</div>
+        </div>
+        <div class="kreisanzeige">
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+        </div>
+      </div>
+    </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>User Journey | Mind Map | HMW | Empathy Map | Storyboard | Persona</h3>
+      <p>After a period of research I often feel overwhelmed by the amount of insights I did collect.
+        The above stated methods are an immense help to identify the most important aspects and to
+        sharpen your perspective.</p>
+    </div>
+  </div>
+
+  <!-- Kapitelübersicht -->
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">03</span>
+      <span id="chaptername">Ideation</span>
+    </p>
+  </div>
+  <!-- Ideation -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop">
+        <img id="uxempathypic" src="img/method/Ideation/brainstorm.JPG" alt="test">
+      </div>
+      <div class="crop">
+        <img id="researchpic" src="img/method/Ideation/crazy8.png" alt="Lucie">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Crazy 8 | Brainstorming</h3>
+      <p>On this point I we already know which problem we want to solve.
+        But how will we do it? It is time to widen our minds again and to allow every
+        crazy thought that comes in our mind. Nothing is too unrealistic or too insane.
+        The base of the final idea or solution lays in all of them.</p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="4"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">04</span>
+      <span id="chaptername">Prototyp</span>
+    </p>
+  </div>
+  <!-- Prototyp -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop">
+        <img id="uxempathypic" src="img/method/Prototype/paper.png" alt="test">
+      </div>
+      <div class="crop">
+        <img id="researchpic" src="img/method/Prototype/paper2.png" alt="Lucie">
+      </div>
+      <div class="crop_abstandoben">
+        <img id="uxempathypic" src="img/method/Prototype/midfi.png" alt="test">
+      </div>
+      <div class="crop_abstandoben">
+        <img id="researchpic" src="img/method/Prototype/hifi2.png" alt="Lucie">
+      </div>
+      <div class="crop_abstandoben">
+        <img id="uxempathypic" src="img/method/Prototype/dyp.png" alt="test">
+      </div>
+      <div class="crop_abstandoben">
+        <img id="researchpic" src="img/method/Prototype/tinker2.JPG" alt="Lucie">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Paper Prototyp to Wireframes Clickdummy | Arduino | Tinker</h3>
+      <p>After defining the solution, it is finally time to get not just visual
+        but also to make the project come alive. Which this methods we form a perfect
+        foundation for following user tests. </p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="4"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">05</span>
+      <span id="chaptername">Test</span>
+    </p>
+  </div>
+  <!-- Test -->
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop">
+        <img id="uxempathypic" src="img/method/Test/test1.png" alt="test">
+      </div>
+      <div class="crop">
+        <img id="researchpic" src="img/method/Test/test2.png" alt="Lucie">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Think aloud | Shadowing</h3>
+      <p>Now it is time to find out which aspects of our prototyp or concept in general
+        pass the inspection of our users. It is always important to clarify the users about
+        the fact that we are testing our product, not them and that the can not do anything wrong.
+        If something does not work out, it is a weakness of the product. With this precious
+        insights we can interate our product until it is finally well-engineered.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- further projects -->
+  <div class="more clearfix">
+    <div id="projects"></div>
+    <div class="columns-container">
+      <section class="columns clearfix">
+        <h1>View more Projects</h1>
+        <a href="lucie.html">
+          <article>
+            <div class="proj mainpagekastenschrift lucie">
+              <div class="overlayproj luciehover">
+                <h2>Lucies Diamond</h2>
+                <h3>An interactive mirror experience</h3>
+                <!-- <h4>Focus on technical implementation & prototyping</h4> -->
+              </div>
+            </div>
+          </article>
+        </a>
+        <article>
+          <div class="proj">
+          </div>
+        </article>
+        <article>
+          <div class="proj">
+          </div>
+        </article>
+      </section>
+    </div>
+    <div class="credit">
+      <div class="pos-center">
+        <a href=""><img src="img/icons/github.png" alt="Github"></a>
+        <a href=""><img src="img/icons/mail.png" alt="Mail"></a>
+        <a href=""><img src="img/icons/linkedin.png" alt="Linkedin"></a>
+      </div>
+      <div class="pos-center">
+        <p>&copy;Valerie Grappendorf 2019<a href=""> Impressum</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    //Navbar for mobile view
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+
+
+    //Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+
+  </script>
+
+
+</body>
+
+</html>
