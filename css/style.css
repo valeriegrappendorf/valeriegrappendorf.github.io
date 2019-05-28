@@ -25,9 +25,10 @@ h2 {
 
 h3 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 10px;
 }
+
 p {
     font-size: 18px;
     font-weight: 350;
@@ -47,10 +48,12 @@ a {
     height: calc((100vw - 20px) * 0.32);
     overflow: hidden;
 }
+
 .crop img {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
+
 .crop_abstandoben {
     float: left;
     width: 50%;
@@ -58,10 +61,12 @@ a {
     overflow: hidden;
     margin-top: 5rem;
 }
+
 .crop_abstandoben img {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
+
 .cropsmall {
     margin-top: 5rem;
     float: left;
@@ -69,14 +74,17 @@ a {
     height: calc((100vw - 20px) * 0.27);
     overflow: hidden;
 }
+
 .cropsmall img {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
+
 /*Grit*/
 .textmitte {
     text-align: center;
 }
+
 .col-sm-4,
 .col-sm-5,
 .col-sm-6,
@@ -86,15 +94,19 @@ a {
     padding-right: 4%;
     padding-left: 4%;
 }
+
 .col-sm-12 {
     overflow: hidden;
 }
+
 .contentProjects {
     overflow: hidden;
 }
+
 .contentProjects span {
     font-weight: 500;
 }
+
 .contentProjects img {
     width: 100%;
     /* margin-top: 1.667rem !important;
@@ -102,34 +114,47 @@ a {
     margin: 0 auto;
     display: block;
 }
+
 .contentProjects p,
 .contentProjects h3,
-.contentProjects h1{
+.contentProjects h1 {
     /*Hier wird die Breite des Textblockes eingestellt*/
     max-width: 70rem;
     margin: auto;
     margin-top: 4rem;
 }
-.small-padding-h3-p p,
+
 .small-padding-h3-p h3 {
-    padding-top: 2%;
+    padding-top: 2rem;
+    margin-top: 2rem;
 }
-.kleinesbild img{ 
+
+.small-padding-h3-p p {
+    padding-top: 2rem;
+    margin-top: 0%;
+}
+
+.kleinesbild img {
     max-width: 70rem;
 }
-.quote p{
+
+.quote p {
     border-left: 2px solid transparent;
     border-left-color: black;
     padding-left: 20px;
     margin-top: 2rem;
 }
-.description{
-    margin-top: 2rem; /*es soll zusammen 4 sein also 2 +2 = 2*/
+
+.description {
+    margin-top: 2rem;
+    /*es soll zusammen 4 sein also 2 +2 = 2*/
 }
-.description p{
+
+.description p {
     margin-top: 2rem;
 }
-.description h3{
+
+.description h3 {
     margin-top: 4rem;
 }
 
@@ -145,6 +170,7 @@ a {
     top: 0;
     width: 100%;
 }
+
 /* My Logo */
 .logo ul a {
     display: block;
@@ -156,16 +182,19 @@ a {
     padding: 0px 0px 0px 0px;
     float: left;
 }
+
 /*Navbar for Phone */
 .navphone {
     display: none;
 }
+
 /* Navbar für Computer */
 .main-header nav {
     float: right;
     padding-top: 0px;
     /*Abstand der Navigation von oberer Grenze*/
 }
+
 .main-header ul {
     /*ul hat eigentlich vordefinierte margin & padding*/
     margin: 0;
@@ -173,11 +202,13 @@ a {
     list-style: none;
     /*Sonst würden Bullet Points angezeigt werden*/
 }
+
 .main-header li {
     float: left;
     /*Anordnung der List: right wäre andersrum & top übereinander gestellt*/
     /*margin: 0 10px;*/
 }
+
 .main-header nav ul a {
     font-size: 18px;
     font-weight: 300;
@@ -187,6 +218,7 @@ a {
     text-decoration: none;
     margin: 0px 0px 10px 30px;
 }
+
 .main-header ul a:hover {
     color: black;
 }
@@ -201,14 +233,17 @@ a {
     position: sticky;
     top: 0;
 }
+
 .projnav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 .projnav li {
     float: left;
 }
+
 .projnav nav ul a {
     font-size: 18px;
     font-weight: 300;
@@ -217,6 +252,7 @@ a {
     margin: 0px 30px 10px 0px;
     text-decoration: none;
 }
+
 .projnav ul a:hover {
     color: black;
 }
@@ -233,21 +269,29 @@ a {
     margin-top: 7%;
     margin-left: 4%;
 }
+
 .introphone {
     display: none;
 }
+
 /* Rectangle with my photo */
 .rect1 {
     position: relative;
     width: 45%;
     background: #FEEE75;
+    /* background: url(../sky.jpeg) center repeat; */
+    /* background-image: linear-gradient(to top, white 0%, #FF6B49 50%);
+    background-image: linear-gradient(to right, white 0%, #FF6B49 50%);
+    background-image: linear-gradient(90deg, white 0%, #FF6B49 50%); */
     border-radius: 10px;
 }
+
 .rect1:before {
     content: "";
     display: block;
     padding-top: 115%;
 }
+
 .rect1 img {
     position: absolute;
     width: 60%;
@@ -256,6 +300,7 @@ a {
     bottom: 0;
     display: inline-block;
 }
+
 /* Rectangle with introduction */
 .rect2 {
     position: absolute;
@@ -268,6 +313,7 @@ a {
     border-radius: 10px;
     z-index: 2;
 }
+
 .rect2 h1 {
     margin-top: 2%;
     margin-bottom: 5%;
@@ -275,6 +321,7 @@ a {
     font-size: 120px;
     font-weight: 450;
 }
+
 .rect2 h1 span {
     display: block;
     font-size: 23px;
@@ -287,15 +334,18 @@ a {
 
 /*Projektansicht*/
 .columns-container {
+    padding-top: 5%;
     margin-left: 0%;
     /* ist bereits in dem oberen Intro Container drin*/
     padding-left: 4%;
     padding-right: 2%;
     /* Hier 2 weniger, weil bei columns article nochmal right +2% */
 }
+
 .columns-container a {
     cursor: url('cross.png'), default;
 }
+
 .columns article {
     width: 33.33%;
     /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
@@ -304,6 +354,7 @@ a {
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
+
 .proj {
     position: relative;
     float: left;
@@ -313,6 +364,7 @@ a {
     background: #FEEE75;
     border-radius: 10px;
 }
+
 .proj:before {
     float: left;
     /*Hierdurch wird der Text im Viereck richtig zentriert*/
@@ -320,11 +372,13 @@ a {
     display: block;
     padding-top: 80%;
 }
+
 .mainpagekastenschrift h2 {
     color: transparent;
     padding-top: 20%;
     font-weight: 500;
 }
+
 .mainpagekastenschrift h3 {
     font-weight: 200;
     font-size: 20px;
@@ -338,12 +392,29 @@ a {
     background: #131F2E url(../img/lucie/lucie.png) center no-repeat;
     background-size: 50%;
 }
+
 .ux {
-    background: #FF8383 url(../img/ux/uxintro.png) center no-repeat;
+    background: #FF7161 url(../img/ux/uxintrocrop.png) center no-repeat;
     background-size: 70%;
 }
+
 .toolset {
-    background: rgb(0, 131, 124) url(../img/method/toolset.png) center no-repeat;
+    background: #1ABCFD url(../img/method/toolset.png) center no-repeat;
+    background-size: 25%;
+}
+
+.bot {
+    background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
+    background-size: 40%;
+}
+
+.whatt {
+    background: #FDB056 url(../img/whatt/whatt.png) center no-repeat;
+    background-size: 40%;
+}
+
+.spare {
+    background: #D1D1D1 url() center no-repeat;
     background-size: 30%;
 }
 
@@ -356,53 +427,72 @@ a {
     transition: 0.8s ease;
     border-radius: 10px;
 }
+
 .proj:hover .overlayproj {
     opacity: 0.9;
     /* cursor: crosshair; */
 }
+
 .proj:hover h2 {
     /*Change font color when hovering the div*/
     color: white;
 }
+
 .proj:hover h3 {
     color: white;
 }
+
 /*Für einzelne Projekte*/
 .luciehover {
     background-color: #131F2E;
 }
+
 .uxhover {
-    background-color: #FF8383;
+    background-color: #FF7161;
 }
+
 .toolsethover {
-    background-color: rgb(0, 131, 124);
+    background-color: #1ABCFD
 }
+
+.bothover {
+    background-color: #0ACE82;
+}
+
+.whatthover {
+    background-color: #FDB056;
+}
+
+.sparehover {
+    background-color: #D1D1D1
+}
+
 
 
 /*Footer*/
 .slogan-container {
     margin-top: 5%;
-    background: #f7f7f7;
+    background: #FAFAFA;
 }
+
 #slogansmal {
     display: none;
 }
+
 .slogan {
     padding-left: 4%;
-    padding-bottom: 5%;
 }
+
 .slogan p {
     line-height: 1.6;
     font-size: 20px;
     float: left;
-    margin-top: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
+
 .slogan span {
     font-weight: 700;
-}
-.slogan img {
-    margin-left: 2%;
-    margin-bottom: 0%;
 }
 
 
@@ -413,26 +503,32 @@ a {
     align-items: center;
     text-align: center;
 }
+
 .pos-center p {
     padding-left: 4%;
     padding-right: 4%;
 }
+
 .credit {
     margin-top: 5%;
 }
+
 .credit img {
     margin-left: 8px;
     margin-bottom: 3px;
     width: 25px;
 }
+
 .credit p {
     padding-bottom: 2%;
 }
+
 .credit a {
     text-decoration: none;
     font-weight: 300;
     color: grey;
 }
+
 .credit a:hover {
     color: black;
 }
@@ -446,7 +542,8 @@ a {
     margin-top: 20%;
     margin-left: 4%;
 }
-.intro h1{
+
+.intro h1 {
     margin-bottom: 0.8%
 }
 /*intropic*/
@@ -455,33 +552,43 @@ a {
     position: relative;
     width: 100%;
 }
+
 .intropic img {
     padding-top: 7%;
     padding-bottom: 7%;
 }
+
 .lucieintro {
     background: #101926;
 }
-.lucieintro img{
+
+.lucieintro img {
     width: 20%;
     margin-left: 37%;
 }
+
 .uxintro {
-    background: #FF8383;
+    background: #FF7161;
 }
-.uxintro img{
-    background: #FF8383;
+
+.uxintro img {
+    background: #FF7161;
     width: 50%;
     margin-left: 25%;
 }
+
+
+/*Methoden*/
 .methodintro {
-    background: rgb(0, 131, 124);
+    background: #1ABCFD;
 }
-.methodintro img{
-    background: rgb(0, 131, 124);
+
+.methodintro img {
+    background: #1ABCFD;
     width: 20%;
     margin-left: 38%;
 }
+
 
 /*Infos über das Projekt*/
 .projinfo-container {
@@ -490,6 +597,7 @@ a {
     background: white;
     margin-left: 7%;
 }
+
 .projcolumns article {
     width: 25%;
     /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
@@ -498,6 +606,7 @@ a {
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
+
 .projinfo span {
     color: #B4B4B4;
 }
@@ -510,9 +619,11 @@ a {
     width: 100%;
     background: #FAFAFA;
 }
+
 .tools {
     background: none;
 }
+
 /*HMW Container*/
 .HMW {
     position: relative;
@@ -522,17 +633,21 @@ a {
     width: 100%;
     background: #FAFAFA;
 }
+
 .nomarging {
     margin: 0% 0 0% 0;
 
 }
-.HMW h3{
+
+.HMW h3 {
     font-weight: 300;
     color: grey;
 }
-.HMW p{
+
+.HMW p {
     font-weight: 500;
 }
+
 /*Kapitelüberschrift*/
 .chapter {
     padding-left: 4%;
@@ -540,23 +655,27 @@ a {
     padding-bottom: 2%;
     vertical-align: baseline
 }
+
 #chapternumber {
     vertical-align: middle;
     font-size: 45px;
     font-weight: 500;
     margin-right: 5px;
 }
+
 #chaptername {
     vertical-align: middle;
     font-size: 30px;
     font-weight: 400;
 }
+
 /*Conceptkasten: Gif mit Fahrrad*/
 .luciegif {
     position: relative;
     width: 100%;
     background: #101926;
 }
+
 .luciegif img {
     margin-left: 18%;
     width: 60%;
@@ -568,6 +687,7 @@ a {
     width: 100%;
     background: #FAFAFA;
 }
+
 #brille {
     padding-top: 6%;
     padding-bottom: 6%;
@@ -577,12 +697,13 @@ a {
     width: 40%;
 }
 
-/*InteractionGIFKasten*/
+/*SliderKasten Lucie*/
 .interactiongif {
     height: 100%;
-    background: #111925;
+    background: #121924;
     margin-top: 4rem;
 }
+
 .mySlides {
     display: none;
     width: 50%;
@@ -590,29 +711,61 @@ a {
     padding-bottom: 2%;
     margin-left: 25%;
 }
+
 .w3-left {
     margin-bottom: 17%;
     margin-left: 0%;
 }
+
 .w3-right {
     margin-bottom: 17%;
     margin-right: 0%;
 }
+
 .w3-left,
 .w3-right,
 .w3-badge {
     cursor: pointer
 }
+
 .kreisanzeige {
     text-align: center;
     padding-bottom: 2%;
 }
+
 .w3-badge {
     height: 10px;
     width: 10px;
     padding-right: 0;
     padding-left: 0;
 }
+
+/*Sliderkasten Methoden*/
+.methodscontainer {
+    height: 100%;
+    background: #FAFAFA;
+}
+
+.mySlides1 {
+    display: none;
+    width: 70%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin-left: 15%;
+}
+
+.mySlides2 {
+    display: none;
+    width: 70%;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    margin-left: 15%;
+}
+
+.methodenanpassung {
+    margin-bottom: 27%;
+}
+
 
 /*ResultKasten*/
 .responsive-video iframe {
@@ -623,6 +776,7 @@ a {
     width: 93%;
     height: 100%;
 }
+
 .responsive-video {
     position: relative;
     height: 0;
@@ -630,6 +784,7 @@ a {
     /* Default for 1600x900 videos 16:9 ratio*/
     overflow: hidden;
 }
+
 .resulttext {
     margin-top: -6%;
     display: flex;
@@ -637,9 +792,11 @@ a {
     align-items: center;
     text-align: center;
 }
+
 .result p {
     float: left;
 }
+
 .result img {
     margin-left: 5px;
     margin-bottom: 22px;
@@ -663,25 +820,30 @@ a {
     margin-left: 4%;
     margin-right: 4%;
 }
-.aboutmebild img{
+
+.aboutmebild img {
     margin-left: 4%;
     float: right;
     width: 50%;
 }
+
 #mehead {
     color: black;
     font-size: 70px;
     font-weight: 450;
 }
+
 #metext {
     font-size: 18px;
     font-weight: 350;
     line-height: 1.8;
 }
+
 #metext a {
     font-weight: 500;
     text-decoration: none;
 }
+
 #check {
     width: 19px;
     padding-right: 5px;
@@ -693,11 +855,13 @@ a {
 .clearfix {
     overflow: auto;
 }
+
 .clearfix:before,
 .clearfix:after {
     content: " ";
     display: table;
 }
+
 .clearfix:after {
     clear: both;
 }
@@ -720,6 +884,7 @@ a {
         width: 50%;
         /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 1 Spalte*/
     }
+
     .proj:before {
         padding-top: 50%;
     }
@@ -733,12 +898,15 @@ a {
     .bignav {
         display: none;
     }
+
     .navphone {
         display: block;
     }
+
     .navphone span {
         float: right;
     }
+
     .overlay {
         height: 100%;
         width: 0;
@@ -750,6 +918,7 @@ a {
         overflow-x: hidden;
         transition: 0.5s;
     }
+
     .overlay-content {
         position: relative;
         top: 25%;
@@ -757,6 +926,7 @@ a {
         text-align: center;
         margin-top: 30px;
     }
+
     .overlay a {
         padding: 8px;
         text-decoration: none;
@@ -764,18 +934,22 @@ a {
         display: block;
         color: grey;
     }
+
     .overlay a:hover,
     .overlay a:focus {
         color: black;
     }
+
     .overlay .closebtn {
         position: absolute;
         right: 15px;
         font-size: 60px;
     }
+
     .overlay a {
         font-size: 20px
     }
+
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -796,43 +970,51 @@ a {
         margin-top: 20%;
         margin-bottom: 20%;
     }
+
     .rect1 {
         display: none;
     }
+
     .rect2 {
         display: none;
     }
+
     .introphone {
         display: block;
     }
+
     .introphone h1 {
         margin-top: 2%;
         margin-bottom: 5%;
         font-size: 50px;
         font-weight: 450;
     }
+
     .introphone h1 span {
         margin-top: 3%;
         display: block;
         font-size: 25px;
         font-weight: 100;
     }
+
     /* Veränderrung der Projektansicht */
     .columns article {
         width: 100%;
         /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 1 Spalte*/
     }
+
     .proj:before {
         padding-top: 50%;
     }
+
     /*About Me Page*/
-    .aboutmebild img{
+    .aboutmebild img {
         margin-left: 4%;
         float: right;
         width: 100%;
         padding-top: 20px;
         padding-bottom: 20px;
-    
+
     }
 }
 
@@ -846,58 +1028,73 @@ a {
         font-size: 25px;
         padding-bottom: 5%;
     }
+
     #slogansmal {
         display: block;
     }
+
     #sloganbig {
         display: none;
     }
+
     .slogan-container {
         margin-top: 15%;
         background: #f7f7f7;
     }
+
     .slogan p {
         line-height: 1.6;
         font-size: 18px;
         float: left;
         margin-top: 2%;
     }
+
     .slogan {
         margin-top: 5%;
         padding-bottom: 40%;
     }
+
     .slogan h1 {
         padding-top: 8%;
     }
+
     .legal {
         margin-top: 10%;
     }
+
     /*Lucie*/
     /*Rolle, Zeit, etc. Ansicht*/
     .intro h1 {
         padding-top: 15%;
         padding-bottom: 1%;
     }
+
     .projcolumns article {
         width: 100%;
     }
+
     .projnav {
         display: none;
     }
+
     .intropic img {
         margin-left: 25%;
         width: 50%;
     }
+
     .luciegif img {
         margin-left: 0%;
         width: 100%;
     }
+
     #brille {
         width: 80%;
     }
+
     .taskcontainer h3 {
         line-height: 1.8;
     }
+
     .resulttext {
         display: none;
     }

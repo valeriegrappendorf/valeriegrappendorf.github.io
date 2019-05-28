@@ -17,7 +17,7 @@
 <!-- SHift + Alt + F formats the code! :)  -->
 
 <body>
-  <!-- Header-->
+  <!-- Header     -->
   <div class="main-header-container" id="myHeader">
     <!-- Allgmeine Box des Headers -->
     <header class="main-header clearfix">
@@ -31,20 +31,20 @@
       <div class="bignav">
         <nav>
           <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="img/Lebenslauf_Valerie%20Grappendorf.pdf" target="_blank">About me</a></li>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="img/CV.pdf" target="_blank">CV</a></li>
           </ul>
         </nav>
       </div>
-      <!-- Navbar für Handy -->
+      <!-- Navbar für mobile Geräte -->
       <div class="navphone">
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="index.html#work">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="img/CV.pdf" target="_blank">CV</a>
           </div>
         </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -85,7 +85,7 @@
         <li><a href="#2">Synthesis</a></li>
         <li><a href="#3">Ideation</a></li>
         <li><a href="#4">Prototype</a></li>
-        <li><a href="#result">Test</a></li>
+        <li><a href="#5">Test</a></li>
       </ul>
     </nav>
   </div>
@@ -127,28 +127,26 @@
     </p>
   </div>
   <!-- Synthesis -->
-  <div class="interactiongif">
-      <div class="w3-content w3-display-container">
-        <img class="mySlides" src="img/method/Synthesis/postit1.JPG">
-        <img class="mySlides" src="img/method/Synthesis/postit2.JPG">
-        <img class="mySlides" src="img/method/Synthesis/optician.png">
-        <img class="mySlides" src="img/method/Synthesis/persona.png">
-        <img class="mySlides" src="img/method/Synthesis/storyboard.png">
-        <img class="mySlides" src="img/method/Synthesis/interactionmap.png">
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-hover-text-aqua" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-aqua" onclick="plusDivs(1)">&#10095;</div>
-        </div>
-        <div class="kreisanzeige">
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
-        </div>
+  <div class="methodscontainer">
+    <div class="w3-content w3-display-container">
+      <img class="mySlides1" src="img/method/Synthesis/postit1.png">
+      <img class="mySlides1" src="img/method/Synthesis/postit2.png">
+      <img class="mySlides1" src="img/method/Synthesis/persona.png">
+      <img class="mySlides1" src="img/method/Synthesis/storyboard.png">
+      <img class="mySlides1" src="img/method/Synthesis/interactionmap.png">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-text-grey methodenanpassung w3-hover-text-blue" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-text-grey w3-hover-text-blue" onclick="plusDivs(1)">&#10095;</div>
+      </div>
+      <div class="kreisanzeige">
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(4)"></span>
+        <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(5)"></span>
       </div>
     </div>
+  </div>
   <div class="contentProjects description">
     <div class="col-sm-12">
       <h3>User Journey | Mind Map | HMW | Empathy Map | Storyboard | Persona</h3>
@@ -193,35 +191,33 @@
   <div class="chapter">
     <p>
       <span id="chapternumber">04</span>
-      <span id="chaptername">Prototyp</span>
+      <span id="chaptername">prototype</span>
     </p>
   </div>
   <!-- Prototyp -->
-  <div class="contentProjects">
-    <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/method/Prototype/paper.png" alt="test">
+  <div class="methodscontainer">
+    <div class="w3-content w3-display-container">
+      <img class="mySlides2" src="img/method/Prototype/paper2.png">
+      <img class="mySlides2" src="img/method/Prototype/midfi.png">
+      <img class="mySlides2" src="img/method/Prototype/hifi2.png">
+      <img class="mySlides2" src="img/method/Prototype/dyp.png">
+      <img class="mySlides2" src="img/method/Prototype/tinker2.png">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-text-grey methodenanpassung w3-hover-text-blue" onclick="plusDivs2(-1)">&#10094;</div>
+        <div class="w3-right w3-text-grey w3-hover-text-blue" onclick="plusDivs2(1)">&#10095;</div>
       </div>
-      <div class="crop">
-        <img id="researchpic" src="img/method/Prototype/paper2.png" alt="Lucie">
-      </div>
-      <div class="crop_abstandoben">
-        <img id="uxempathypic" src="img/method/Prototype/midfi.png" alt="test">
-      </div>
-      <div class="crop_abstandoben">
-        <img id="researchpic" src="img/method/Prototype/hifi2.png" alt="Lucie">
-      </div>
-      <div class="crop_abstandoben">
-        <img id="uxempathypic" src="img/method/Prototype/dyp.png" alt="test">
-      </div>
-      <div class="crop_abstandoben">
-        <img id="researchpic" src="img/method/Prototype/tinker2.JPG" alt="Lucie">
+      <div class="kreisanzeige">
+        <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(1)"></span>
+        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(2)"></span>
+        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(3)"></span>
+        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(4)"></span>
+        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(5)"></span>
       </div>
     </div>
   </div>
   <div class="contentProjects description">
     <div class="col-sm-12">
-      <h3>Paper Prototyp to Wireframes Clickdummy | Arduino | Tinker</h3>
+      <h3>Paper Prototype to Wireframes Clickdummy | Arduino | Tinker</h3>
       <p>After defining the solution, it is finally time to get not just visual
         but also to make the project come alive. Which this methods we form a perfect
         foundation for following user tests. </p>
@@ -230,7 +226,7 @@
 
 
   <!-- Kapitelübersicht -->
-  <div id="4"></div>
+  <div id="5"></div>
   <div class="chapter">
     <p>
       <span id="chapternumber">05</span>
@@ -251,7 +247,7 @@
   <div class="contentProjects description">
     <div class="col-sm-12">
       <h3>Think aloud | Shadowing</h3>
-      <p>Now it is time to find out which aspects of our prototyp or concept in general
+      <p>Now it is time to find out which aspects of our prototype or concept in general
         pass the inspection of our users. It is always important to clarify the users about
         the fact that we are testing our product, not them and that the can not do anything wrong.
         If something does not work out, it is a weakness of the product. With this precious
@@ -277,7 +273,7 @@
               <div class="overlayproj luciehover">
                 <h2>Lucies Diamond</h2>
                 <h3>An interactive mirror experience</h3>
-                <!-- <h4>Focus on technical implementation & prototyping</h4> -->
+                <!-- <h4>Focus on technical implementation & prototypeing</h4> -->
               </div>
             </div>
           </article>
@@ -294,12 +290,13 @@
     </div>
     <div class="credit">
       <div class="pos-center">
-        <a href=""><img src="img/icons/github.png" alt="Github"></a>
-        <a href=""><img src="img/icons/mail.png" alt="Mail"></a>
-        <a href=""><img src="img/icons/linkedin.png" alt="Linkedin"></a>
+        <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+        <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+        <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+            alt="Linkedin"></a>
       </div>
       <div class="pos-center">
-        <p>&copy;Valerie Grappendorf 2019<a href=""> Impressum</a></p>
+        <p>&copy;Valerie Grappendorf 2019<a href="impressum.html"> Impressum</a></p>
       </div>
     </div>
   </div>
@@ -328,7 +325,7 @@
     }
     function showDivs(n) {
       var i;
-      var x = document.getElementsByClassName("mySlides");
+      var x = document.getElementsByClassName("mySlides1");
       var dots = document.getElementsByClassName("demo");
       if (n > x.length) { slideIndex = 1 }
       if (n < 1) { slideIndex = x.length }
@@ -336,10 +333,35 @@
         x[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
+        dots[i].className = dots[i].className.replace(" w3-blue", "");
       }
       x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
+      dots[slideIndex - 1].className += " w3-blue";
+    }
+    //Slideshow 2
+    var slideIndex = 1;
+    showDivs2(slideIndex);
+
+    function plusDivs2(n) {
+      showDivs2(slideIndex += n);
+    }
+    function currentDiv2(n) {
+      showDivs2(slideIndex = n);
+    }
+    function showDivs2(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides2");
+      var dots = document.getElementsByClassName("demo2");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-blue", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-blue";
     }
 
   </script>
