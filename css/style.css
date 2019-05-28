@@ -598,7 +598,10 @@ a {
     width: 20%;
     margin-left: 38%;
 }
-
+.botgit img{
+  margin-top: 2%;
+  width: 3%;
+}
 
 /*Infos über das Projekt*/
 .projinfo-container {
@@ -817,8 +820,7 @@ a {
 /*MarvinBot*/
 .marvinchat {
     margin: 0% 0 0% 0;
-    padding: 0% 20% 5% 20%;
-    /* background: #FAFAFA */
+    padding: 0% 20% 0% 20%;
 }
 
 
