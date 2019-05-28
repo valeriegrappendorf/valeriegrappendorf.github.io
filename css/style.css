@@ -414,7 +414,7 @@ a {
 }
 
 .spare {
-    background: #D1D1D1 url() center no-repeat;
+    background: #D1D1D1 url(../img/letztewerbung/letztewerbung.png) center no-repeat;
     background-size: 30%;
 }
 
@@ -585,6 +585,16 @@ a {
 
 .methodintro img {
     background: #1ABCFD;
+    width: 20%;
+    margin-left: 38%;
+}
+/*Bot*/
+.botintro {
+    background: #0ACE82;
+}
+
+.botintro img {
+    background: #0ACE82;
     width: 20%;
     margin-left: 38%;
 }
@@ -803,6 +813,13 @@ a {
     width: 25px;
 }
 
+
+/*MarvinBot*/
+.marvinchat {
+    margin: 0% 0 0% 0;
+    padding: 0% 20% 5% 20%;
+    /* background: #FAFAFA */
+}
 
 
 /* UX*/
