@@ -365,6 +365,9 @@ a {
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
+.columns h1 {
+    margin-top: 0;
+}
 
 .proj {
     position: relative;
@@ -386,16 +389,16 @@ a {
 
 .mainpagekastenschrift h2 {
     color: transparent;
-    padding-top: 20%;
+    padding-top: calc((100vw - 20px) * 0.08);
     font-weight: 500;
 }
-
 .mainpagekastenschrift h3 {
     font-weight: 200;
     font-size: 20px;
     margin-top: -2%;
     /*Ausgleich von oben*/
     color: transparent;
+    padding: 0 2% 0 2%;
 }
 
 /* Speziell für Projekte */
@@ -488,10 +491,12 @@ a {
 
 #slogansmal {
     display: none;
+    padding-right: 4%;
 }
 
 .slogan {
     padding-left: 4%;
+    padding-right: 4%;
 }
 
 .slogan p {
@@ -641,6 +646,9 @@ a {
 }
 .projinfo span {
     color: #B4B4B4;
+}
+.columns h1 {
+    margin-top: 0;
 }
 
 
@@ -948,7 +956,9 @@ a {
         width: 50%;
         /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 1 Spalte*/
     }
-
+    .mainpagekastenschrift h2 {
+        padding-top: calc((100vw - 20px) * 0.06);
+    }
     .proj:before {
         padding-top: 50%;
     }
@@ -1024,6 +1034,11 @@ a {
         padding-top: 5%;
     }
 
+    /*Rechtecke der Projekte*/
+    .mainpagekastenschrift h2 {
+        padding-top: calc((100vw - 20px) * 0.15);
+    }
+
     /*Rolle, Zeit, etc. Ansicht*/
     .projcolumns article {
         width: 50%;
@@ -1086,6 +1101,11 @@ a {
 
 /* Handyansicht */
 @media screen and (max-width: 400px) {
+
+    /*Rechtecke der Projekte*/
+    .mainpagekastenschrift h2 {
+        padding-top: calc((100vw - 20px) * 0.1);
+    }
 
     /* Überschriften und Footer*/
     h1 {
