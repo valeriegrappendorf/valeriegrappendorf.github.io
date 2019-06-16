@@ -10,6 +10,22 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1;
 }
+#nofigmaheader {
+    margin-top: -41px;
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background-color: white; 
+    z-index: 2;
+}
+#figma {
+    height: 1000px;
+    width: 100%; 
+    margin-top: -240px;
+    margin-bottom: -230px;
+    transform: scale(0.6);
+    border: none;
+}
 
 h1 {
     font-size: 30px;
@@ -79,7 +95,7 @@ a {
     /* margin: -75px 0 0 -100px; */
 }
 .cropsupersmall {
-    margin-top: 5rem;
+    margin-top: -1rem;
     float: left;
     width: 50%;
     height: calc((100vw - 20px) * 0.18);
