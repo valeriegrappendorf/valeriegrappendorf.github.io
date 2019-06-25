@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mysuru Palace 360&deg; Demo using Aframe">
     <title>Mysuru Palace 360&deg;</title>
     <script src="js/aframe.js"></script>
+    <style>
+        #test {
+            height: 100px;
+            width: 400px;
+            background-color: red;
+            z-index: 10;
+        }
+
+        .aframebox {
+            height: 500px;
+            width: 500px;
+            z-index: 1;
+        }
+        .back{
+            z-index: 1;
+        }
+    </style>
 </head>
+
 <body>
-    <a-scene>
+    <!-- <a-scene> 
+            <a-scene embedded></a-scene>
         <a-sky src="images/mysuru_palace.jpg"></a-sky>
         <a-text font="kelsonsans" value="Amba Vilas Palace, Mysuru, India" width="6" position="-1.5 0.25 -2.75"
             rotation="0 15 0"></a-text>
         <a-text font="kelsonsans" value="Amba Vilas Palace, otherwise known as the Mysore Palace, is a historical palace and a royal residence at Mysore in the Indian State of Karnataka."
             width="4" position="-1.5 1.2 -3.5" rotation="0 15 0"></a-text>
-    </a-scene>
+    </a-scene> -->
+
+    <!-- <a-scene class="aframebox" embedded>
+        <a-sky class="back" opacity="1" src="images/mysuru_palace.jpg"></a-sky>
+        <a-sky class="back" opacity="0.5" src="images/me.png"></a-sky>
+        <div id="test"></div>
+        <h1>Hallo</h1>
+    </a-scene> -->
+
+    <div style="position:relative;">
+            <a-scene>
+                    <a-sky class="back" opacity="1" src="images/mysuru_palace.jpg"></a-sky>
+                    <a-sky class="back" opacity="0.5" src="images/me.png"></a-sky>
+            </a-scene>
+            <div style="position:absolute; top:0px; left:0px; z-index:1000;">
+                    <div id="test"></div>
+                    <h1>Hallo</h1>
+            </div>
+        </div>
 </body>
+
 </html>
