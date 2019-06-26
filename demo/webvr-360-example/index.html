@@ -7,13 +7,21 @@
     <meta name="description" content="Mysuru Palace 360&deg; Demo using Aframe">
     <title>Mysuru Palace 360&deg;</title>
     <script src="js/aframe.js"></script>
+
     <script src="https://unpkg.com/aframe-html-shader@0.2.0/dist/aframe-html-shader.min.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
 
     <style>
-        #test {
-            height: 100px;
-            width: 400px;
-            background-color: red;
+        #show {
+            height: 50;
+            width: 100;
+            background-color: white;
+            z-index: 10;
+        }
+        #hide {
+            height: 50;
+            width: 100;
+            background-color: green;
             z-index: 10;
         }
 
@@ -23,9 +31,12 @@
             z-index: 1;
         }
 
-        .back {
-            z-index: 1;
-        }
+        /* #button {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+        } */
+
     </style>
 </head>
 
@@ -47,30 +58,74 @@
     </a-scene> -->
 
     <a-scene>
-        <a-sky class="back" opacity="1" src="images/mysuru_palace.jpg"></a-sky>
-        <!-- <a-sky class="back" opacity="0.5" src="images/me.png"></a-sky> -->
+            <a-sky  opacity="1" src="images/mysuru_palace.jpg"></a-sky>
+            <!-- Overlay Filter -->
+            <!-- <a-sky  opacity="0.5" src="images/me.png"></a-sky> -->
 
-        <a-entity camera look-controls>
-            <a-entity geometry="primitive: plane; height: 2; width: 2" position="-1.45 -0.8 -1"
-            material="color: white; opacity: 0.5"></a-entity>
-            <a-entity geometry="primitive: plane; height: 2; width: 2" position="1.45 -0.8 -1"
-            material="color: white; opacity: 0.5"></a-entity>
-          </a-entity>
+            <!-- Beispielbox zum Testen / fix Position VR -->
+            <!-- <a-box
+            id="redBox"
+            position="0 2 -5"
+            color="#6173F4"
+            rotation="0 45 45"
+            opacity=" 1"
+            depth="1"
+            change-color="color: #f00"
+            ></a-box>   -->
+    
+            <!-- Elemente als fixer Overlay // GleitsichtModus testen --> 
+            <a-entity camera look-controls>
+                <a-entity id="basicleft" geometry="primitive: plane; height: 2; width: 2" position="-1.45 -0.8 -1"
+                    material="color: white; opacity: 0.6"></a-entity>
+                <a-entity id="basicright" geometry="primitive: plane; height: 2; width: 2" position="1.45 -0.8 -1"
+                    material="color: white; opacity: 0.6"></a-entity>
+            </a-entity>
+            
+            <!-- Buttons um zwischen den Modusen zu wechseln -->
+            <div style="position:absolute; top:0px; left:0px; z-index:1000;">
+                <button id="show" onclick="show()">Show</button>
+                <button id="hide" onclick="hide()">Hide</button>
+            </div>
+        </a-scene>
 
-        <div style="position:absolute; top:0px; left:0px; z-index:1000;">
-            <!-- <div id="test"></div>
-            <h1>Hallo</h1> -->
-        </div>
-    </a-scene>
 
 
     <!-- <a-scene>
                 <a-entity geometry="primitive: box" material="shader: html; target: #htmlElement"></a-entity>
               </a-scene>
-            
               <div style="width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: -1; overflow: hidden">
                 <div id="htmlElement" style="background: #F8F8F8; color: #333; font-size: 48px">Hello, HTML!</div>
               </div> -->
 </body>
+
+
+
+
+<script>
+
+
+var basiclayleft = document.querySelector('#basicleft');
+var basiclayright = document.querySelector('#basicright');
+function show() {
+    basiclayleft.setAttribute('material', 'opacity', 0.6);
+    basiclayright.setAttribute('material', 'opacity', 0.6);
+}
+function hide() {
+    basiclayleft.setAttribute('material', 'opacity', 0);
+    basiclayright.setAttribute('material', 'opacity', 0);
+}
+
+
+//eigene Funktionen schreiben 
+AFRAME.registerComponent('do-something-once-loaded', {
+  init: function () {
+    // This will be called after the entity has properly attached and loaded.
+    console.log('I am ready!');
+  }
+});
+box.setAttribute('do-something-once-loaded', '');
+
+
+</script>
 
 </html>
