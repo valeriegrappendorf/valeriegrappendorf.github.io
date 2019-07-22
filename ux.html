@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -31,7 +33,8 @@
       <div class="bignav">
         <nav>
           <ul>
-            <li><a href="index.html#work">Work</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="method.html">Uncut</a></li>
             <li><a href="aboutme.html">About</a></li>
             <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
           </ul>
@@ -55,13 +58,13 @@
 
   <!-- Projektintro -->
   <div class="intro">
-    <h1>Connectivity for local crafts</h1>
+    <h1>Opto VR</h1>
     <p>Demonstration model for optometrists</p>
   </div>
 
   <!-- Bildkasten -->
   <div class="intropic uxintro clearfix">
-    <img src="img/ux/uxintro.png" alt="Lucie">
+    <img src="img/ux/ok.png" alt="Lucie">
   </div>
 
   <!-- Einführungsinfos -->
@@ -70,14 +73,15 @@
     <section class="projcolumns clearfix">
       <article>
         <div class="projinfo">
-          <h3>Role<span> so far</span></h3>
-          <p>Research,<br>Ideation,<br>Prototype</p>
+          <h3>Role</h3>
+          <p>Research, Ideation,<br>
+            Concept, <br> Prototyping and Coding</p>
         </div>
       </article>
       <article>
         <div class="projinfo">
-          <h3>Timeline<span> so far</span></h3>
-          <p>March-today<br>(4 months Project)<br>4th Semester</p>
+          <h3>Timeline</h3>
+          <p>March-July 2019<br>(4 months Project)<br>4th Semester</p>
         </div>
       </article>
       <article>
@@ -88,8 +92,8 @@
       </article>
       <article>
         <div class="projinfo">
-          <h3>Tools<span> so far</span></h3>
-          <p>Sketch,<br>Figma,<br>Premiere Pro</p>
+          <h3>Tools</h3>
+          <p>Sketch, Figma,<br>HTML, CSS, JS,<br>A-Frame, Node.js</p>
         </div>
       </article>
     </section>
@@ -99,12 +103,12 @@
   <!-- Grauer Task Kasten  -->
   <div class="taskcontainer clearfix">
     <div class="col-sm-12 contentProjects small-padding-h3-p">
-      <h3><span>The digitalisation expands daily.</span> But also in the local hadcraft?</h3>
-      <p>What are the current pain points, unmet needs and goals in that domain? <br>
-        Through which methods can we detect them? <br>
-        And as a final question: could they be solved through a step towards digitalisation?</p>
+      <h3><span>The digitalisation expands daily. But also in the local optometrist handcraft?
+          <p>What are the current pain points, unmet needs and goals in that domain? <br>
+            Through which methods can we detect them? <br>
+            And as a final question: could they be solved through a step towards digitalisation?</p>
 
-      <!-- <h3><span>Die Digitalisierung ist im vollen Gange.</span> Aber auch im lokalen Handwerk?</h3>
+          <!-- <h3><span>Die Digitalisierung ist im vollen Gange.</span> Aber auch im lokalen Handwerk?</h3>
       <p>Was sind dort die momentanen Pain Points, unmet needs and goals? <br>
         Durch welche Methoden können wir diese herausfinden? <br>
         Könnten diese durch einen Schritt in richtig Digitalisierung gelöst werden? </p> -->
@@ -116,11 +120,12 @@
     <nav>
       <ul>
         <h3>Overview</h3>
-        <li><a href="#1">Empathy</a></li>
-        <li><a href="#2">Synthesis</a></li>
-        <li><a href="#3">Ideation</a></li>
-        <li><a href="#4">Problem</a></li>
-        <li><a href="#5">Prototype</a></li>
+        <li><a id="uxnav1" href="#1">Empathy</a></li>
+        <li><a id="uxnav2" href="#2">Synthesis</a></li>
+        <li><a id="uxnav3" href="#3">Ideation</a></li>
+        <li><a id="uxnav4" href="#4">Problem</a></li>
+        <li><a id="uxnav5" href="#5">Prototype</a></li>
+        <li><a id="uxnav5" href="#6">Result</a></li>
         <!-- <li><a href="#result">Solution</a></li> -->
       </ul>
     </nav>
@@ -150,7 +155,7 @@
     <div class="col-sm-12">
       <h3>Process</h3>
       <p>We interviewed opticians as well as their customers and perfomed one-day-internships
-        (day in a life) to gain deeper insights into this up to this point for us foreign domain.
+        (<span>day in a life</span>) to gain deeper insights into this up to this point for us foreign domain.
 
         <!-- Wir interviewten Optiker sowie deren Kunden und absolvierten mehrere Praktika,
         in Form von einem Day in a life, um tiefe Einblicke in diese uns zuvor noch
@@ -249,7 +254,8 @@
   <div class="contentProjects description">
     <div class="col-sm-12">
       <h3>Process</h3>
-      <p>We created our first ideas through the crazy 8 method and discussed our favorite ones with a local optician.
+      <p>We created our first ideas through the <span>crazy 8</span> method and discussed our favorite ones with a local
+        optician.
         Due to his deep background knowledge and our predefined pain points we were able to iterate and deepen our idea.
       </p>
       <h3>Top insight</h3>
@@ -257,7 +263,8 @@
         2. The main struggle of the customer is to decite for the right category of varifocals.
       </p>
       <h3>Decition</h3>
-      <p>After different iterations we decided to develop a <span>demonstration module for varifocals</span></p>
+      <p>After different iterations we decided to develop a <span>demonstration module for varifocals</span>. <br>
+        Our goal was to develop a product, with which the customers realistically can test their new varifocals in VR and AR. They should be able to interact with their visual range and to adjust it during the test. With this tool the customers will be able to configure the perfect glasses for themselfs.</p>
 
       <!-- <h3>Process</h3>
       <p>Wir kreatierten unsere ersten Ideen durch die Methode Crazy 8 und besprachen
@@ -323,16 +330,17 @@
   <!-- Prototyp -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <img id="researchpic" src="img/ux/prototyp.png" alt="Lucie">
+      <img id="researchpic" src="img/ux/prototyp2.png" alt="Lucie">
     </div>
   </div>
   <div class="contentProjects description">
     <div class="col-sm-12">
+       <h3>blabla</h3>
+      <p>blabla
+        <br> </p>
+      <h3>blabla</h3>
       <p>
-        Our goal is to develop a product, with which the customers realistically can test their new varifocals
-        in VR and AR. They should be able to interact with their visual range and to adjust it during the test.
-        With this tool the customers will be able to configure the perfect glasses for themselfs.
-
+        blabla
         <!-- Unser Ziel ist es, ein Produkt zu entwickeln, mit welchem der Kunde seine neue Gleitsichtbrille 
          realitätsnah in VR sowie AR testen kann. Er soll dabei mit seiner Sicht interagieren können und 
          diese während der Übertragung verändern können. Hiermit kann sich der Kunde seine optimale 
@@ -340,37 +348,39 @@
       </p>
     </div>
   </div>
+  <!-- <div class="center">
+    <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Explore by yourself</button>
+    <button class="buttonselect" id="videobutton" onclick="Video()">Show Clickthrough</button>
+  </div> -->
+
+  <!-- <div id="nofigmaheader"></div> -->
+  <!-- <div id="figmavideoframe">
+    <video id="figmavideo" src="./img/ux/UXVideo.mov" autoplay loop></video>
+  </div> -->
+  <!-- <iframe id="figmaipad"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfxoPMd9VNgRRU8Si39jpnUpM%2FUX-Optik%3Fnode-id%3D679%253A3536%26scaling%3Dscale-down"
+    allowfullscreen></iframe> -->
 
 
-  <!-- Further steps -->
-  <br> <br> <br> <br> <br> <br>
-  <div class="textmitte">
-    <h3>... further steps in progress</h3>
+
+  <!-- Kapitelübersicht -->
+  <div id="6"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">06</span>
+      <span id="chaptername">Result</span>
+    </p>
   </div>
-  <div class="projinfo-container">
-    <section class="projcolumns clearfix">
-      <article>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Next steps</h3>
-          <p>Deepening of the concept<br>Prototyping<br>Usertest<br>Technical implementation</p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Questions to answer</h3>
-          <p>How will we implement it? <br>
-            Which simulations are possible? <br>
-            Interaction with VR or AR? <br>
-            How can we adjust the parameters?</p>
-        </div>
-      </article>
-      <article>
-      </article>
-    </section>
-  </div>
-
+   <div class="result">
+      <div class="responsive-video">
+        <iframe src="https://player.vimeo.com/video/347672090" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+          allowFullScreen></iframe>
+      </div>
+      <!-- <div class="resulttext">
+        <p>Catch something yellow and try it out by yourself! </p>
+        <a href=""><img src="img/icons/github.png" alt="Github"></a>
+      </div> -->
+  
 
 
 
@@ -379,22 +389,11 @@
     <div id="projects"></div>
     <div class="columns-container">
       <section class="columns clearfix">
-        <h1>View more Projects</h1>
-        <a href="method.html">
+        <a href="cart.html">
           <article>
-            <div class="proj mainpagekastenschrift toolset">
-              <div class="overlayproj toolsethover">
-                <h2>My Toolset</h2>
-                <h3>Deeper insights in my design prozess</h3>
-              </div>
-            </div>
-          </article>
-        </a>
-        <a href="whatt.html">
-          <article>
-            <div class="proj mainpagekastenschrift whatt">
-              <div class="overlayproj whatthover">
-                <h2>W(h)att?</h2>
+            <div class="proj mainpagekastenschrift cart">
+              <div class="overlayproj carthover">
+                <h2>Smart Shopping Cart</h2>
                 <h3>Consciousness for electricity usage</h3>
               </div>
             </div>
@@ -438,6 +437,28 @@
     }
 
 
+
+    //Prototype Video und Figma Live
+    var vid = document.getElementById("figmavideo");
+    //Hide Figma
+    function Figma() {
+      document.getElementById("figmaipad").style.display = "block";
+      document.getElementById("figmavideoframe").style.display = "none";
+      vid.pause();
+      document.getElementById("figmabutton").className = "buttonselect";
+      document.getElementById("videobutton").className = "buttonnotselect";
+    }
+    function Video() {
+      vid.load();
+      vid.play();
+      document.getElementById("figmavideoframe").style.display = "block";
+      document.getElementById("figmaipad").style.display = "none";
+      document.getElementById("videobutton").className = "buttonselect";
+      document.getElementById("figmabutton").className = "buttonnotselect";
+    }
+
+
+
     //Slideshow
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -463,10 +484,92 @@
       x[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " w3-white";
     }
-
   </script>
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <script>
+    //Scroll UX Navbar
+    var t1 = $("#1").offset().top;
+    var t2 = $("#2").offset().top;
+    var t3 = $("#3").offset().top;
+    var t4 = $("#4").offset().top;
+    var t5 = $("#5").offset().top;
 
+    $(document).scroll(function () {
+      if ($("#uxnav1").height() + $(this).scrollTop() > t1) {
+        $("#uxnav1").css("font-weight", "500");
+        $("#uxnav1").css("color", "black");
 
+        $("#uxnav2").css("font-weight", "300");
+        $("#uxnav2").css("color", "grey");
+        $("#uxnav3").css("font-weight", "300");
+        $("#uxnav3").css("color", "grey");
+        $("#uxnav4").css("font-weight", "300");
+        $("#uxnav4").css("color", "grey");
+        $("#uxnav5").css("font-weight", "300");
+        $("#uxnav5").css("color", "grey");
+      }
+    });
+    $(document).scroll(function () {
+      if ($("#uxnav2").height() + $(this).scrollTop() > t2) {
+        $("#uxnav2").css("font-weight", "500");
+        $("#uxnav2").css("color", "black");
+
+        $("#uxnav1").css("font-weight", "300");
+        $("#uxnav1").css("color", "grey");
+        $("#uxnav3").css("font-weight", "300");
+        $("#uxnav3").css("color", "grey");
+        $("#uxnav4").css("font-weight", "300");
+        $("#uxnav4").css("color", "grey");
+        $("#uxnav5").css("font-weight", "300");
+        $("#uxnav5").css("color", "grey");
+      }
+    });
+    $(document).scroll(function () {
+      if ($("#uxnav3").height() + $(this).scrollTop() > t3) {
+        $("#uxnav3").css("font-weight", "500");
+        $("#uxnav3").css("color", "black");
+
+        $("#uxnav1").css("font-weight", "300");
+        $("#uxnav1").css("color", "grey");
+        $("#uxnav2").css("font-weight", "300");
+        $("#uxnav2").css("color", "grey");
+        $("#uxnav4").css("font-weight", "300");
+        $("#uxnav4").css("color", "grey");
+        $("#uxnav5").css("font-weight", "300");
+        $("#uxnav5").css("color", "grey");
+      }
+    });
+    $(document).scroll(function () {
+      if ($("#uxnav4").height() + $(this).scrollTop() > t4) {
+        $("#uxnav4").css("font-weight", "500");
+        $("#uxnav4").css("color", "black");
+
+        $("#uxnav1").css("font-weight", "300");
+        $("#uxnav1").css("color", "grey");
+        $("#uxnav2").css("font-weight", "300");
+        $("#uxnav2").css("color", "grey");
+        $("#uxnav3").css("font-weight", "300");
+        $("#uxnav3").css("color", "grey");
+        $("#uxnav5").css("font-weight", "300");
+        $("#uxnav5").css("color", "grey");
+      }
+    });
+    $(document).scroll(function () {
+      if ($("#uxnav5").height() + $(this).scrollTop() > t5) {
+        $("#uxnav5").css("font-weight", "500");
+        $("#uxnav5").css("color", "black");
+
+        $("#uxnav1").css("font-weight", "300");
+        $("#uxnav1").css("color", "grey");
+        $("#uxnav2").css("font-weight", "300");
+        $("#uxnav3").css("color", "grey");
+        $("#uxnav3").css("font-weight", "300");
+        $("#uxnav3").css("color", "grey");
+        $("#uxnav4").css("font-weight", "300");
+        $("#uxnav4").css("color", "grey");
+      }
+    });
+  </script>
 </body>
 
 </html>
