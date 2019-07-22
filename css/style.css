@@ -145,12 +145,18 @@ a {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
-
+.cropmiddle {
+    margin-top: 5rem;
+    float: left;
+    width: 50%;
+    height: calc((100vw - 20px) * 0.23);
+    overflow: hidden;
+}
 .cropsmall {
     margin-top: 5rem;
     float: left;
     width: 50%;
-    height: calc((100vw - 20px) * 0.27);
+    height: calc((100vw - 20px) * 0.2);
     overflow: hidden;
 }
 
@@ -163,7 +169,7 @@ a {
     margin-top: -1rem;
     float: left;
     width: 50%;
-    height: calc((100vw - 20px) * 0.18);
+    height: calc((100vw - 20px) * 0.2);
     overflow: hidden;
 }
 
@@ -321,6 +327,7 @@ a {
     padding: 4% 0% 25px 4%;
     margin-bottom: -1%;
     z-index: 4;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
