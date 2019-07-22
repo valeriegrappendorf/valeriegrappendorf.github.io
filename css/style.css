@@ -10,22 +10,85 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1;
 }
-#nofigmaheader {
-    margin-top: -41px;
-    position: absolute;
-    height: 25px;
-    width: 100%;
-    background-color: white; 
-    z-index: 2;
+
+/* Etwas ins Zentrum :) */
+.center {
+    margin-top: 4rem;
+    text-align: center;
 }
+
+/* Button */
+.buttonselect {
+    background-color: #3193FE;
+    color: white;
+    font-size: 16px;
+    border: solid 2px;
+    border-color: #3193FE;
+    margin-left: 2rem;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttonnotselect {
+    background-color: white;
+    color: #3193FE;
+    border: solid 2px;
+    border-color: #3193FE;
+    font-size: 16px;
+    margin-left: 2rem;
+    border-radius: 10px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
 #figma {
     height: 1000px;
-    width: 100%; 
+    width: 100%;
     margin-top: -240px;
     margin-bottom: -230px;
     transform: scale(0.6);
     border: none;
 }
+
+
+#figmaipad {
+    margin-top: 4rem;
+    height: 600px;
+    width: 100%;
+    transform: scale(1);
+    border: none;
+    display: none;
+}
+
+#nofigmaheader {
+    margin-top: -41px;
+    position: absolute;
+    height: 25px;
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+#figmavideoframe {
+    margin-top: 4rem;
+    background-color: #3E3C3C;
+    display: block;
+}
+
+#figmavideo {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 20%;
+    width: 60%;
+}
+
 
 h1 {
     font-size: 30px;
@@ -82,6 +145,7 @@ a {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
+
 .cropsmall {
     margin-top: 5rem;
     float: left;
@@ -94,6 +158,7 @@ a {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
+
 .cropsupersmall {
     margin-top: -1rem;
     float: left;
@@ -286,6 +351,7 @@ a {
 
 
 
+
 /*MainPage*/
 
 /*Introkasten*/
@@ -304,8 +370,8 @@ a {
 /* Rectangle with my photo */
 .rect1 {
     position: relative;
-    width: 45%;
-    background: #FEEE75;
+    width: 47%;
+    background: #75B4FE;
     /* background: url(../sky.jpeg) center repeat; */
     /* background-image: linear-gradient(to top, white 0%, #FF6B49 50%);
     background-image: linear-gradient(to right, white 0%, #FF6B49 50%);
@@ -351,7 +417,7 @@ a {
 
 .rect2 h1 span {
     display: block;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 100;
     line-height: 1.2;
 }
@@ -361,7 +427,7 @@ a {
 
 /*Projektansicht*/
 .columns-container {
-    padding-top: 5%;
+    padding-top: 4%;
     margin-left: 0%;
     /* ist bereits in dem oberen Intro Container drin*/
     padding-left: 4%;
@@ -374,25 +440,44 @@ a {
 }
 
 .columns article {
-    width: 33.33%;
+    width: 50%;
     /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
     float: left;
-    padding-top: 2%;
+    padding-top: 0%;
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
-.columns h1 {
-    margin-top: 0;
-}
-
 .proj {
+    margin-top: 2rem;
     position: relative;
     float: left;
-    /*Hierdurch wird der Text im Viereck richtig zentriert*/
+    /*Hierdurch wird der Text im horizontal Viereck richtig zentriert*/
     text-align: center;
+    vertical-align: center;
     width: 100%;
-    background: #FEEE75;
+    /* background: #FEEE75; */
     border-radius: 10px;
+}
+
+.HeaderMain{
+    padding-top: 2%;
+}
+.HeaderMain h10{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: -5%;
+    border-bottom: solid 3px;
+    border-bottom-color: #75B4FE;
+}
+.smallprojects{
+    margin-top: 75%;
+}
+.smallprojects h10{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    border-bottom: solid 3px;
+    border-bottom-color: #75B4FE;
 }
 
 .proj:before {
@@ -400,52 +485,43 @@ a {
     /*Hierdurch wird der Text im Viereck richtig zentriert*/
     content: "";
     display: block;
-    padding-top: 80%;
+    padding-top: 65%;
 }
 
 .mainpagekastenschrift h2 {
+    padding-top: calc((100vw - 20px) * 0.1);
+    margin-bottom: -1%;
     color: transparent;
-    padding-top: calc((100vw - 20px) * 0.08);
+    font-size: 20px;
     font-weight: 500;
 }
+
 .mainpagekastenschrift h3 {
-    font-weight: 200;
-    font-size: 20px;
-    margin-top: -2%;
-    /*Ausgleich von oben*/
+    margin-top: 3%;
     color: transparent;
-    padding: 0 2% 0 2%;
+    font-size: 18px;
+    font-weight: 300;
 }
 
 /* Speziell für Projekte */
 .lucie {
-    background: #131F2E url(../img/lucie/lucie.png) center no-repeat;
-    background-size: 50%;
+    background: #DFDEDF url(../img/lucie/lucie.png) center no-repeat;
+    background-size: 40%;
 }
 
 .ux {
-    background: #FF7161 url(../img/ux/uxintrocrop.png) center no-repeat;
-    background-size: 70%;
+    background: #DFDEDF url(../img/ux/brille.png) center no-repeat;
+    background-size: 50%;
 }
 
-.toolset {
-    background: #1ABCFD url(../img/method/toolset.png) center no-repeat;
-    background-size: 25%;
+.letztwerbung {
+    background: #DFDEDF url(../img/letztewerbung/letztewerbung.png) center no-repeat;
+    background-size: 20%;
 }
 
-.bot {
-    background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
-    background-size: 40%;
-}
-
-.whatt {
-    background: #FDB056 url(../img/whatt/whatt.png) center no-repeat;
-    background-size: 40%;
-}
-
-.spare {
-    background: #D1D1D1 url(../img/letztewerbung/letztewerbung.png) center no-repeat;
-    background-size: 30%;
+.cart {
+    background: #DFDEDF url(../img/cart/mock.png) center no-repeat;
+    background-size: 80%;
 }
 
 /* Hover über Projektansicht */
@@ -474,27 +550,37 @@ a {
 
 /*Für einzelne Projekte*/
 .luciehover {
-    background-color: #131F2E;
+    background-color: #0A192D;
 }
 
 .uxhover {
-    background-color: #FF7161;
+    background-color: #3193FE;
 }
 
-.toolsethover {
-    background-color: #1ABCFD
+.letztwerbunghover {
+    background-color: #D6224D;
 }
 
-.bothover {
-    background-color: #0ACE82;
+.carthover {
+    background-color: #A180FF;
 }
 
-.whatthover {
-    background-color: #FDB056;
-}
 
-.sparehover {
-    background-color: #D1D1D1
+.catch p {
+    margin-top: calc((100vw - 20px) * 0.08);
+    font-size: calc((100vw - 20px) * 0.025);
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+.catchleft {
+    margin-left: 20%;
+    margin-right: -20%;
+    z-index: 1;
+}
+.catchright {
+    margin-left: -20%;
+    margin-right: 20%;
 }
 
 
@@ -578,6 +664,7 @@ a {
 .intro h1 {
     margin-bottom: 0.8%
 }
+
 /*intropic*/
 .intropic {
     margin-top: 5%;
@@ -600,14 +687,15 @@ a {
 }
 
 .uxintro {
-    background: #FF7161;
+    background: #3193FE;
 }
 
 .uxintro img {
-    background: #FF7161;
+    background: #3193FE;
     width: 50%;
     margin-left: 25%;
 }
+
 .whattintro {
     background: #FDB056;
 }
@@ -629,6 +717,7 @@ a {
     width: 20%;
     margin-left: 38%;
 }
+
 /*Bot*/
 .botintro {
     background: #0ACE82;
@@ -639,14 +728,15 @@ a {
     width: 20%;
     margin-left: 38%;
 }
-.botgit img{
-  margin-top: 2%;
-  width: 3%;
+
+.botgit img {
+    margin-top: 2%;
+    width: 3%;
 }
 
 /*Infos über das Projekt*/
 .projinfo-container {
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 2%;
     background: white;
     margin-left: 7%;
@@ -656,13 +746,15 @@ a {
     width: 25%;
     /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
     float: left;
-    padding-top: 2%;
+    padding-top: 0%;
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
+
 .projinfo span {
     color: #B4B4B4;
 }
+
 .columns h1 {
     margin-top: 0;
 }
@@ -675,18 +767,23 @@ a {
     background: white;
     margin-left: 7%;
 }
+
 .projinfo img {
     width: 100%;
 }
-#surround img:last-child{
+
+#surround img:last-child {
     display: none;
 }
+
 #surround:hover img:last-child {
     display: block;
 }
-#surround:hover img:first-child{
+
+#surround:hover img:first-child {
     display: none;
 }
+
 /*Prototype Whatt*/
 #challenge {
     width: 90%;
@@ -966,17 +1063,15 @@ a {
 
 /* Halber Bildschirm Ansicht */
 @media screen and (max-width: 800px) {
-
-    /*Ansicht der Projekte Rechtecke*/
-    .columns article {
-        width: 50%;
-        /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 1 Spalte*/
-    }
     .mainpagekastenschrift h2 {
-        padding-top: calc((100vw - 20px) * 0.06);
+        padding-top: calc((100vw - 20px) * 0.09);
     }
-    .proj:before {
-        padding-top: 50%;
+
+    #HMWMain {
+        display: none;
+    }
+    .smallprojects{
+        margin-top: 45%;
     }
 }
 
@@ -1045,6 +1140,10 @@ a {
         top: 15px;
     }
 
+    .smallprojects{
+        margin-top: 155%;
+    }
+
     /*Projektnavbar*/
     .projnav {
         padding-top: 5%;
@@ -1052,7 +1151,7 @@ a {
 
     /*Rechtecke der Projekte*/
     .mainpagekastenschrift h2 {
-        padding-top: calc((100vw - 20px) * 0.15);
+        padding-top: calc((100vw - 20px) * 0.2);
     }
 
     /*Rolle, Zeit, etc. Ansicht*/
@@ -1099,7 +1198,7 @@ a {
     }
 
     .proj:before {
-        padding-top: 50%;
+        padding-top: 60%;
     }
 
     /*About Me Page*/
@@ -1110,6 +1209,10 @@ a {
         padding-top: 20px;
         padding-bottom: 20px;
 
+    }
+
+    .credit {
+        margin-top: 10%;
     }
 }
 
