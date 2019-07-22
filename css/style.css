@@ -321,7 +321,6 @@ a {
     padding: 4% 0% 25px 4%;
     margin-bottom: -1%;
     z-index: 4;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -669,66 +668,35 @@ a {
 .intropic {
     margin-top: 5%;
     position: relative;
+    height: 400px;
     width: 100%;
 }
 
-.intropic img {
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-
 .lucieintro {
-    background: #101926;
-}
-
-.lucieintro img {
-    width: 20%;
-    margin-left: 37%;
+    background: #101926 url(../img/lucie/lucie.png) center no-repeat;
+    background-size: 20%;
 }
 
 .uxintro {
-    background: #3193FE;
-}
-
-.uxintro img {
-    background: #3193FE;
-    width: 50%;
-    margin-left: 25%;
+    background: #3193FE url(../img/ux/ok.png) center no-repeat;
+    background-size: 40%;
 }
 
 .whattintro {
-    background: #FDB056;
+    background: #FDB056 url(../img/whatt/whatt.png) center no-repeat;
+    background-size: 10%;
+
 }
 
-.whattintro img {
-    background: #FDB056;
-    width: 15%;
-    margin-left: 40%;
-}
-
-
-/*Methoden*/
 .methodintro {
-    background: #1ABCFD;
+    background: #1ABCFD url(../img/method/toolset.png) center no-repeat;
+    background-size: 10%;
 }
 
-.methodintro img {
-    background: #1ABCFD;
-    width: 20%;
-    margin-left: 38%;
-}
-
-/*Bot*/
 .botintro {
-    background: #0ACE82;
+    background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
+    background-size: 10%;
 }
-
-.botintro img {
-    background: #0ACE82;
-    width: 20%;
-    margin-left: 38%;
-}
-
 .botgit img {
     margin-top: 2%;
     width: 3%;
@@ -1061,6 +1029,50 @@ a {
 
 /*Veränderungen bei unterschiedlichen Screen Größen*/
 
+/*Großer Bildschirm (wie bei Bosch)*/
+@media screen and (min-width: 1500px) {
+.main-header-container {
+padding: 2% 15% 1% 15%;
+    }
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-12 {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.columns-container {
+    padding-left: 15%;
+    padding-right: 13%;
+}
+.intro {
+    margin-left: 15%;
+}
+.intro-container {
+    margin-left: 15%;
+}
+.chapter {
+    padding-left: 15%;
+}
+.projnav {
+    padding: 4% 0% 25px 15%;
+}
+.projinfo-container {
+    margin-left: 15%;
+}
+.catch p {
+    font-size: 30px;
+}
+.crop {
+    height: calc((100vw - 20px) * 0.2);
+}
+.aboutmebild {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+}
 /* Halber Bildschirm Ansicht */
 @media screen and (max-width: 800px) {
     .mainpagekastenschrift h2 {
@@ -1302,3 +1314,5 @@ a {
         display: none;
     }
 }
+
+
