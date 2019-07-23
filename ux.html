@@ -12,8 +12,6 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- JQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -124,7 +122,7 @@
         <li><a id="uxnav3" href="#3">Ideation</a></li>
         <li><a id="uxnav4" href="#4">Problem</a></li>
         <li><a id="uxnav5" href="#5">Prototype</a></li>
-        <li><a id="uxnav5" href="#6">Result</a></li>
+        <li><a id="uxnav6" href="#6">Result</a></li>
         <!-- <li><a href="#result">Solution</a></li> -->
       </ul>
     </nav>
@@ -265,7 +263,8 @@
       <p>After different iterations we decided to develop a <span>demonstration module for varifocals</span>. <br>
         Our goal was to develop a product, with which the customers realistically can test their new varifocals in VR
         and AR. They should be able to interact with their visual range and to adjust it during the test. With this tool
-        the customers will be able to configure the perfect glasses for themselfs.</p>
+        the customers will be able to configure the perfect glasses for themselfs. The optometrist will have the master 
+      view on an iPad and guids and supports the customer through this whole process.  </p>
 
       <!-- <h3>Process</h3>
       <p>Wir kreatierten unsere ersten Ideen durch die Methode Crazy 8 und besprachen
@@ -286,7 +285,7 @@
   <div id="4"></div>
   <div class="chapter">
     <p>
-      <span id="chapternumber">04</span>
+        <span id="chapternumber">04</span>
       <span id="chaptername">Problem</span>
     </p>
   </div>
@@ -339,40 +338,41 @@
       </div>
     </div>
   </div>
-  <div class="contentProjects description">
-    <div class="col-sm-12">
-      <h3>blabla</h3>
-      <p>blabla
-        <br> </p>
-      <h3>blabla</h3>
+  <div class="contentProjects">
+    <div class="col-sm-12 description">
+      <h3>First steps</h3>
+      <p>Now our goal was to make our idea visual as fast as possible to test our concept. Before getting technical,
+        we visualised the view through the VR glasses with an simple video and made first wireframes for the iPad master
+        view.</p>
+      </div>
+
+      <div class="col-sm-12 abstandoben">
+          <div class="cropsmall">
+              <img id="protoersteideen" src="img/ux/protoersteideen.png" alt="test">
+            </div>
+            <div class="cropsmall kleinesbild">
+              <img id="brille2" src="img/ux/brille2.png" alt="Lucie">
+      </div>
+    </div>
+      <div class="col-sm-12 description">
+      <h3>Controls</h3>
       <p>
-        blabla
-        <!-- Unser Ziel ist es, ein Produkt zu entwickeln, mit welchem der Kunde seine neue Gleitsichtbrille 
-         realitätsnah in VR sowie AR testen kann. Er soll dabei mit seiner Sicht interagieren können und 
-         diese während der Übertragung verändern können. Hiermit kann sich der Kunde seine optimale 
-         Brille selbst definieren.   -->
+        The customers should have the opportunity to interact with his view to define the for him perfect settings.
+        He should be able to define the intensity, switch the mode and confirm his choice. We tested several 
+        options for implementing these features and decided for the most intuitive one.
+        After testing and discussing this base, we started with the technical implementation. 
       </p>
     </div>
-  </div>
-  <div class="contentProjects">
-    <div class="col-sm-12">
-      <div class="crop">
-        <img id="protoersteideen" src="img/ux/protoersteideen.png" alt="test">
+
+        <div class="col-sm-12 mittelbild abstandoben">
+            <img id="researchpic" src="img/ux/technik.png" alt="Lucie">
+          </div>
+    <div class="col-sm-12 description">
+        <h3>Technical implementation</h3>
+        <p>
+          Blalala 
+        </p>
       </div>
-      <div class="crop">
-        <img id="brille2" src="img/ux/brille2.png" alt="Lucie">
-      </div>
-    </div>
-  </div>
-  <div class="contentProjects">
-    <div class="col-sm-12">
-      <div class="crop">
-        <img id="protoersteideen" src="img/ux/optik.png" alt="test">
-      </div>
-      <div class="crop">
-        <img id="brille2" src="img/ux/technik.png" alt="Lucie">
-      </div>
-    </div>
   </div>
 
 
@@ -385,24 +385,27 @@
       <span id="chaptername">Result</span>
     </p>
   </div>
+  <div class="contentProjects">
   <div class="result"></div>
-  <div class="responsive-video">
-    <iframe src="https://player.vimeo.com/video/347672090" frameborder="0" webkitAllowFullScreen mozallowfullscreen
-      allowFullScreen></iframe>
-  </div>
-  <div class="center">
-    <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Explore by yourself</button>
-    <button class="buttonselect" id="videobutton" onclick="Video()">Show Clickthrough</button>
-  </div>
-
   <!-- <div id="nofigmaheader"></div> -->
   <div id="figmavideoframe">
-    <video id="figmavideo" src="./img/ux/UXVideo.mov" autoplay loop></video>
+    <div class="responsive-video">
+      <iframe src="https://player.vimeo.com/video/347672090" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+        allowFullScreen></iframe>
+    </div>
   </div>
   <iframe id="figmaipad"
     src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfxoPMd9VNgRRU8Si39jpnUpM%2FUX-Optik%3Fnode-id%3D679%253A3536%26scaling%3Dscale-down"
     allowfullscreen></iframe>
-
+    <div class="center description">
+        <button class="buttonselect" id="videobutton" onclick="Video()">Usecase</button>
+        <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Screens</button>
+      </div>
+          <div class="col-sm-12 description nomarging">
+            <h3>Result</h3>
+            <p>Blabla</p>
+            </div>
+          </div>
 
 
 
@@ -461,18 +464,14 @@
 
 
     //Prototype Video und Figma Live
-    var vid = document.getElementById("figmavideo");
     //Hide Figma
     function Figma() {
       document.getElementById("figmaipad").style.display = "block";
       document.getElementById("figmavideoframe").style.display = "none";
-      vid.pause();
       document.getElementById("figmabutton").className = "buttonselect";
       document.getElementById("videobutton").className = "buttonnotselect";
     }
     function Video() {
-      vid.load();
-      vid.play();
       document.getElementById("figmavideoframe").style.display = "block";
       document.getElementById("figmaipad").style.display = "none";
       document.getElementById("videobutton").className = "buttonselect";
@@ -508,90 +507,10 @@
     }
   </script>
   <!-- JQuery muss in eine extra Script Datei! :)  -->
-  <script>
-    //Scroll UX Navbar
-    var t1 = $("#1").offset().top;
-    var t2 = $("#2").offset().top;
-    var t3 = $("#3").offset().top;
-    var t4 = $("#4").offset().top;
-    var t5 = $("#5").offset().top;
-
-    $(document).scroll(function () {
-      if ($("#uxnav1").height() + $(this).scrollTop() > t1) {
-        $("#uxnav1").css("font-weight", "500");
-        $("#uxnav1").css("color", "black");
-
-        $("#uxnav2").css("font-weight", "300");
-        $("#uxnav2").css("color", "grey");
-        $("#uxnav3").css("font-weight", "300");
-        $("#uxnav3").css("color", "grey");
-        $("#uxnav4").css("font-weight", "300");
-        $("#uxnav4").css("color", "grey");
-        $("#uxnav5").css("font-weight", "300");
-        $("#uxnav5").css("color", "grey");
-      }
-    });
-    $(document).scroll(function () {
-      if ($("#uxnav2").height() + $(this).scrollTop() > t2) {
-        $("#uxnav2").css("font-weight", "500");
-        $("#uxnav2").css("color", "black");
-
-        $("#uxnav1").css("font-weight", "300");
-        $("#uxnav1").css("color", "grey");
-        $("#uxnav3").css("font-weight", "300");
-        $("#uxnav3").css("color", "grey");
-        $("#uxnav4").css("font-weight", "300");
-        $("#uxnav4").css("color", "grey");
-        $("#uxnav5").css("font-weight", "300");
-        $("#uxnav5").css("color", "grey");
-      }
-    });
-    $(document).scroll(function () {
-      if ($("#uxnav3").height() + $(this).scrollTop() > t3) {
-        $("#uxnav3").css("font-weight", "500");
-        $("#uxnav3").css("color", "black");
-
-        $("#uxnav1").css("font-weight", "300");
-        $("#uxnav1").css("color", "grey");
-        $("#uxnav2").css("font-weight", "300");
-        $("#uxnav2").css("color", "grey");
-        $("#uxnav4").css("font-weight", "300");
-        $("#uxnav4").css("color", "grey");
-        $("#uxnav5").css("font-weight", "300");
-        $("#uxnav5").css("color", "grey");
-      }
-    });
-    $(document).scroll(function () {
-      if ($("#uxnav4").height() + $(this).scrollTop() > t4) {
-        $("#uxnav4").css("font-weight", "500");
-        $("#uxnav4").css("color", "black");
-
-        $("#uxnav1").css("font-weight", "300");
-        $("#uxnav1").css("color", "grey");
-        $("#uxnav2").css("font-weight", "300");
-        $("#uxnav2").css("color", "grey");
-        $("#uxnav3").css("font-weight", "300");
-        $("#uxnav3").css("color", "grey");
-        $("#uxnav5").css("font-weight", "300");
-        $("#uxnav5").css("color", "grey");
-      }
-    });
-    $(document).scroll(function () {
-      if ($("#uxnav5").height() + $(this).scrollTop() > t5) {
-        $("#uxnav5").css("font-weight", "500");
-        $("#uxnav5").css("color", "black");
-
-        $("#uxnav1").css("font-weight", "300");
-        $("#uxnav1").css("color", "grey");
-        $("#uxnav2").css("font-weight", "300");
-        $("#uxnav3").css("color", "grey");
-        $("#uxnav3").css("font-weight", "300");
-        $("#uxnav3").css("color", "grey");
-        $("#uxnav4").css("font-weight", "300");
-        $("#uxnav4").css("color", "grey");
-      }
-    });
-  </script>
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
 </body>
 
 </html>
