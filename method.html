@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script> 
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -249,7 +250,8 @@
     </div>
   </div>
 
-
+  <!-- Sonst funktioniert jquery scroll nicht -->
+  <div id="6"></div>
 
 
 
@@ -267,16 +269,6 @@
               <div class="overlayproj uxhover">
                 <h2>Connectivity for local crafts</h2>
                 <h3>Demonstration model for optometrists</h3>
-              </div>
-            </div>
-          </article>
-        </a>
-        <a href="whatt.html">
-          <article>
-            <div class="proj mainpagekastenschrift whatt">
-              <div class="overlayproj whatthover">
-                <h2>W(h)att?</h2>
-                <h3>Consciousness for electricity usage</h3>
               </div>
             </div>
           </article>
@@ -310,69 +302,65 @@
 
 
   <script>
-    //Navbar for mobile view
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-
     //Slideshow
-    var slideIndex = 1;
-    showDivs(slideIndex);
+  var slideIndex = 1;
+  showDivs(slideIndex);
 
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides1");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
     }
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-blue", "");
     }
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides1");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-blue", "");
-      }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-blue";
-    }
-    //Slideshow 2
-    var slideIndex = 1;
-    showDivs2(slideIndex);
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-blue";
+  }
 
-    function plusDivs2(n) {
-      showDivs2(slideIndex += n);
-    }
-    function currentDiv2(n) {
-      showDivs2(slideIndex = n);
-    }
-    function showDivs2(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides2");
-      var dots = document.getElementsByClassName("demo2");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-blue", "");
-      }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-blue";
-    }
+  
+  //Slideshow 2
+  var slideIndex = 1;
+  showDivs2(slideIndex);
 
+  function plusDivs2(n) {
+    showDivs2(slideIndex += n);
+  }
+  function currentDiv2(n) {
+    showDivs2(slideIndex = n);
+  }
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    var dots = document.getElementsByClassName("demo2");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-blue", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-blue";
+  }
   </script>
 
-
+ <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
 </body>
 
 </html>

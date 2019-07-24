@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script> 
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -356,22 +357,15 @@
   </div>
 
 
+   <!-- Sonst funktioniert jquery scroll nicht -->
+   <div id="6"></div>
+
+
   <!-- further projects -->
   <div class="more clearfix">
     <div id="projects"></div>
     <div class="columns-container">
       <section class="columns clearfix">
-        <h1>View more Projects</h1>
-        <a href="method.html">
-          <article>
-            <div class="proj mainpagekastenschrift toolset">
-              <div class="overlayproj toolsethover">
-                <h2>My Toolset</h2>
-                <h3>Deeper insights in my design prozess</h3>
-              </div>
-            </div>
-          </article>
-        </a>
         <a href="ux.html">
           <article>
             <div class="proj mainpagekastenschrift ux">
@@ -411,43 +405,12 @@
 
 
   <script>
-    //Navbar for mobile view
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-
-    //Slideshow
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
-    }
-
   </script>
-
+ <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
 
 </body>
 

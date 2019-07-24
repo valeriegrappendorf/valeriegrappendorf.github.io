@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script> 
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -72,7 +73,8 @@
         <div class="projinfo">
           <h3>Role</h3>
           <p>Research, Ideation,<br>
-            Concept, <br> Prototyping and Coding</p>
+            Concept, Prototyping <br>  
+            and Coding</p>
         </div>
       </article>
       <article>
@@ -364,15 +366,9 @@
       </p>
     </div>
 
-        <div class="col-sm-12 mittelbild abstandoben">
+        <div class="col-sm-12 mittelbild description">
             <img id="researchpic" src="img/ux/technik.png" alt="Lucie">
           </div>
-    <div class="col-sm-12 description">
-        <h3>Technical implementation</h3>
-        <p>
-          Blalala 
-        </p>
-      </div>
   </div>
 
 
@@ -399,11 +395,14 @@
     allowfullscreen></iframe>
     <div class="center description">
         <button class="buttonselect" id="videobutton" onclick="Video()">Usecase</button>
-        <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Screens</button>
+        <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Interface</button>
       </div>
           <div class="col-sm-12 description nomarging">
             <h3>Result</h3>
-            <p>Blabla</p>
+            <p>This video demonstrates the szenario which the optometrist and customer experience with 
+              our product. Feel free to have a deeper look at the interface to understand the master view of the
+              optometrist better. 
+            </p>
             </div>
           </div>
 
@@ -453,16 +452,6 @@
 
 
   <script>
-    //Navbar for mobile view
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-
-
     //Prototype Video und Figma Live
     //Hide Figma
     function Figma() {
@@ -477,36 +466,9 @@
       document.getElementById("videobutton").className = "buttonselect";
       document.getElementById("figmabutton").className = "buttonnotselect";
     }
-
-
-
-    //Slideshow
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
-    }
   </script>
-  <!-- JQuery muss in eine extra Script Datei! :)  -->
+  
+   <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

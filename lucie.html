@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script> 
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -261,6 +262,10 @@
     </div>
   </div>
 
+   <!-- Sonst funktioniert jquery scroll nicht -->
+  <div id="5"></div>
+  <div id="6"></div>
+
 
 
   <!-- further projects -->
@@ -289,16 +294,6 @@
             </div>
           </article>
         </a>
-        <a href="bot.html#intro">
-          <article>
-            <div class="proj mainpagekastenschrift bot">
-              <div class="overlayproj bothover">
-                <h2>Marvin Bot</h2>
-                <h3>A chatbot for storytelling</h3>
-              </div>
-            </div>
-          </article>
-        </a>
       </section>
     </div>
     <div class="credit">
@@ -317,19 +312,9 @@
 
 
   <script>
-    //Navbar for mobile view
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-
     //Slideshow
     var slideIndex = 1;
     showDivs(slideIndex);
-
     function plusDivs(n) {
       showDivs(slideIndex += n);
     }
@@ -351,10 +336,12 @@
       x[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " w3-white";
     }
-
   </script>
-
-
+ <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
 </body>
 
 </html>
