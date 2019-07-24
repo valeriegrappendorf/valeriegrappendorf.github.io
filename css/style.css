@@ -91,7 +91,7 @@ h1 {
 
 h2 {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 h3 {
@@ -230,7 +230,10 @@ a {
 .mittelbild img {
     max-width: 800px;
 }
-
+#bold {
+    font-weight: 500;
+    color: black;
+}
 .quote p {
     border-left: 2px solid transparent;
     border-left-color: black;
@@ -314,6 +317,7 @@ a {
 
 .main-header ul a:hover {
     color: black;
+    font-weight: 500;
 }
 
 /* Navbar für Projekte */
@@ -493,15 +497,12 @@ a {
     padding-top: calc((100vw - 20px) * 0.1);
     margin-bottom: -1%;
     color: transparent;
-    font-size: 20px;
-    font-weight: 500;
 }
 
 .mainpagekastenschrift h3 {
     margin-top: 3%;
+    font-weight: 500;
     color: transparent;
-    font-size: 18px;
-    font-weight: 300;
 }
 
 /* Speziell für Projekte */
@@ -670,12 +671,17 @@ a {
 .intropic {
     margin-top: 5%;
     position: relative;
-    height: 400px;
+    height: calc((100vw - 20px) * 0.32);
     width: 100%;
 }
 
 .lucieintro {
     background: #101926 url(../img/lucie/lucie.png) center no-repeat;
+    background-size: 20%;
+}
+
+.cartintro {
+    background: #A180FF url(../img/cart/Coverimage.jpeg) center no-repeat;
     background-size: 20%;
 }
 
@@ -691,7 +697,7 @@ a {
 }
 
 .methodintro {
-    background: #1ABCFD url(../img/method/toolset.png) center no-repeat;
+    background: #75B4FE url(../img/method/toolset.png) center no-repeat;
     background-size: 10%;
 }
 
@@ -786,11 +792,6 @@ a {
 .nomarging {
     margin: 0% 0 0% 0;
 
-}
-
-.HMW h3 {
-    font-weight: 300;
-    color: grey;
 }
 
 .HMW p {
@@ -1034,7 +1035,7 @@ a {
 /*Veränderungen bei unterschiedlichen Screen Größen*/
 
 /*Großer Bildschirm (wie bei Bosch)*/
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
 .main-header-container {
 padding: 2% 15% 1% 15%;
     }
