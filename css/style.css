@@ -126,6 +126,10 @@ a {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
+.crop video {
+    width: 125%;
+    /* margin: -75px 0 0 -100px; */
+}
 
 .crop_abstandoben {
     float: left;
@@ -211,12 +215,6 @@ a {
     /*Hier wird die Breite des Textblockes eingestellt*/
     max-width: 70rem;
     margin: auto;
-    margin-top: 4rem;
-}
-
-.small-padding-h3-p h3 {
-    padding-top: 2rem;
-    margin-top: 2rem;
 }
 
 .small-padding-h3-p p {
@@ -770,7 +768,7 @@ a {
 .taskcontainer {
     position: relative;
     margin: 5% 0 5% 0;
-    padding: 6% 0 10% 0;
+    padding: 10% 0 10% 0;
     width: 100%;
     background: #FAFAFA;
 }
@@ -783,7 +781,7 @@ a {
 .HMW {
     position: relative;
     margin: 5% 0 5% 0;
-    padding: 6% 0 10% 0;
+    padding: 10% 0 10% 0;
     text-align: center;
     width: 100%;
     background: #FAFAFA;
