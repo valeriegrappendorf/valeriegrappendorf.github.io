@@ -6,7 +6,9 @@
     box-sizing: border-box;
 }
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
 }
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -568,20 +570,21 @@ a {
 
 .catch p {
     margin-top: calc((100vw - 20px) * 0.08);
-    font-size: calc((100vw - 20px) * 0.025);
+    font-size: calc((100vw - 20px) * 0.019);
     background: white;
     color: black;
     border-radius: 10px;
+    /* padding-right: 200px; */
 }
-.catchleft {
-    margin-left: 20%;
+/* .catchleft {
+    margin-left: 30%;
     margin-right: -20%;
     z-index: 1;
 }
 .catchright {
     margin-left: -20%;
-    margin-right: 20%;
-}
+    margin-right: 30%;
+} */
 
 
 
