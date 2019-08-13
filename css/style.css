@@ -475,7 +475,7 @@ a {
     border-bottom-color: #75B4FE;
 }
 .smallprojects{
-    margin-top: 75%;
+    margin-top: 40%;
 }
 .smallprojects h10{
     font-size: 40px;
@@ -939,7 +939,7 @@ a {
 }
 
 .resulttext {
-    margin-top: -6%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
