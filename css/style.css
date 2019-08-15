@@ -526,6 +526,16 @@ a {
     background-size: 80%;
 }
 
+.bosch {
+    background: #DFDEDF url(../img/bosch/bosch.png) center no-repeat;
+    background-size: 45%;
+}
+
+.ml {
+    background: #DFDEDF url(../img/ml/speak.png) center no-repeat;
+    background-size: 30%;
+}
+
 /* Hover über Projektansicht */
 .overlayproj {
     position: absolute;
@@ -567,6 +577,13 @@ a {
     background-color: #A180FF;
 }
 
+.boschhover {
+    background-color: #005898;
+}
+
+.mlhover {
+    background-color: #005898;
+}
 
 .catch p {
     margin-top: calc((100vw - 20px) * 0.08);
