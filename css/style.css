@@ -117,6 +117,9 @@ a {
 .abstandoben{
     margin-top: 10rem;
 }
+.abstandobennormal {
+    margin-top: 4rem;
+}
 .crop {
     float: left;
     width: 50%;

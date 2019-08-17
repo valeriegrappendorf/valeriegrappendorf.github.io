@@ -263,27 +263,25 @@
     </p>
   </div>
   <div class="contentProjects">
-  <div class="result"></div>
+    <div class="col-sm-12">
+        <img id="uxempathypic" src="img/cart/Mockup.png" alt="test">
+      </div>
+      <div class="description">
+        <h3>Result</h3>
+        <p>The following video demonstrates the szenario which the user experiences with 
+          our product. 
+        </p>
+        </div>
+    </div>
+  <div class="contentProjects abstandobennormal">
   <!-- <div id="nofigmaheader"></div> -->
   <div id="figmavideoframe">
     <div class="responsive-video">
-      <!-- <iframe src="https://player.vimeo.com/video/347672090" frameborder="0" webkitAllowFullScreen mozallowfullscreen
-        allowFullScreen></iframe> -->
-        <video src="img/cart/Storyboard Smart Cart Video.m4v" ></video>
+      <iframe src="https://player.vimeo.com/video/354381702" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+        allowFullScreen></iframe>
     </div>
   </div>
-  <iframe id="figmaipad" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FCm8Gey4EqNVzqblCAQZyIJ9H%2FSchwerpunkte-Checkin-Checkout%3Fnode-id%3D302%253A3271" allowfullscreen></iframe>
-    <div class="center description">
-        <button class="buttonselect" id="videobutton" onclick="Video()">Usecase</button>
-        <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Interface</button>
-      </div>
-          <div class="col-sm-12 description nomarging">
-            <h3>Result</h3>
-            <p>This video demonstrates the szenario which the user experiences with 
-              our product. Feel free to have a deeper look at the interface to understand the screenflow of the app.
-            </p>
-            </div>
-          </div>
+  </div>
 
 
   <!-- Sonst funktioniert jquery scroll nicht -->
@@ -332,22 +330,6 @@
 
 
 
-  <script>
-    //Prototype Video und Figma Live
-    //Hide Figma
-    function Figma() {
-      document.getElementById("figmaipad").style.display = "block";
-      document.getElementById("figmavideoframe").style.display = "none";
-      document.getElementById("figmabutton").className = "buttonselect";
-      document.getElementById("videobutton").className = "buttonnotselect";
-    }
-    function Video() {
-      document.getElementById("figmavideoframe").style.display = "block";
-      document.getElementById("figmaipad").style.display = "none";
-      document.getElementById("videobutton").className = "buttonselect";
-      document.getElementById("figmabutton").className = "buttonnotselect";
-    }
-  </script>
   
    <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->
