@@ -585,7 +585,7 @@ a {
 }
 
 .mlhover {
-    background-color: #005898;
+    background-color: #478C6B;
 }
 
 .catch p {
@@ -701,6 +701,11 @@ a {
     background-size: 20%;
 }
 
+.mlintro {
+    background: #478C6B url(../img/ml/speak.png) center no-repeat;
+    background-size: 15%;
+}
+
 .cartintro {
     background: #A180FF url(../img/cart/intro.png) center no-repeat;
     background-size: 20%;
@@ -721,6 +726,7 @@ a {
     background: #75B4FE url(../img/method/toolset.png) center no-repeat;
     background-size: 10%;
 }
+
 
 .botintro {
     background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
