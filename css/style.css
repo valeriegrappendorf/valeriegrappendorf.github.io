@@ -206,7 +206,8 @@ a {
     font-weight: 500;
 }
 
-.contentProjects img {
+.contentProjects img,
+.contentProjects video{
     width: 100%;
     /* margin-top: 1.667rem !important;
     margin-bottom: 1.667rem !important; */
@@ -231,6 +232,9 @@ a {
     max-width: 330px;
 }
 .mittelbild img {
+    max-width: 800px;
+}
+.mittelbild video {
     max-width: 800px;
 }
 #bold {
@@ -359,7 +363,6 @@ a {
 
 
 
-
 /*MainPage*/
 
 /*Introkasten*/
@@ -385,6 +388,7 @@ a {
     background-image: linear-gradient(to right, white 0%, #FF6B49 50%);
     background-image: linear-gradient(90deg, white 0%, #FF6B49 50%); */
     border-radius: 10px;
+    /* background: white url(../img/home/DYP.JPG) no-repeat fixed 1%;  */
 }
 
 .rect1:before {
@@ -694,6 +698,17 @@ a {
     position: relative;
     height: calc((100vw - 20px) * 0.32);
     width: 100%;
+}
+
+.boschintro {
+    margin-top: 5%;
+    position: relative;
+    height: calc((100vw - 20px) * 0.32);
+    width: 100%;
+    background: white url(../img/bosch/feld.jpg) no-repeat fixed 50%; /*durch fixed bewegt sich Bild nicht mit*/
+/*  background: transparent url(../img/layout/laptop.png) center center  no-repeat;*/
+    background-size: cover;
+    background-size: 100%;
 }
 
 .lucieintro {

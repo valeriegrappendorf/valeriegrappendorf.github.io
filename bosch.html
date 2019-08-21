@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Valerie Grappendorf | Machine Learning</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script>
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header     -->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header clearfix">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="index.html#work">Work</a></li>
+            <li><a href="method.html">Toolset</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für mobile Geräte -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html#work">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="img/CV.pdf" target="_blank">CV</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Projektintro -->
+  <div class="intro">
+    <h1>Bosch Smart Agriculture</h1>
+    <p>Redesign of a management UI for farmers</p>
+  </div>
+
+  <!-- Bildkasten -->
+  <div class="boschintro">
+  </div>
+
+  <!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projinfo-container">
+    <section class="projcolumns clearfix">
+      <article>
+        <div class="projinfo">
+          <h3>Role</h3>
+          <p>Wireframes, <br>CSS frontend support</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Timeline</h3>
+          <p>Mai-July 2019<br>(3 month Project)</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Team</h3>
+          <p>Developers of Bosch Software Innovations
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Tools</h3>
+          <p>Figma, CSS</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+
+  <!-- Grauer Task Kasten  -->
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <p>The Bosch Smart Agriculture web app enables farmers to have an overview of their fields and sensors. The
+        sensors deliver data about the specific field/designation like temperature, humidity and more. Each business
+        case has its explorer and management view. The explorer view gives a quick overview and alarms the farmer when a
+        sensor or field needs action. The management view on the other side enables the farmer to add, edit, delete and
+        connect locations and data sources (sensors).
+        The goal was to redesign those interfaces and to improve the user experience for the farmer. </p>
+    </div>
+  </div>
+
+  <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a id="uxnav1" href="#1">Research</a></li>
+        <li><a id="uxnav2" href="#2">Management UI </a></li>
+        <li><a id="uxnav3" href="#3">Explorer UI</a></li>
+        <li><a id="uxnav4" href="#4">Key Learnings and Takeaway</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Researchkapitel -->
+  <div id="1"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">01</span>
+      <span id="chaptername">Research</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12 mittelbild">
+      <img src="img/bosch/management.JPG" alt="management">
+    </div>
+    <div class="col-sm-12 abstandoben">
+      <p>
+        To get a first impression of the current interface, a UX analyze was made. With this, the pain points and
+        inefficient flows were recognized. Interviews with the developers and contact persons of the farmers enabled
+        important user stories and led to the main interactions which have to be made in this interface.
+      </p>
+    </div>
+    <div class="col-sm-12 abstandoben">
+      <div class="crop">
+        <img src="img/bosch/research.jpg" alt="research">
+      </div>
+      <div class="crop">
+        <img src="img/bosch/research2.jpg" alt="research2">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="2"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">02</span>
+      <span id="chaptername">Management UI</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12 mittelbild">
+        <video src="img/bosch/V2.mov" autobuffer controls>
+      </div>
+    <div class="col-sm-12 abstandobennormal">
+      <p>
+        The above and following videos show the iterations of the interface up to the final version.
+      </p>
+    </div>
+    <div class="col-sm-12 mittelbild abstandobennormal">
+      <video src="img/bosch/V8.mov" autobuffer controls>
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <p>
+        The interface should be simplified and intuitive with a clear visual hierarchy. Nevertheless, the user should
+        have all the important information and actions in one view.
+      </p>
+    </div>
+    <div class="col-sm-12 mittelbild abstandobennormal">
+      <video src="img/bosch/V9.mov" autobuffer controls>
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <p>
+        During the last iteration, the decision was made to discard the wizard overlay for editing and details and to
+        instead open these views in a new window. This was made for more stable technical development and for the user
+        to have a better overview of his editing. The interface should be simplified and intuitive with a clear visual
+        hierarchy. Nevertheless, the user should have all the important information and actions in one view.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">03</span>
+      <span id="chaptername">Explorer UI</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12 mittelbild">
+      <img src="img/bosch/research.jpg" alt="V2">
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <p>
+        In the Explorer UI, the user wants to have a quick overview of his locations and fields. He wants to see which
+        one needs action and where alarms are triggered.
+      </p>
+    </div>
+    <div class="col-sm-12 mittelbild abstandobennormal">
+      <img src="img/bosch/research.jpg" alt="V2">
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <p>
+        For a more stable and easier implementation, a discussion with the developers let to this interface.
+      </p>
+    </div>
+    <div class="col-sm-12 mittelbild abstandobennormal">
+      <video src="img/bosch/V2.mov" autobuffer controls>
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <p>
+        During the last iteration, the decision was made to keep the interface simple and minimalistic. The user should
+        only see the status of the location and have the option to see further details if wanted.
+      </p>
+    </div>
+  </div>
+
+  <div id="4"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">04</span>
+      <span id="chaptername">Key Learnings and Takeaway</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <p>
+        1. Due to the short period of this project, the focus mainly laid on the UX and not on the visual UI design. The
+        final interface was developed with Angular material and due to that a close teamwork with the development team
+        was very important during the whole project. Due to that, we were able to achieve a productive workflow and to
+        prevent misunderstandings.
+      </p><br>
+      <p>
+        2. Sometimes you have to decide against a beautiful visual design to achieve the best user experience. </p><br>
+      <p>
+        3. CSS is a very important skill for a designer to support the developer team to achieve the desired visual
+        design. </p>
+    </div>
+  </div>
+
+
+  <!-- Sonst funktioniert jquery scroll nicht -->
+  <div id="5"></div>
+  <div id="6"></div>
+
+
+
+  <!-- further projects -->
+  <div class="more clearfix">
+    <div id="projects"></div>
+    <div class="columns-container">
+      <section class="columns clearfix">
+        <a href="ux.html">
+          <article>
+            <div class="proj mainpagekastenschrift ux">
+              <div class="overlayproj uxhover">
+                <h2>Connectivity for local crafts</h2>
+                <h3>Demonstration model for optometrists</h3>
+              </div>
+            </div>
+          </article>
+        </a>
+        <a href="cart.html">
+          <article>
+            <div class="proj mainpagekastenschrift cart">
+              <div class="overlayproj carthover">
+                <h2>Smart Shopping Cart</h2>
+                <h3>Independence for wheelchair users</h3>
+              </div>
+            </div>
+          </article>
+        </a>
+      </section>
+    </div>
+    <div class="credit">
+      <div class="pos-center">
+        <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+        <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+        <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+            alt="Linkedin"></a>
+      </div>
+      <div class="pos-center">
+        <p>&copy;Valerie Grappendorf 2019<a href="impressum.html"> Impressum</a></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+</body>
+
+</html>
