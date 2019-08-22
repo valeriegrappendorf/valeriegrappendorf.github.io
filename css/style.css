@@ -120,6 +120,15 @@ a {
 .abstandobennormal {
     margin-top: 4rem;
 }
+
+.scale video{
+    -moz-transform:scale(1.5);
+    -webkit-transform:scale(1.5);
+    -o-transform:scale(1.5);
+    -ms-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
 .crop {
     float: left;
     width: 50%;
@@ -131,10 +140,7 @@ a {
     width: 50%;
     /* margin: -75px 0 0 -100px; */
 }
-.crop video {
-    width: 125%;
-    /* margin: -75px 0 0 -100px; */
-}
+
 
 .crop_abstandoben {
     float: left;
@@ -154,6 +160,7 @@ a {
     height: calc((100vw - 20px) * 0.28);
     overflow: hidden;
 }
+
 .cropsmall {
     float: left;
     width: 50%;
