@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Valerie Grappendorf | Machine Learning</title>
+  <title>Valerie Grappendorf | Letzte Werbung</title>
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
   <!-- Schritft einbinden -->
   <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="all.js"></script> 
+  <script src="all.js"></script>
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -57,12 +57,12 @@
 
   <!-- Projektintro -->
   <div class="intro">
-    <h1>Machine Learning</h1>
-    <p>Voice recognition and control system</p>
+    <h1>Letzte Werbung</h1>
+    <p>Prohibition of advertisement trash</p>
   </div>
 
   <!-- Bildkasten -->
-  <div class="intropic mlintro">
+  <div class="intropic lwintro">
   </div>
 
   <!-- Einführungsinfos -->
@@ -72,26 +72,27 @@
       <article>
         <div class="projinfo">
           <h3>Role</h3>
-          <p>Ideation,<br>coding/prototyping</p>
+          <p>Wireframes, <br>Visual Design</p>
         </div>
       </article>
       <article>
         <div class="projinfo">
           <h3>Timeline</h3>
-          <p>June 2019<br>(3 weeks Project)<br>4th Semester</p>
+          <p>Mai-June 2019<br>(2 month Project)</p>
         </div>
       </article>
       <article>
         <div class="projinfo">
           <h3>Team</h3>
-          <p> <a href="https://ethanguenther.de/index.html">Ethan Günther</a>
-            </p>
+          <p>Letzte Werbung Initiative <br>
+            (Feedback and Concept)
+          </p>
         </div>
       </article>
       <article>
         <div class="projinfo">
           <h3>Tools</h3>
-          <p>Javascript, p5.js,<br>Wekinator, Arduino<br>Websocket, Node.js<br>Processing, OSC</p>
+          <p>Figma</p>
         </div>
       </article>
     </section>
@@ -101,82 +102,103 @@
   <!-- Grauer Task Kasten  -->
   <div class="taskcontainer clearfix">
     <div class="col-sm-12 contentProjects small-padding-h3-p">
-      <p>The goal of this project was to create a speech recognition and control system. It should detect the voice of a person (who is taking) and what this person is saying. This should enable a more personalized interaction between the system and the user. In this case, an ambient light should start a different mode depending on the person saying the trigger word.</p>
+      <p>Germany is one of the biggest consumers of paper worldwide. To meet the German paper demand, primeval forests
+        are deforested - for example in Indonesia and Canada. In the places where used to be natural forests are now
+        economic forests. 33 kilograms of paper advertisements does every German receive to his postbox every year. But
+        surveys show that 76% of the inhabitants do not want those advertisements. </p>
     </div>
   </div>
 
+  <!-- Navbar für Projekte -->
   <div class="projnav">
-      <nav>
-        <ul>
-          <h3>Overview</h3>
-          <li><a id="uxnav1" href="#1">Coding</a></li>
-          <li><a id="uxnav2" href="#2">Physical</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a id="uxnav1" href="#1">Background</a></li>
+        <li><a id="uxnav2" href="#2">Design Process</a></li>
+        <li><a id="uxnav3" href="#3">Result</a></li>
+      </ul>
+    </nav>
+  </div>
 
-  <!-- Researchkapitel -->
   <div id="1"></div>
   <div class="chapter">
     <p>
       <span id="chapternumber">01</span>
-      <span class="chaptername mlborder">Coding</span>
+      <span class="chaptername lwborder">Background</span>
     </p>
   </div>
   <div class="contentProjects">
-    <div class="col-sm-12 mittelbild">
-      <img id="researchpic" src="img/ml/1.png" alt="Lucie">
-      <img id="researchpic" src="img/ml/2.png" alt="Lucie">
-    </div>
-  </div>
-  <div class="contentProjects description">
     <div class="col-sm-12">
-      <h3>Speech Recognition</h3>
+      <div class="cropmiddle">
+        <img src="img/letztewerbung/werbung.jpg" alt="research">
+      </div>
+      <div class="cropmiddle">
+        <img src="img/letztewerbung/werbungsticker.jpg" alt="research2">
+      </div>
+    </div>
+    <div class="col-sm-12 description">
       <p>
-          Speech Recognition with P5.js. When a text phrase is detected e.g. "light on", the web browser sends emit to Websocket. Websocket forwards speech data with OSC to processing.
-      </p>
-      <h3>Voice Recognition</h3>
-      <p>
-          The open framework tool MFCC detects the sound signal an sends it to Wekinator. The ML Tool Wekinator is used to learn the voice of different users for personalized light control. Wekinator must be trained to different voices, which should be used for personalized light control. MQTT is used for the connection between Processing and the ESP8266. The data is published on the topic "/client" in the local network.
+        The goal of our initiative is to send a “no advertisement” sticker to every household in Germany. We
+        unfortunately already got the feedback that a lot of the companies ignore the sticker and deliver the
+        advertisement anyway. Due to that, we developed an app, in which the user can log those abuses. Furthermore, he
+        can also deregister from any advertisement within the app, without the need for a sticker at all.
       </p>
     </div>
   </div>
 
-
-  <!-- Kapitelübersicht -->
   <div id="2"></div>
   <div class="chapter">
     <p>
       <span id="chapternumber">02</span>
-      <span class="chaptername mlborder">Physical</span>
+      <span class="chaptername lwborder">Design Process</span>
     </p>
   </div>
   <div class="contentProjects">
-      <div class="col-sm-12">
-        <div class="crop">
-          <img  src="img/ml/p1.JPG" alt="p1">
-        </div>
-        <div class="crop">
-          <img  src="img/ml/p2.JPG" alt="p2">
-        </div>
-      </div>
+    <div class="col-sm-12">
+      <img src="img/letztewerbung/LW3.png" alt="LW">
     </div>
-    <div class="result">
-        <div class="resulttext">
-          <p>Find the code on Github to rebuild it yourself and more technical information!</p>
-          <a href="https://github.com/ValGrapp/ML-SpeachControlRecognition" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
-        </div>
-      </div>
+    <div class="col-sm-12 description">
+      <p>
+        Low-Fi Wireframes for planning the user and screen flow of the app.
+      </p>
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <img src="img/letztewerbung/LW2.png" alt="LW">
+    </div>
+    <div class="col-sm-12 description">
+      <p>
+        First High-Fi version with the implementation of more detailed visual elements.
+      </p>
+    </div>
+    <div class="col-sm-12 abstandobennormal">
+      <img src="img/letztewerbung/LW1.png" alt="LW">
+    </div>
+    <div class="col-sm-12 description">
+      <p>
+        High-Fi Version after iteration. The goal was to keep the app simple and minimalistic but to still have our
+        brand identifiable.
+      </p>
+    </div>
+  </div>
 
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">03</span>
+      <span class="chaptername lwborder">Result</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <img src="img/letztewerbung/Mockup.png" alt="LW">
+    </div>
+  </div>
 
-
-   <!-- Sonst funktioniert jquery scroll nicht -->
-   <div id="3"></div>
+  <!-- Sonst funktioniert jquery scroll nicht -->
   <div id="4"></div>
   <div id="5"></div>
   <div id="6"></div>
-
-
 
   <!-- further projects -->
   <div class="more clearfix">
@@ -221,7 +243,7 @@
 
 
 
- <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

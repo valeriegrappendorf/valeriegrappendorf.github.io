@@ -492,6 +492,7 @@ a {
     border-bottom-color: #75B4FE;
 }
 
+
 .proj:before {
     float: left;
     /*Hierdurch wird der Text im Viereck richtig zentriert*/
@@ -511,6 +512,31 @@ a {
     font-weight: 500;
     color: transparent;
 }
+
+
+/*Kapitelüberschrift*/
+.chapter {
+    padding-left: 4%;
+    margin-top: 10%;
+    padding-bottom: 2%;
+    vertical-align: baseline
+}
+
+#chapternumber {
+    vertical-align: middle;
+    font-size: 45px;
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.chaptername {
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: solid 3px;
+    border-bottom-color: #75B4FE;
+}
+
 
 /* Speziell für Projekte */
 .lucie {
@@ -710,38 +736,65 @@ a {
     background-size: cover;
     background-size: 100%;
 }
+.boschborder {
+    border-bottom-color: #005898;
+}
 
 .lucieintro {
     background: #101926 url(../img/lucie/lucie.png) center no-repeat;
     background-size: 20%;
+}
+.lucieborder {
+    border-bottom-color: #101926;
 }
 
 .mlintro {
     background: #478C6B url(../img/ml/speak.png) center no-repeat;
     background-size: 15%;
 }
+.mlborder {
+    border-bottom-color: #478C6B;
+}
+
+.lwintro {
+    background: #CF0132 url(../img/letztewerbung/werbung3.png) center no-repeat;
+    background-size: 45%;
+}
+.lwborder {
+    border-bottom-color: #CF0132;
+}
 
 .cartintro {
     background: #A180FF url(../img/cart/intro.png) center no-repeat;
     background-size: 20%;
+}
+.cartborder {
+    border-bottom-color: #A180FF;
 }
 
 .uxintro {
     background: #3193FE url(../img/ux/ok.png) center no-repeat;
     background-size: 40%;
 }
+.uxborder {
+    border-bottom-color: #3193FE;
+}
 
 .whattintro {
     background: #FDB056 url(../img/whatt/whatt.png) center no-repeat;
     background-size: 10%;
-
+}
+.whattborder {
+    border-bottom-color: #FDB056;
 }
 
 .methodintro {
     background: #75B4FE url(../img/method/toolset.png) center no-repeat;
     background-size: 10%;
 }
-
+.methodborder {
+    border-bottom-color: #75B4FE;
+}
 
 .botintro {
     background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
@@ -750,6 +803,9 @@ a {
 .botgit img {
     margin-top: 2%;
     width: 3%;
+}
+.botborder {
+    border-bottom-color: #0ACE82;
 }
 
 /*Infos über das Projekt*/
@@ -840,28 +896,6 @@ a {
     font-weight: 500;
 }
 
-/*Kapitelüberschrift*/
-.chapter {
-    padding-left: 4%;
-    margin-top: 10%;
-    padding-bottom: 2%;
-    vertical-align: baseline
-}
-
-#chapternumber {
-    vertical-align: middle;
-    font-size: 45px;
-    font-weight: 500;
-    margin-right: 5px;
-}
-
-#chaptername {
-    vertical-align: middle;
-    font-size: 30px;
-    font-weight: 400;
-    border-bottom: solid 3px;
-    border-bottom-color: #75B4FE;
-}
 
 /*Conceptkasten: Gif mit Fahrrad*/
 .luciegif {
