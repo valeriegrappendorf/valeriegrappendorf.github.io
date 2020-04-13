@@ -98,7 +98,7 @@ h2 {
 
 h3 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     margin-bottom: 10px;
 }
 
@@ -211,6 +211,24 @@ a {
 }
 #crazy8 {
     background-image: url("../img/method/Ideation/crazy8.JPG");
+}
+/* About */
+#speak {
+    background-image: url("../img/aboutme/speak.png");
+    height: 300px;
+}
+#health {
+    background-image: url("../img/aboutme/health.jpeg");
+    height: 300px;
+}
+#energy {
+    background-image: url("../img/aboutme/energy.png");
+    height: 300px;
+}
+#blockchain {
+    background-image: url("../img/aboutme/blockchain.png");
+    background-size: contain;
+    height: 300px;
 }
 
 /* The Modal (background) */
@@ -672,7 +690,7 @@ a {
 
 .mainpagekastenschrift h3 {
     margin-top: 3%;
-    font-weight: 500;
+    font-weight: 700;
     color: transparent;
 }
 
@@ -706,28 +724,28 @@ a {
 
 /* Speziell für Projekte */
 .lucie {
-    background: #DFDEDF url(../img/lucie/lucie.png) center no-repeat;
-    background-size: 40%;
+    background: #DFDEDF url(../img/home/lucie.png) center no-repeat;
+    background-size: 120%;
 }
 
 .ux {
-    background: #DFDEDF url(../img/ux/brille.png) center no-repeat;
-    background-size: 50%;
+    background: #DFDEDF url(../img/home/opto.png) center no-repeat;
+    background-size: 120%;
 }
 
 .letztwerbung {
-    background: #DFDEDF url(../img/letztewerbung/letztewerbung.png) center no-repeat;
-    background-size: 20%;
+    background: #DFDEDF url(../img/home/post.png) center no-repeat;
+    background-size: 120%;
 }
 
 .cart {
-    background: #DFDEDF url(../img/cart/mock.png) center no-repeat;
-    background-size: 80%;
+    background: #DFDEDF url(../img/home/smart.png) center no-repeat;
+    background-size: 120%;
 }
 
 .bosch {
-    background: #DFDEDF url(../img/bosch/bosch.png) center no-repeat;
-    background-size: 45%;
+    background: #DFDEDF url(../img/home/bosch.png) center no-repeat;
+    background-size: 120%;
 }
 
 .ml {
@@ -1281,6 +1299,16 @@ a {
 /* Kleiner Bildschirm */
 @media screen and (max-width: 700px) {
 
+    /* Vorschau Projekte */
+    .columns article {
+        width: 100%;
+        /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
+        float: left;
+        padding-top: 0%;
+        padding-right: 2%;
+        /* border-left: 1px solid #bfb6a8; */
+    }
+    å
 /* Veränderung Videos  --> Funktionert nur wenn an erster Stell*/
 .videokasten{
     float: left;
@@ -1490,9 +1518,11 @@ and (max-device-width : 1024px)  {
     background-size: 90%;
 }
 
- /*Rolle, Zeit, etc. Ansicht*/
- .projcolumns article {
-    width: 100%;
+.projinfo-container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background: white;
+    margin-left: 20px;
 }
 
 /*Kapitelüberschrift*/

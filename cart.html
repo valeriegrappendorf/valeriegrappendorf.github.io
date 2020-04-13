@@ -125,6 +125,12 @@
   </div>
 
 
+   <!-- Bildmodal -->
+   <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
   <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
   <div id="1"></div>
   <div class="chapter">
@@ -291,7 +297,7 @@
 
   <!-- further projects -->
   <div class="more clearfix">
-    <!-- <div id="projects"></div>
+    <div id="projects"></div>
     <div class="columns-container">
       <section class="columns clearfix">
         <a href="ux.html">
@@ -315,7 +321,7 @@
             </article>
           </a>
       </section>
-    </div> -->
+    </div>
     <div class="credit">
       <div class="pos-center">
         <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
@@ -324,13 +330,23 @@
             alt="Linkedin"></a>
       </div>
       <div class="pos-center">
-        <p>&copy;Valerie Grappendorf 2019<a href="impressum.html"> Impressum</a></p>
+        <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
       </div>
     </div>
   </div>
 
+<script>
 
+document.getElementById('TestObi').addEventListener("mousedown", modal);
+document.getElementById('Brainstorming').addEventListener("mousedown", modal);
+document.getElementById('Story1').addEventListener("mousedown", modal);
+document.getElementById('Crazy8').addEventListener("mousedown", modal);
+document.getElementById('Konzept2').addEventListener("mousedown", modal);
+document.getElementById('cart').addEventListener("mousedown", modal);
+document.getElementById('Low2').addEventListener("mousedown", modal);
+document.getElementById('Mockup').addEventListener("mousedown", modal);
 
+</script>
   
    <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->

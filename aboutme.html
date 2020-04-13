@@ -2,20 +2,18 @@
 <html>
 
 <head>
-  <title>Valerie Grappendorf | Portfolio</title>
+  <title>Valerie Grappendorf | Opto VR</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
   <!-- Schritft einbinden -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
   <link rel="stylesheet" href="css/normalize.css">
   <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description"
-    content="Valerie Grappendorf, student of Internet of Things - Design of networked systems at the University of Design in Schwäbisch Gmünd." />
-  <meta name="keywords"
-    content="Valerie Grappendorf, HfG, IoT, Internet der Dinge, Student, Hochschule für Gestaltung, Schwäbisch Gmünd, Gmünd, Internet of Things, Bachelor of Arts, UX, Valerie, Grappendorf" />
-  <script src="all.js"></script> 
-  </head>
+  <script src="all.js"></script>
+</head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
 
@@ -57,24 +55,57 @@
   </div>
 
 
+    <!-- Bildmodal -->
+    <div id="myModal" class="modal">
+      <img class="modal-content close" id="img01">
+    </div>
 
 
-  <!-- Bildkasten -->
-  <div class="aboutmebild clearfix">
-    <span id="mehead">Hey there!</span>
-    <img src="img/aboutme/aboutme.png" alt="Me">
-    <br> <br> <br>
-    <span id="metext">I am an enthusiastic designer who aims to detect human pain points/needs through empathy
-      and curiosity and solve them with creativity. On that way, I am always seeking to learn something new and collaborate
-      with people from all different skill sets to create interdisciplinary and complex solutions. The combination of
-      design and code offers me to think through and understand the overall creation prozess of a new product.
+  <!-- Introkasten -->
+  <div class="intro-container clearfix">
+    <div class="landing">
+      <p id="hello"> Hi! <span> I'm Valerie - a digital product and iot design student focused 
+        UX/UI design, code and prototyping.</span>
+      </p>
+    </div>
+  </div>
 
-      On the theoretical side I love to inform myself about tech related news and discuss about technical sociology and sustainability.
-      My desire to be a designer profounds in my dream to contribute something impactful to the world. And I really love
-      to tinker, prototyping is quite close to that.
-      <br> <br>
-      Check out my <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a> for my skillset and my previous work experiences! :)
-    </span>
+  
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="health">
+      </div>
+      <div class="crop" id="speak">
+      </div>
+    </div>
+  </div>
+
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <!-- <h3>Blabla</h3> -->
+      <p>
+        <br>I am an enthusiastic designer who aims to detect human pain points/needs through empathy
+        and curiosity and solve them with creativity. On that way, I am always seeking to learn something new and collaborate
+        with people from all different skill sets to create interdisciplinary and complex solutions. The combination of
+        design and code offers me to think through and understand the overall creation prozess of a new product.
+  
+        On the theoretical side I love to inform myself about tech related news and discuss about technical sociology and sustainability.
+        My desire to be a designer profounds in my dream to contribute something impactful to the world. And I really love
+        to tinker, prototyping is quite close to that.
+        Check out my <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a> for my skillset and my previous work experiences! :)
+        <br><br><br><br>
+      </p>
+      </div>
+    </div>
+    
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="energy">
+      </div>
+      <div class="crop" id="blockchain">
+      </div>
+    </div>
   </div>
 
 
@@ -157,48 +188,17 @@
             alt="Linkedin"></a>
       </div>
       <div class="pos-center">
-        <p>&copy;Valerie Grappendorf 2019<a href="impressum.html"> Impressum</a></p>
+        <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
       </div>
     </div>
   </div>
 
 
   <script>
-    //Navbar for mobile view
-    function openNav() {
-      document.getElementById("myNav").style.width = "100%";
-    }
-    function closeNav() {
-      document.getElementById("myNav").style.width = "0%";
-    }
-
-
-    //Slideshow
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
-    }
-
+document.getElementById('speak').addEventListener("mousedown", modal);
+document.getElementById('health').addEventListener("mousedown", modal);
+document.getElementById('energy').addEventListener("mousedown", modal);
+document.getElementById('blockchain').addEventListener("mousedown", modal);
   </script>
 
 
