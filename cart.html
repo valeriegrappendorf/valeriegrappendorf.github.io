@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <title>Valerie Grappendorf | Smart Shopping Helper</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <title>Valerie Grappendorf | Smart Shopping Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
   <!-- Schritft einbinden -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="all.js"></script> 
+  <script src="all.js"></script>
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -49,7 +49,7 @@
             <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
           </div>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span class="open" onclick="openNav()">&#9776;</span>
       </div>
     </header>
   </div>
@@ -103,9 +103,8 @@
   <!-- Grauer Task Kasten  -->
   <div class="taskcontainer clearfix">
     <div class="col-sm-12 contentProjects small-padding-h3-p">
-        <img id="" src="img/cart/evocortex.png" style="width:30%"  alt="Evocortex">
-
-          <p>This project was realised in cooperation with Evocortex, a start up which builts autonomous driving platforms for logistics. 
+      <img id="evocart" src="/img/cart/evocortex.png" alt="Evocart">
+                <p>This project was realised in cooperation with Evocortex, a start up which builts autonomous driving platforms for logistics. 
             Our goal during this cooperation was to think behind the logistics field and find a new usecas for this product.</p>
         </div>
   </div>
@@ -137,11 +136,12 @@
   <!-- Empathy -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/cart/TestObi.png" alt="test">
+      <div class="crop" id="TestObi">
       </div>
-      <div class="crop scale">
-        <video id="video" src="img/cart/Pain1.mp4" autoplay loop muted alt="Lucie">
+      <div class="col-sm-12 videokasten">
+        <video autoplay muted loop id="protovr">
+          <source src="img/cart/Pain1.mp4" autoplay loop muted type="video/mp4">
+      </video>
       </div>
     </div>
   </div>
@@ -176,11 +176,9 @@
   <!-- Synthesis -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/cart/Brainstorming.JPG" alt="test">
+      <div class="crop" id="Brainstorming">
       </div>
-      <div class="crop">
-        <img id="researchpic" src="img/cart/Story1.png" alt="Lucie">
+      <div class="crop" id="Story1">
       </div>
     </div>
   </div>
@@ -204,12 +202,10 @@
   <!-- Ideation -->
   <div class="contentProjects">
       <div class="col-sm-12">
-          <div class="crop">
-            <img id="uxempathypic" src="img/cart/Crazy8.png" alt="test">
-          </div>
-          <div class="crop">
-            <img id="researchpic" src="img/cart/Konzept2.png" alt="Lucie">
-          </div>
+        <div class="crop" id="Crazy8">
+        </div>
+        <div class="crop" id="Konzept2">
+        </div>
         </div>
   </div>
   <div class="contentProjects description">
@@ -233,12 +229,17 @@
   <!-- Prototyp -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="cropmiddle">
+      <div class="crop" id="cart">
+      </div>
+      <div class="crop" id="Low2">
+      </div>
+      
+      <!-- <div class="cropmiddle">
         <img id="protovr" src="img/cart/cart.jpg" alt="protovr">
       </div>
       <div class="cropmiddle">
         <img id="prototyp" src="img/cart/Low2.png" alt="prototyp">
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="contentProjects">
@@ -264,7 +265,8 @@
   </div>
   <div class="contentProjects">
     <div class="col-sm-12">
-        <img id="uxempathypic" src="img/cart/Mockup.png" alt="test">
+      <div class="crop" id="Mockup">
+      </div>
       </div>
       <div class="description">
         <h3>Result</h3>
@@ -289,7 +291,7 @@
 
   <!-- further projects -->
   <div class="more clearfix">
-    <div id="projects"></div>
+    <!-- <div id="projects"></div>
     <div class="columns-container">
       <section class="columns clearfix">
         <a href="ux.html">
@@ -308,13 +310,12 @@
                 <div class="overlayproj boschhover">
                   <h2>Bosch Smart Agriculture</h2>
                   <h3>Redesign of a management UI for farmers</h3>
-                  <!-- <h4>Focus on technical implementation & prototyping</h4> -->
                 </div>
               </div>
             </article>
           </a>
       </section>
-    </div>
+    </div> -->
     <div class="credit">
       <div class="pos-center">
         <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>

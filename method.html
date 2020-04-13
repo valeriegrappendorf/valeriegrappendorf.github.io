@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <title>Valerie Grappendorf | My Toolset</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <title>Valerie Grappendorf | Opto VR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
   <!-- Schritft einbinden -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="all.js"></script> 
+  <script src="all.js"></script>
 </head>
 
 <!-- SHift + Alt + F formats the code! :)  -->
@@ -44,13 +44,12 @@
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <li><a href="index.html#work">Work</a></li>
-            <li><a href="method.html">Toolset</a></li>
-            <li><a href="aboutme.html">About</a></li>
-            <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
+            <a href="index.html#work">Work</a>
+            <a href="aboutme.html">About</a>
+            <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
           </div>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span class="open" onclick="openNav()">&#9776;</span>
       </div>
     </header>
   </div>
@@ -66,8 +65,8 @@
   <div class="intropic methodintro">
   </div>
 
-  <div class="contentProjects description">
-    <div class="col-sm-12">
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
       <p>The design thinking process is a great approach for an elaborated project. I want to use this page 
         to give you deeper insights into my proceedings and show you a selection of the methods which often 
         support me and my teams to get to our goal. Across all those steps it is important to say that it is 
@@ -77,46 +76,51 @@
     </div>
   </div>
 
-  <!-- Navbar für Projekte -->
-  <div class="projnav">
-    <nav>
-      <ul>
-        <h3>Overview</h3>
-        <li><a id="uxnav1" href="#1">Empathy</a></li>
-        <li><a id="uxnav2" href="#2">Synthesis</a></li>
-        <li><a id="uxnav3" href="#3">Ideation</a></li>
-        <li><a id="uxnav4" href="#4">Prototype</a></li>
-        <li><a id="uxnav5" href="#5">Test</a></li>
-      </ul>
-    </nav>
+
+<!-- Navbar für Projekte -->
+<div class="projnav">
+  <nav>
+    <ul>
+      <h3>Overview</h3>
+      <li><a id="uxnav1" href="#1">Empathy</a></li>
+      <li><a id="uxnav2" href="#2">Synthesis</a></li>
+      <li><a id="uxnav3" href="#3">Ideation</a></li>
+      <li><a id="uxnav4" href="#4">Prototype</a></li>
+      <li><a id="uxnav5" href="#5">Test</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+  <!-- Bildmodal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
   </div>
 
 
-  <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
-  <div id="1"></div>
-  <div class="chapter">
-    <p>
-      <span id="chapternumber">01</span>
-      <span class="chaptername methodborder">Empathy</span>
-    </p>
-  </div>
-  <!-- Empathy -->
-  <div class="contentProjects">
-    <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/method/Empathy/empathy.png" alt="test">
-      </div>
-      <div class="crop">
-        <img id="researchpic" src="img/method/Empathy/cultureprobe.jpeg" alt="Lucie">
+    <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
+    <div id="1"></div>
+    <div class="chapter">
+      <p>
+        <span id="chapternumber">01</span>
+        <span class="chaptername methodborder">Empathy</span>
+      </p>
+    </div>
+    <!-- Empathy -->
+    <div class="contentProjects">
+      <div class="col-sm-12">
+        <div class="crop" id="empathy">
+        </div>
+        <div class="crop" id="cultureprobe">
+        </div>
       </div>
     </div>
-  </div>
-  <div class="contentProjects description">
-    <div class="col-sm-12">
-      <h3>Day in a life | Be your own customer | Cultural probe</h3>
-      <p>As a first step I want to know who I am designing for and realize / feel the needs of my users.</p>
+    <div class="contentProjects description">
+      <div class="col-sm-12">
+        <h3>Day in a life | Be your own customer | Cultural probe</h3>
+        <p>As a first step I want to know who I am designing for and realize / feel the needs of my users.</p>
+      </div>
     </div>
-  </div>
 
 
   <!-- Kapitelübersicht -->
@@ -156,146 +160,112 @@
     </div>
   </div>
 
-  <!-- Kapitelübersicht -->
-  <div id="3"></div>
-  <div class="chapter">
-    <p>
-      <span id="chapternumber">03</span>
-      <span class="chaptername methodborder">Ideation</span>
-    </p>
-  </div>
-  <!-- Ideation -->
-  <div class="contentProjects">
-    <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/method/Ideation/brainstorm.png" alt="test">
-      </div>
-      <div class="crop">
-        <img id="researchpic" src="img/method/Ideation/crazy8.JPG" alt="Lucie">
-      </div>
+
+
+ <!-- Kapitelübersicht -->
+ <div id="3"></div>
+ <div class="chapter">
+   <p>
+     <span id="chapternumber">03</span>
+     <span class="chaptername methodborder">Ideation</span>
+   </p>
+ </div>
+ <!-- Ideation -->
+ <div class="contentProjects">
+   <div class="col-sm-12">
+    <div class="crop" id="brainstorm">
+    </div>
+    <div class="crop" id="crazy8">
     </div>
   </div>
-  <div class="contentProjects description">
-    <div class="col-sm-12">
-      <h3>Crazy 8 | Brainstorming</h3>
-      <p>At this point we already know which problem we want to solve.
-          But how will we do it? It is time to widen our minds again and to allow every crazy thought that comes in our mind. Nothing is too unrealistic or too insane.
-          The base of the final idea or solution lies in all of them.</p>
-    </div>
-  </div>
+ </div>
+ <div class="contentProjects description">
+   <div class="col-sm-12">
+     <h3>Crazy 8 | Brainstorming</h3>
+     <p>At this point we already know which problem we want to solve.
+         But how will we do it? It is time to widen our minds again and to allow every crazy thought that comes in our mind. Nothing is too unrealistic or too insane.
+         The base of the final idea or solution lies in all of them.</p>
+   </div>
+ </div>
 
 
-  <!-- Kapitelübersicht -->
-  <div id="4"></div>
-  <div class="chapter">
-    <p>
-      <span id="chapternumber">04</span>
-      <span class="chaptername methodborder">Prototype</span>
-    </p>
-  </div>
-  <!-- Prototyp -->
-  <div class="methodscontainer">
-    <div class="w3-content w3-display-container">
-      <img class="mySlides2" src="img/method/Prototype/paper2.png">
-      <img class="mySlides2" src="img/method/Prototype/midfi.png">
-      <img class="mySlides2" src="img/method/Prototype/hifi2.png">
-      <img class="mySlides2" src="img/method/Prototype/dyp.png">
-      <img class="mySlides2" src="img/method/Prototype/tinker1.jpg">
-      <img class="mySlides2" src="img/method/Prototype/tinker2.png">
-      <img class="mySlides2" src="img/method/Prototype/Schaltung.jpg">
-      <img class="mySlides2" src="img/method/Prototype/window1.JPG">
-      <img class="mySlides2" src="img/method/Prototype/window2.JPG">
-      <img class="mySlides2" src="img/method/Prototype/embedd.jpg">
-      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-text-grey methodenanpassung w3-hover-text-blue" onclick="plusDivs2(-1)">&#10094;</div>
-        <div class="w3-right w3-text-grey w3-hover-text-blue" onclick="plusDivs2(1)">&#10095;</div>
-      </div>
-      <div class="kreisanzeige">
-        <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(1)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(2)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(3)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(4)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(5)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(6)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(7)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(8)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(9)"></span>
-        <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(10)"></span>
-      </div>
-    </div>
-  </div>
-  <div class="contentProjects description">
-    <div class="col-sm-12">
-      <h3>Paper Prototype to Wireframes Clickdummy | Arduino | Tinker</h3>
-      <p>After defining the solution, it is finally time to get not just visual but also make the project come alive. With these methods we form a perfect foundation for following user tests.</p>
-    </div>
-  </div>
+ <!-- Kapitelübersicht -->
+ <div id="4"></div>
+ <div class="chapter">
+   <p>
+     <span id="chapternumber">04</span>
+     <span class="chaptername methodborder">Prototype</span>
+   </p>
+ </div>
+ <!-- Prototyp -->
+ <div class="methodscontainer">
+   <div class="w3-content w3-display-container">
+     <img class="mySlides2" src="img/method/Prototype/paper2.png">
+     <img class="mySlides2" src="img/method/Prototype/midfi.png">
+     <img class="mySlides2" src="img/method/Prototype/hifi2.png">
+     <img class="mySlides2" src="img/method/Prototype/dyp.png">
+     <img class="mySlides2" src="img/method/Prototype/tinker1.jpg">
+     <img class="mySlides2" src="img/method/Prototype/tinker2.png">
+     <img class="mySlides2" src="img/method/Prototype/Schaltung.jpg">
+     <img class="mySlides2" src="img/method/Prototype/window1.JPG">
+     <img class="mySlides2" src="img/method/Prototype/window2.JPG">
+     <img class="mySlides2" src="img/method/Prototype/embedd.jpg">
+     <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+       <div class="w3-left w3-text-grey methodenanpassung w3-hover-text-blue" onclick="plusDivs2(-1)">&#10094;</div>
+       <div class="w3-right w3-text-grey w3-hover-text-blue" onclick="plusDivs2(1)">&#10095;</div>
+     </div>
+     <div class="kreisanzeige">
+       <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(1)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(2)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(3)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(4)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(5)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(6)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(7)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(8)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(9)"></span>
+       <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(10)"></span>
+     </div>
+   </div>
+ </div>
+ <div class="contentProjects description">
+   <div class="col-sm-12">
+     <h3>Paper Prototype to Wireframes Clickdummy | Arduino | Tinker</h3>
+     <p>After defining the solution, it is finally time to get not just visual but also make the project come alive. With these methods we form a perfect foundation for following user tests.</p>
+   </div>
+ </div>
 
-
-  <!-- Kapitelübersicht -->
-  <div id="5"></div>
-  <div class="chapter">
-    <p>
-      <span id="chapternumber">05</span>
-      <span class="chaptername methodborder">Test</span>
-    </p>
-  </div>
-  <!-- Test -->
-  <div class="contentProjects">
-    <div class="col-sm-12">
-      <div class="crop scale">
-        <video id="uxempathypic" src="img/method/Test/test1.MOV" autoplay loop muted alt="test">
-      </div>
-      <div class="crop">
-        <img id="researchpic" src="img/method/Test/test2.png" alt="Lucie">
-      </div>
-    </div>
-  </div>
-  <div class="contentProjects description">
-    <div class="col-sm-12">
-      <h3>Think aloud | Shadowing</h3>
-      <p>Now it is time to find out which aspects of our prototype or concept in general
-        pass the inspection of our users. It is always important to clarify the users about
-        the fact that we are testing our product, not them and that they can not do anything wrong.
-        If something does not work out, it is a weakness of the product. With this precious
-        insights we can iterate our product until it is finally well-engineered.</p>
-    </div>
-  </div>
-
-  <!-- Sonst funktioniert jquery scroll nicht -->
-  <div id="6"></div>
-
-
+  
 
 
 
   <!-- further projects -->
   <div class="more clearfix">
-    <div id="projects"></div>
+    <!-- <div id="projects"></div>
     <div class="columns-container">
       <section class="columns clearfix">
-        <a href="ux.html">
+          <a href="cart.html">
+              <article>
+                <div class="proj mainpagekastenschrift cart">
+                  <div  class="overlayproj carthover">
+                    <h2>Smart Shopping Helper</h2>
+                    <h3>Independence for wheelchair users</h3>
+                  </div>
+                </div>
+              </article>
+            </a>
+        <a href="bosch.html">
           <article>
-            <div class="proj mainpagekastenschrift ux">
-              <div class="overlayproj uxhover">
-                <h2>Connectivity for local crafts</h2>
-                <h3>Demonstration model for optometrists</h3>
-              </div>
-            </div>
-          </article>
-        </a>
-        <a href="cart.html">
-          <article>
-            <div class="proj mainpagekastenschrift cart">
-              <div class="overlayproj carthover">
-                <h2>Smart Shopping Cart</h2>
-                <h3>Independence for wheelchair users</h3>
+            <div class="proj mainpagekastenschrift bosch">
+              <div class="overlayproj boschhover">
+                <h2>Bosch Smart Agriculture</h2>
+                <h3>Redesign of a management UI for farmers</h3>
               </div>
             </div>
           </article>
         </a>
       </section>
-    </div>
+    </div> -->
     <div class="credit">
       <div class="pos-center">
         <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
@@ -308,6 +278,11 @@
       </div>
     </div>
   </div>
+
+
+
+
+
 
 
 
@@ -366,7 +341,8 @@
   }
   </script>
 
- <!-- JQuery muss in eine extra Script Datei! :)  -->
+
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

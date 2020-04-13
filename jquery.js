@@ -1,4 +1,41 @@
- //Scroll UX Navbar
+//Landing Page Image Change Destkop View
+$(function() {
+  $('.text1').hover(function() {
+      $('#rect1').css('background-image', 'url(../img/home/scooter.png)');
+  })
+});
+$(function() {
+  $('.text2').hover(function() {
+      $('#rect1').css('background-image', 'url(../img/home/smart.png)');
+  })
+});
+$(function() {
+  $('.text3').hover(function() {
+      $('#rect1').css('background-image', 'url(../img/home/post.png)');
+  })
+});
+$(function() {
+  $('.text4').hover(function() {
+      $('#rect1').css('background-image', 'url(../img/home/bosch.png)');
+  })
+});
+$(function() {
+  $('.text5').hover(function() {
+      $('#rect1').css('background-image', 'url(../img/home/opto.png)');
+  })
+});
+$(function() {
+  $('.text6').hover(function() {
+      $('#rect1').css('background-image', 'url(../img/home/lucie.png)');
+  })
+});
+
+
+
+
+
+
+//Scroll UX Navbar
  var t1 = $("#1").offset().top;
  var t2 = $("#2").offset().top;
  var t3 = $("#3").offset().top;

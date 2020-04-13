@@ -3,7 +3,7 @@
 
 <head>
   <title>Valerie Grappendorf | Opto VR</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
   <!-- Schritft einbinden -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
@@ -49,7 +49,7 @@
             <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
           </div>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span class="open" onclick="openNav()">&#9776;</span>
       </div>
     </header>
   </div>
@@ -132,9 +132,16 @@
   </div>
 
 
+  <!-- Bildmodal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
+
   <!-- Kapitelübersicht | vertical-align:baseline um Text auf gleicher Höhe zu haben-->
   <div id="1"></div>
-  <div class="chapter">
+  <div class="chapter chapter1">
     <p>
       <span id="chapternumber">01</span>
       <span class="chaptername uxborder">Empathy</span>
@@ -143,11 +150,9 @@
   <!-- Empathy -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/ux/test.png" alt="test">
+      <div class="crop" id="uxempathypic">
       </div>
-      <div class="crop">
-        <img id="researchpic" src="img/ux/glasses.png" alt="Lucie">
+      <div class="crop" id="uxresearchpic">
       </div>
     </div>
   </div>
@@ -185,11 +190,9 @@
   <!-- Synthesis -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="crop">
-        <img id="uxempathypic" src="img/ux/customer.png" alt="test">
+      <div class="crop" id="customer">
       </div>
-      <div class="crop">
-        <img id="researchpic" src="img/ux/optician.png" alt="Lucie">
+      <div class="crop" id="optician">
       </div>
     </div>
   </div>
@@ -242,13 +245,15 @@
       <span class="chaptername uxborder">Ideation</span>
     </p>
   </div>
+
+
+
+
   <!-- Ideation -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <!-- <div class="crop">
-          <img id="uxempathypic" src="img/ux/customer.png" alt="test">
-        </div> -->
-      <img id="researchpic" src="img/ux/ideation.png" alt="Lucie">
+      <div class="crop" id="uxideation">
+      </div>
     </div>
   </div>
   <div class="contentProjects description">
@@ -268,18 +273,6 @@
         and AR. They should be able to interact with their visual range and to adjust it during the test. With this tool
         the customers will be able to configure the perfect glasses for themselfs. The optometrist will have the master
         view on an iPad and guids and supports the customer through this whole process. </p>
-
-      <!-- <h3>Process</h3>
-      <p>Wir kreatierten unsere ersten Ideen durch die Methode Crazy 8 und besprachen
-        unsere Favoriten mit einem lokalen Optiker. Durch sein Hintergrundwissen und
-        unsere zuvor ausgearbeiteten Pain Points, konnten wir unsere Idee vertiefen und festigen. </p>
-      <h3>Top insight</h3>
-      <p>1. Man kann nicht alle Eigenschaften einer Brille simulieren.
-        2. Das Hauptproblem der Kunden ist es, sich für die für ihn optimale
-        Kategorie von Gleitsichtbrillen zu entscheiden. </p>
-      <h3>Decition</h3>
-      <p>Nach einigen Iterationen entschieden wir uns dafür, ein <span>Demonstrationsmodul
-          für Gleitsichtbrillen</span> zu entwickeln. </p> -->
     </div>
   </div>
 
@@ -311,12 +304,6 @@
         cheaper model. Due to that the potential of the market often gets not scooped. In the end the customers often
         perceive their
         visual range as too limited and understand the advantages of a higher category.
-
-        <!-- Momentan zeigen Optiker ihren Kunden Beispielfotos, wie ihr Sichtbereich mit der 
-        jeweiligen Brille aussehen würde. Darunter können sich diese jedoch oft nichts vorstellen 
-        und greifen daher öfter zum günstigeren Modell. Dadurch wird das Potential des Marktes 
-        nicht genutzt. Kunden empfinden ihr Sichtfeld im Nachhinein of als zu eingeschränkt und 
-        auch die Optiker können den Kunden die Qualität und den gerechtfertiten Preis nicht beweisen.  -->
       </p>
     </div>
   </div>
@@ -333,11 +320,12 @@
   <!-- Prototyp -->
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="cropmiddle">
-        <img id="protovr" src="img/ux/protovr.png" alt="protovr">
+      <div class="crop" id="protvr">
       </div>
-      <div class="cropmiddle">
-        <img id="prototyp" src="img/ux/prototyp.m4v" autoplay loop muted alt="prototyp">
+      <div class="col-sm-12 videokasten">
+        <video autoplay muted loop id="protovr">
+          <source src="img/ux/prototyp.m4v" type="video/mp4">
+      </video>
       </div>
     </div>
   </div>
@@ -350,11 +338,9 @@
     </div>
 
     <div class="col-sm-12 abstandoben">
-      <div class="cropsmall">
-        <img id="protoersteideen" src="img/ux/protoersteideen.png" alt="test">
+      <div class="crop" id="protoersteideen">
       </div>
-      <div class="cropsmall kleinesbild">
-        <img id="brille2" src="img/ux/brille2.png" alt="Lucie">
+      <div class="crop" id="brille2">
       </div>
     </div>
     <div class="col-sm-12 description">
@@ -367,8 +353,8 @@
       </p>
     </div>
 
-    <div class="col-sm-12 mittelbild abstandobennormal">
-      <img id="researchpic" src="img/ux/technik.png" alt="Lucie">
+    <div class="col-sm-12 abstandobennormal">
+      <div<div class="crop" id="technik"></div>
     </div>
   </div>
 
@@ -411,7 +397,7 @@
 
   <!-- further projects -->
   <div class="more clearfix">
-    <div id="projects"></div>
+    <!-- <div id="projects"></div>
     <div class="columns-container">
       <section class="columns clearfix">
           <a href="cart.html">
@@ -430,13 +416,12 @@
               <div class="overlayproj boschhover">
                 <h2>Bosch Smart Agriculture</h2>
                 <h3>Redesign of a management UI for farmers</h3>
-                <!-- <h4>Focus on technical implementation & prototyping</h4> -->
               </div>
             </div>
           </article>
         </a>
       </section>
-    </div>
+    </div> -->
     <div class="credit">
       <div class="pos-center">
         <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
@@ -449,6 +434,9 @@
       </div>
     </div>
   </div>
+
+
+
 
 
 
@@ -467,7 +455,21 @@
       document.getElementById("videobutton").className = "buttonselect";
       document.getElementById("figmabutton").className = "buttonnotselect";
     }
-  </script>
+
+
+document.getElementById('uxideation').addEventListener("mousedown", modal);
+document.getElementById('customer').addEventListener("mousedown", modal);
+document.getElementById('optician').addEventListener("mousedown", modal);
+document.getElementById('uxempathypic').addEventListener("mousedown", modal);
+document.getElementById('uxresearchpic').addEventListener("mousedown", modal);
+document.getElementById('protvr').addEventListener("mousedown", modal);
+document.getElementById('protovr').addEventListener("mousedown", modal);
+document.getElementById('protoersteideen').addEventListener("mousedown", modal);
+document.getElementById('brille2').addEventListener("mousedown", modal);
+document.getElementById('technik').addEventListener("mousedown", modal);
+</script>
+
+
 
   <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->
