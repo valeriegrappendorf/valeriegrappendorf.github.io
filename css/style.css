@@ -328,6 +328,11 @@ a {
 .col-sm-12 {
     overflow: hidden;
 }
+.col-sm-12 p{
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
 
 .contentProjects {
     overflow: hidden;
@@ -535,6 +540,58 @@ a {
     background-size: cover;
     background-position: center;
 }
+
+/*Introkasten*/
+.intro-container2 {
+    position: relative;
+    background: white;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.landing2 {
+    margin-top: 100px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+    background-color: transparent;
+    background-image: none;
+}
+#background2 {
+    position: relative;
+    stroke: black;
+    height: 100vh;
+    opacity: 1;
+    background-image: url("../img/home/scooter.png"); 
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#rect2 img {
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    bottom: 0;
+    display: inline-block;
+}
+
+#rect2 a {
+    font-size: 23px;
+    font-weight: 600;
+    color: black; 
+    background: white; 
+    position: absolute;
+    left: 60px;
+    padding: 5px 10px 5px 5px;
+    /* border-radius: 10px; */
+}
+#rect2 a:hover {
+    color: #0075FF; 
+}
+
+
 #background {
     position: relative;
     margin-top: 20px;
@@ -629,6 +686,7 @@ a {
 }
 
 .columns-container a {
+    stroke: solid black 2px;
     cursor: url('cross.png'), default;
 }
 
@@ -642,6 +700,7 @@ a {
 }
 .proj {
     margin-top: 2rem;
+    border-style: solid ;
     position: relative;
     float: left;
     /*Hierdurch wird der Text im horizontal Viereck richtig zentriert*/
@@ -739,7 +798,8 @@ a {
 }
 
 .cart {
-    background: #DFDEDF url(../img/home/smart.png) center no-repeat;
+    background: #DFDEDF;
+    /* background: #DFDEDF url(../img/home/smart.png) center no-repeat; */
     background-size: 120%;
 }
 
@@ -791,7 +851,9 @@ a {
 }
 
 .carthover {
-    background-color: #A180FF;
+background: #DFDEDF url(../img/home/smart.png) center no-repeat;
+background-size: 120%;
+
 }
 
 .boschhover {
