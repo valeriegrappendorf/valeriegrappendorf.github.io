@@ -1036,40 +1036,53 @@ background-size: cover;
     border-bottom-color: #0ACE82;
 }
 
+
+
+
+
+
 /*Infos über das Projekt*/
+/* Klein */
 .projinfo-container {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    background: white;
-    margin-left: 80px;
+    margin: 80px 0 80px 0;
+    display: none;
+    text-align: center;
+    /* margin: 80px 0 80px 0; */
 }
-
 .projcolumns article {
-    width: 25%;
-    /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
-    float: left;
-    padding-top: 0%;
-    padding-right: 2%;
-    /* border-left: 1px solid #bfb6a8; */
+    width: 23%;
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    /* background: #eee; */
 }
-
-.projinfo span {
-    color: #B4B4B4;
+.projinfo {
+    line-height: normal;
 }
-
-.columns h1 {
-    margin-top: 0;
+/* Groß */
+.projcolumns2{
+    margin: 80px 0 80px 0;
+    width: 100vw;
+    text-align: center;
+}
+.projinfo2 {
+    display: inline-block;
+    text-align: left;
+    padding-right: calc((100vw - 300px) * 0.08);
+}
+.projinfo3 {
+    display: inline-block;
+    text-align: left;
+    padding-right: 0px;
 }
 
 
 /*für Whatt*/
-.projinfo-container-bilder {
+/* .projinfo-container-bilder {
     margin-top: -3%;
     margin-bottom: 2%;
     background: white;
-    margin-left: 7%;
 }
-
 .projinfo img {
     width: 100%;
 }
@@ -1084,12 +1097,12 @@ background-size: cover;
 
 #surround:hover img:first-child {
     display: none;
-}
+} */
 
 /*Prototype Whatt*/
-#challenge {
+/* #challenge {
     width: 90%;
-}
+} */
 
 
 /*Taskcontainer*/
@@ -1115,7 +1128,7 @@ background-size: cover;
 /*HMW Container*/
 .HMW {
     position: relative;
-    margin: 5% 0 5% 0;
+    margin: 5% 0 0 0;
     padding: 10% 0 10% 0;
     text-align: center;
     width: 100%;
@@ -1367,15 +1380,27 @@ background-size: cover;
 .projnav {
     padding: 4% 0% 25px 60px;
 }
-.projinfo-container {
-    margin-left: 60px;
-}
 /* .catch p {
     font-size: 30px;
 } */
 .aboutmebild {
     margin-left: 15%;
     margin-right: 15%;
+}
+}
+
+
+/* Mittlerer Bildschirm */
+@media screen and (max-width: 1100px) {
+/*Rolle, Zeit, etc. Ansicht*/
+.projcolumns2  {
+    display:none;
+}
+.projinfo-container{
+    display: block;
+}
+ .projcolumns article {
+    width: 35%;
 }
 }
 
@@ -1393,17 +1418,12 @@ background-size: cover;
         padding-right: 2%;
         /* border-left: 1px solid #bfb6a8; */
     }
-    å
+    
 /* Veränderung Videos  --> Funktionert nur wenn an erster Stell*/
 .videokasten{
     float: left;
     width: 100%;
     height: 400px; 
-}
-
- /*Rolle, Zeit, etc. Ansicht*/
- .projcolumns article {
-    width: 50%;
 }
 
   /*Veränderung der Navbar */
@@ -1521,6 +1541,7 @@ cursor:pointer;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
 
+
     /* Landing Page */
     #rect1 {
         display: none;
@@ -1537,6 +1558,12 @@ and (max-device-width : 1024px)  {
     and (min-device-width: 300px) 
     and (max-device-width: 768px) 
     and (-webkit-device-pixel-ratio: 2) {
+
+
+ /*Rolle, Zeit, etc. Ansicht*/
+ .projcolumns article {
+    width: 50%;
+}
 
     /* Landing Page */
     #rect1 {
@@ -1607,7 +1634,6 @@ and (max-device-width : 1024px)  {
     margin-top: 80px;
     margin-bottom: 80px;
     background: white;
-    margin-left: 20px;
 }
 
 /*Kapitelüberschrift*/
