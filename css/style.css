@@ -677,7 +677,7 @@ a {
 
 /*Projektansicht*/
 .columns-container {
-    padding-top: 4%;
+    margin-top: 100px;;
     margin-left: 0%;
     /* ist bereits in dem oberen Intro Container drin*/
     padding-left: 4%;
@@ -699,7 +699,7 @@ a {
     /* border-left: 1px solid #bfb6a8; */
 }
 .proj {
-    height: 400px;
+    height: 350px;
     margin-top: 2rem;
     border-style: solid ;
     position: relative;
@@ -710,6 +710,9 @@ a {
     width: 100%;
     /* background: #FEEE75; */
     border-radius: 10px;
+}
+.proj img {
+height: 150px;
 }
 
 .HeaderMain{
@@ -733,10 +736,10 @@ a {
     border-bottom-color: #75B4FE;
 }
 
-
 .mainpagekastenschrift  h2, 
 .mainpagekastenschrift  h3,
 .mainpagekastenschrift  h4 {
+    line-height: normal;
     text-align: left; 
     margin-left: 10%;
     margin-right: 10%;
@@ -746,26 +749,24 @@ a {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 }
-
 .mainpagekastenschrift h2 {
-    /* margin-top: calc((100vw- 40vw ) * 0.08); */
-    margin-top: 15%;
-    line-height: normal;
     color: black;
     font-weight: 800;
     font-size: 30px;
 }
+.columns-container h3{
+    color: black;
+    font-weight: 800;
+    font-size: 35px;
+}
+.mainpagekastenschrift h2 {
+    margin-top: 15%;
+}
 
-.mainpagekastenschrift h3 {
-    font-weight: 500;
-    color: black;
-}
 .mainpagekastenschrift h4 {
+    font-size: 20px;
     font-weight: 500;
     color: black;
-}
-.mainpagekastenschrift h4 span {
-    font-weight: 700;
 }
 
 
@@ -795,7 +796,7 @@ a {
 }
 .mainpagekastenschrift:hover  h3 span,
 .mainpagekastenschrift:hover  h4 span{
-    /* background: rgba(255, 255, 255, 0.8) */
+    /* background: rgba(255, 255, 255,  1) */
     color: transparent
 }
 
@@ -806,20 +807,20 @@ a {
 /*Für einzelne Projekte*/
 .gtghover {
     background-color: #0A192D;
-    background:linear-gradient(0deg, rgba(10, 25, 45, 0.2), rgba(10, 25, 45,  0.2)), url(../img/home/scooter.png) center no-repeat;
+    background:linear-gradient(0deg, rgba(34, 220, 39, 0.2), rgba(34, 220, 39,  0.2)), url(../img/home/scooter.png) center no-repeat;
     background-size: cover;
 }
 .gtg:hover  h2 span{
-    background: rgba(255, 255, 255,  0.7)
+    background: rgba(34, 220,  39);
 }
 
 .luciehover {
     background-color: #0A192D;
-    background:linear-gradient(0deg, rgba(10, 25, 45, 0.2), rgba(10, 25, 45,  0.2)), url(../img/home/lucie.png) center no-repeat;
+    background:linear-gradient(0deg, rgba(10, 25, 45, 0.6), rgba(10, 25, 45,  0.6)), url(../img/home/lucie.png) center no-repeat;
     background-size: cover;
 }
 .lucie:hover  h2 span{
-    background: rgba(255, 255, 255,  0.7)
+    background: rgba(79, 114, 158,  1)
 }
 
 .uxhover {
@@ -827,7 +828,7 @@ a {
     background-size: cover;
 }
 .ux:hover  h2 span{
-    background: rgba(49, 147, 254, 0.7)
+    background: rgba(49, 147, 254, 1)
 }
 
 .letztwerbunghover {
@@ -835,7 +836,7 @@ a {
     background-size: cover;
 }
 .werbung:hover  h2 span{
-    background: rgba(414, 34, 77, 0.7)
+    background: rgba(414, 34, 77, 1)
 }
 
 .carthover {
@@ -844,7 +845,7 @@ background:linear-gradient(0deg, rgba(190, 180, 255, 0.2), rgba(190, 180, 255, 0
 background-size: cover;
 }
 .cart:hover  h2 span{
-    background: rgba(190, 180, 255, 0.8)
+    background: rgba(190, 180, 255, 1);
 }
 
 .boschhover {
@@ -852,7 +853,7 @@ background-size: cover;
     background-size: cover;
 }
 .bosch:hover  h2 span{
-    background: rgba(4, 126, 215, 0.7)
+    background: rgba(4, 126, 215, 1)
 }
 
 
