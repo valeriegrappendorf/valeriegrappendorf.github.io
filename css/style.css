@@ -699,6 +699,7 @@ a {
     /* border-left: 1px solid #bfb6a8; */
 }
 .proj {
+    height: 400px;
     margin-top: 2rem;
     border-style: solid ;
     position: relative;
@@ -733,25 +734,137 @@ a {
 }
 
 
-.proj:before {
-    float: left;
-    /*Hierdurch wird der Text im Viereck richtig zentriert*/
-    content: "";
-    display: block;
-    padding-top: 65%;
+.mainpagekastenschrift  h2, 
+.mainpagekastenschrift  h3,
+.mainpagekastenschrift  h4 {
+    text-align: left; 
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.mainpagekastenschrift span {
+    padding: 0px 5px 0px 5px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 .mainpagekastenschrift h2 {
-    padding-top: calc((100vw - 20px) * 0.1);
-    margin-bottom: -1%;
-    color: transparent;
+    /* margin-top: calc((100vw- 40vw ) * 0.08); */
+    margin-top: 15%;
+    line-height: normal;
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
 }
 
 .mainpagekastenschrift h3 {
-    margin-top: 3%;
-    font-weight: 700;
-    color: transparent;
+    font-weight: 500;
+    color: black;
 }
+.mainpagekastenschrift h4 {
+    font-weight: 500;
+    color: black;
+}
+.mainpagekastenschrift h4 span {
+    font-weight: 700;
+}
+
+
+/* Speziell für Projekte */
+
+.projbackground {
+    background: transparent;
+    /* background: #DFDEDF url(../img/home/smart.png) center no-repeat; */
+    background-size: 120%;
+}
+
+
+/* Hover über Projektansicht */
+.overlayproj {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.8s ease;
+    border-radius: 10px;
+}
+
+.proj:hover .overlayproj {
+    opacity: 0.6;
+    /* cursor: crosshair; */
+}
+.mainpagekastenschrift:hover  h3 span,
+.mainpagekastenschrift:hover  h4 span{
+    /* background: rgba(255, 255, 255, 0.8) */
+    color: transparent
+}
+
+
+
+
+
+/*Für einzelne Projekte*/
+.gtghover {
+    background-color: #0A192D;
+    background:linear-gradient(0deg, rgba(10, 25, 45, 0.2), rgba(10, 25, 45,  0.2)), url(../img/home/scooter.png) center no-repeat;
+    background-size: cover;
+}
+.gtg:hover  h2 span{
+    background: rgba(255, 255, 255,  0.7)
+}
+
+.luciehover {
+    background-color: #0A192D;
+    background:linear-gradient(0deg, rgba(10, 25, 45, 0.2), rgba(10, 25, 45,  0.2)), url(../img/home/lucie.png) center no-repeat;
+    background-size: cover;
+}
+.lucie:hover  h2 span{
+    background: rgba(255, 255, 255,  0.7)
+}
+
+.uxhover {
+    background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/opto.png) center no-repeat;
+    background-size: cover;
+}
+.ux:hover  h2 span{
+    background: rgba(49, 147, 254, 0.7)
+}
+
+.letztwerbunghover {
+    background:linear-gradient(0deg, rgba(414, 34, 77, 0.2), rgba(414, 34, 77, 0.2)), url(../img/home/post.png) center no-repeat;
+    background-size: cover;
+}
+.werbung:hover  h2 span{
+    background: rgba(414, 34, 77, 0.7)
+}
+
+.carthover {
+background:linear-gradient(0deg, rgba(190, 180, 255, 0.2), rgba(190, 180, 255, 0.2)), url(../img/home/smart.png) center no-repeat;
+/* background: url(../img/home/smart.png) center no-repeat; */
+background-size: cover;
+}
+.cart:hover  h2 span{
+    background: rgba(190, 180, 255, 0.8)
+}
+
+.boschhover {
+    background:linear-gradient(0deg, rgba(0, 88, 152, 0.2), rgba(0, 88, 152, 0.2)), url(../img/home/bosch.png) center no-repeat;
+    background-size: cover;
+}
+.bosch:hover  h2 span{
+    background: rgba(4, 126, 215, 0.7)
+}
+
+
+/* .catch p {
+    margin-top: calc((100vw - 20px) * 0.08);
+    font-size: calc((100vw - 20px) * 0.019);
+    background: white;
+    color: black;
+    border-radius: 10px;
+} */
+
+
 
 
 /*Kapitelüberschrift*/
@@ -780,97 +893,6 @@ a {
     border-bottom-color: #75B4FE;
 }
 
-
-/* Speziell für Projekte */
-.lucie {
-    background: #DFDEDF url(../img/home/lucie.png) center no-repeat;
-    background-size: 120%;
-}
-
-.ux {
-    background: #DFDEDF url(../img/home/opto.png) center no-repeat;
-    background-size: 120%;
-}
-
-.letztwerbung {
-    background: #DFDEDF url(../img/home/post.png) center no-repeat;
-    background-size: 120%;
-}
-
-.cart {
-    background: #DFDEDF;
-    /* background: #DFDEDF url(../img/home/smart.png) center no-repeat; */
-    background-size: 120%;
-}
-
-.bosch {
-    background: #DFDEDF url(../img/home/bosch.png) center no-repeat;
-    background-size: 120%;
-}
-
-.ml {
-    background: #DFDEDF url(../img/ml/speak.png) center no-repeat;
-    background-size: 30%;
-}
-
-/* Hover über Projektansicht */
-.overlayproj {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: 0.8s ease;
-    border-radius: 10px;
-}
-
-.proj:hover .overlayproj {
-    opacity: 0.9;
-    /* cursor: crosshair; */
-}
-
-.proj:hover h2 {
-    /*Change font color when hovering the div*/
-    color: white;
-}
-
-.proj:hover h3 {
-    color: white;
-}
-
-/*Für einzelne Projekte*/
-.luciehover {
-    background-color: #0A192D;
-}
-
-.uxhover {
-    background-color: #3193FE;
-}
-
-.letztwerbunghover {
-    background-color: #D6224D;
-}
-
-.carthover {
-background: #DFDEDF url(../img/home/smart.png) center no-repeat;
-background-size: 120%;
-
-}
-
-.boschhover {
-    background-color: #005898;
-}
-
-.mlhover {
-    background-color: #478C6B;
-}
-
-.catch p {
-    margin-top: calc((100vw - 20px) * 0.08);
-    font-size: calc((100vw - 20px) * 0.019);
-    background: white;
-    color: black;
-    border-radius: 10px;
-}
 
 
 
@@ -1347,9 +1369,9 @@ background-size: 120%;
 .projinfo-container {
     margin-left: 60px;
 }
-.catch p {
+/* .catch p {
     font-size: 30px;
-}
+} */
 .aboutmebild {
     margin-left: 15%;
     margin-right: 15%;
