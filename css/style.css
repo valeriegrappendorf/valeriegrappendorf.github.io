@@ -114,19 +114,10 @@ a {
     color: black;
 }
 
-.abstandoben{
-    margin-top: 10rem;
-}
 .abstandobennormal {
     margin-top: 4rem;
 }
-/* .scale video{
-    -moz-transform:scale(1.5);
-    -webkit-transform:scale(1.5);
-    -o-transform:scale(1.5);
-    -ms-transform:scale(1.5);
-    transform:scale(1.5);
-} */
+
 
 
 /* UX Opto VR */
@@ -212,6 +203,20 @@ a {
 #crazy8 {
     background-image: url("../img/method/Ideation/crazy8.JPG");
 }
+#test1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: auto; 
+    height: 100%;
+    z-index: -1000; 
+    overflow: hidden;
+}
+#test2 {
+    background-image: url("../img/method/Test/test2.png");
+}
 /* About */
 #speak {
     background-image: url("../img/aboutme/speak.png");
@@ -230,6 +235,99 @@ a {
     background-size: contain;
     height: 300px;
 }
+/* Bosch */
+#boschresearch{
+    background-image: url("../img/bosch/research.jpg");
+}
+#boschresearch2{
+    background-image: url("../img/bosch/research2.jpg");
+}
+#management{
+    background-image: url("../img/bosch/management.JPG");
+    width: 100%;
+    background-size: contain;
+}
+#E1{
+    background-image: url("../img/bosch/E1.png");
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+#E2{
+    background-image: url("../img/bosch/E2.png");
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+/* ML */
+#p1{
+    background-image: url("../img/ml/p1.JPG");
+}
+#p2{
+    background-image: url("../img/ml/p2.JPG");
+}
+#ml1{
+    background-image: url("../img/ml/1.png");
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+}
+#ml2{
+    background-image: url("../img/ml/2.png");
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+}
+/* LW */
+#werbung{
+    background-image: url("../img/letztewerbung/werbung.jpg");
+}
+#werbungsticker{
+    background-image: url("../img/letztewerbung/werbungsticker.jpg");
+}
+#lw12{
+    background-image: url("../img/letztewerbung/lw12.png");
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-color: #787D85;
+}
+#lw22{
+    background-image: url("../img/letztewerbung/lw22.png");
+    width: 100%;
+    height: 250px;
+    background-size: contain;
+    background-color: #787D85;
+}
+#lw32{
+    background-image: url("../img/letztewerbung/lw32.png");
+    width: 100%;
+    background-size: contain;
+    background-color: #787D85;
+}
+#Mockup{
+    background-image: url("../img/letztewerbung/Mockup.png");
+    width: 100%;
+    background-size: contain;
+}
+/* Lucie */
+#luciegif{
+    background-image: url("../img/lucie/luciegif.gif");
+    width: 100%;
+    background-size: contain;
+}
+#brille {
+    background-image: url("../img/lucie/brille.png");
+    width: 100%;
+    height: 250px;
+    background-size: contain;
+}
+#lucieresearch {
+    background-image: url("../img/lucie/research.png");
+    width: 100%;
+    background-size: contain;
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -293,28 +391,6 @@ a {
 
 
 
-
-
-
-.crop_abstandoben {
-    float: left;
-    width: 50%;
-    height: calc((100vw - 20px) * 0.32);
-    overflow: hidden;
-    margin-top: 5rem;
-}
-
-.crop_abstandoben img {
-    width: 50%;
-    /* margin: -75px 0 0 -100px; */
-}
-
-
-/*Grit*/
-.textmitte {
-    text-align: center;
-}
-
 .col-sm-4,
 .col-sm-5,
 .col-sm-6,
@@ -323,6 +399,11 @@ a {
 .col-sm-12 {
     padding-right: 60px;
     padding-left: 60px;
+}
+
+.col-sm-12 video {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .col-sm-12 {
@@ -341,7 +422,6 @@ a {
 .contentProjects span {
     font-weight: 500;
 }
-
 
 .contentProjects img,
 .contentProjects video{
@@ -362,15 +442,6 @@ a {
     margin-top: 0%;
 }
 
-.kleinesbild img {
-    max-width: 330px;
-}
-.mittelbild img {
-    max-width: 800px;
-}
-.mittelbild video {
-    max-width: 800px;
-}
 #bold {
     font-weight: 500;
     color: black;
@@ -503,33 +574,12 @@ a {
 
 
 
-/*MainPage*/
-
-/*Introkasten*/
-.intro-container {
-    position: relative;
-    background: white;
-    /* background-size: cover; */
-    margin-top: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
-
-}
-
-
-
-/* Rectangle with my photo */
-
-/*Projekte für iPad */
-#responsive {
-    display: none;
-}
 #rect1 {
     display: block;
 }
 
 
-#rect1, #responsive {
+#rect1 {
     position: relative;
     margin-top: 20px;
     height: 600px;
@@ -592,73 +642,10 @@ a {
 }
 
 
-#background {
-    position: relative;
-    margin-top: 20px;
-    height: 600px;
-    stroke: black;
-    border-radius: 10px;
-    background-image: url("../img/home/scooter.png"); 
-    background-size: cover;
-    background-position: center;
-}
-
-.landing {
-    position: relative;
-    margin-top: 20px;
-    height: 600px;
-    opacity: 1;
-    stroke: black;
-    border-radius: 10px;
-    background-color: white;
-    background-image: none;
-}
-#rect1 img, #responsive img {
-    position: absolute;
-    width: 60%;
-    height: auto;
-    left: 20%;
-    bottom: 0;
-    display: inline-block;
-}
-
-#rect1 a, #responsive  a {
-    font-size: 23px;
-    font-weight: 600;
-    color: black; 
-    background: white; 
-    position: absolute;
-    left: 16px;
-    padding: 5px 10px 5px 5px;
-    /* border-radius: 10px; */
-}
-#rect1 a:hover {
-    color: #0075FF; 
-}
-
-.text1 a{
-    top: 50px;
-}
-.text2 a{
-    top: 120px;
-}
-.text3 a{
-    top: 190px;
-}
-.text4 a{
-    top: 260px;
-}
-.text5 a{
-    top: 330px;
-}
-.text6 a{
-    top: 400px;
-}
-
 #hello {
     color: black; 
     padding-left: 10%;
-    padding-right: 30%;
+    padding-right: 35%;
     padding-top: 80px;
     font-size: 120px;
     font-weight: 450;
@@ -677,12 +664,15 @@ a {
 
 /*Projektansicht*/
 .columns-container {
-    margin-top: 100px;;
+    margin-top: 100px;
     margin-left: 0%;
     /* ist bereits in dem oberen Intro Container drin*/
-    padding-left: 4%;
-    padding-right: 2%;
+    padding-left: 60px;
+    padding-right: 60px;
     /* Hier 2 weniger, weil bei columns article nochmal right +2% */
+}
+.further {
+    margin-top: 150px;
 }
 
 .columns-container a {
@@ -690,11 +680,14 @@ a {
     cursor: url('cross.png'), default;
 }
 
-.columns article {
+.columns article,
+.columns section{
     width: 50%;
     /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
     float: left;
     padding-top: 0%;
+}
+.columns article{
     padding-right: 2%;
     /* border-left: 1px solid #bfb6a8; */
 }
@@ -702,39 +695,20 @@ a {
     height: 350px;
     margin-top: 2rem;
     border-style: solid ;
+    border-color: black;
     position: relative;
     float: left;
     /*Hierdurch wird der Text im horizontal Viereck richtig zentriert*/
     text-align: center;
     vertical-align: center;
     width: 100%;
-    /* background: #FEEE75; */
+    background: white;
     border-radius: 10px;
 }
 .proj img {
 height: 150px;
 }
 
-.HeaderMain{
-    padding-top: 2%;
-}
-.HeaderMain h10{
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: -5%;
-    border-bottom: solid 3px;
-    border-bottom-color: #75B4FE;
-}
-.smallprojects{
-    margin-top: 40%;
-}
-.smallprojects h10{
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 0px;
-    border-bottom: solid 3px;
-    border-bottom-color: #75B4FE;
-}
 
 .mainpagekastenschrift  h2, 
 .mainpagekastenschrift  h3,
@@ -773,7 +747,7 @@ height: 150px;
 /* Speziell für Projekte */
 
 .projbackground {
-    background: transparent;
+    background-color: transparent;
     /* background: #DFDEDF url(../img/home/smart.png) center no-repeat; */
     background-size: 120%;
 }
@@ -857,14 +831,6 @@ background-size: cover;
 }
 
 
-/* .catch p {
-    margin-top: calc((100vw - 20px) * 0.08);
-    font-size: calc((100vw - 20px) * 0.019);
-    background: white;
-    color: black;
-    border-radius: 10px;
-} */
-
 
 
 
@@ -882,14 +848,14 @@ background-size: cover;
 #chapternumber {
     vertical-align: middle;
     font-size: 45px;
-    font-weight: 500;
+    font-weight: 600;
     margin-right: 5px;
 }
 
 .chaptername {
     vertical-align: middle;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 600;
     border-bottom: solid 3px;
     border-bottom-color: #75B4FE;
 }
@@ -911,7 +877,9 @@ background-size: cover;
 }
 
 .credit {
-    margin-top: 70px;
+    margin-top: 50px;
+    padding-top: 70px;
+    background-color: #FAFAFA;
 }
 
 .credit img {
@@ -943,6 +911,9 @@ background-size: cover;
 }
 
 .intro h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 35px;
     margin-bottom: 10px;
 }
 
@@ -1049,7 +1020,8 @@ background-size: cover;
     text-align: center;
     /* margin: 80px 0 80px 0; */
 }
-.projcolumns article {
+.projcolumns article,
+.projcolumns section  {
     width: 23%;
     text-align: left;
     vertical-align: top;
@@ -1065,44 +1037,20 @@ background-size: cover;
     width: 100vw;
     text-align: center;
 }
+.about {
+    margin: 80px 0 120px 0;
+}
 .projinfo2 {
+    vertical-align: top;
     display: inline-block;
     text-align: left;
-    padding-right: calc((100vw - 300px) * 0.08);
+    padding-right: calc((100vw - 300px) * 0.09);
 }
 .projinfo3 {
     display: inline-block;
     text-align: left;
     padding-right: 0px;
 }
-
-
-/*für Whatt*/
-/* .projinfo-container-bilder {
-    margin-top: -3%;
-    margin-bottom: 2%;
-    background: white;
-}
-.projinfo img {
-    width: 100%;
-}
-
-#surround img:last-child {
-    display: none;
-}
-
-#surround:hover img:last-child {
-    display: block;
-}
-
-#surround:hover img:first-child {
-    display: none;
-} */
-
-/*Prototype Whatt*/
-/* #challenge {
-    width: 90%;
-} */
 
 
 /*Taskcontainer*/
@@ -1145,33 +1093,17 @@ background-size: cover;
 }
 
 
-/*Conceptkasten: Gif mit Fahrrad*/
+/*Lucie Conceptkasten: Gif mit Fahrrad*/
 .luciegif {
     position: relative;
-    width: 100%;
     background: #101926;
 }
-
-.luciegif img {
-    margin-left: 18%;
-    width: 60%;
-}
-
 /*InteractionKasten*/
 .interactionpic {
     position: relative;
-    width: 100%;
     background: #FAFAFA;
 }
 
-#brille {
-    padding-top: 6%;
-    padding-bottom: 6%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
 
 /*SliderKasten Lucie*/
 .interactiongif {
@@ -1286,46 +1218,7 @@ background-size: cover;
     padding: 0% 20% 0% 20%;
 }
 
-
-/* UX*/
-.more {
-    margin-top: 10%;
-    width: 100%;
-    background-color: #FAFAFA;
-}
-
-
-/*About Me*/
-.aboutmebild {
-    padding-top: 10%;
-    padding-bottom: 3%;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-
-.aboutmebild img {
-    margin-left: 4%;
-    float: right;
-    width: 50%;
-}
-
-#mehead {
-    color: black;
-    font-size: 70px;
-    font-weight: 450;
-}
-
-#metext {
-    font-size: 18px;
-    font-weight: 350;
-    line-height: 1.8;
-}
-
-#metext a {
-    font-weight: 500;
-    text-decoration: none;
-}
-
+/*About*/
 #check {
     width: 19px;
     padding-right: 5px;
@@ -1360,6 +1253,23 @@ background-size: cover;
 
 /*Großer Bildschirm (wie bei Bosch)*/
 @media screen and (min-width: 1600px) {
+
+    .main-header-container {
+        padding-left: 140px;
+        padding-right: 140px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #hello {
+        padding-left: 20%;
+        padding-right: 40%;
+    }
+
+/*Projekte*/
+.intro {
+    margin-left: 140px;
+}
     
 .col-sm-4,
 .col-sm-5,
@@ -1367,26 +1277,22 @@ background-size: cover;
 .col-sm-7,
 .col-sm-8,
 .col-sm-12 {
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 140px;
+    padding-left: 140px;
 }
 .columns-container {
-    padding-left: 15%;
-    padding-right: 13%;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 .chapter {
-    padding-left: 15%;
+    padding-left: 140px;
 }
 .projnav {
-    padding: 4% 0% 25px 60px;
+    padding: 4% 0% 25px 140px;
 }
 /* .catch p {
     font-size: 30px;
 } */
-.aboutmebild {
-    margin-left: 15%;
-    margin-right: 15%;
-}
 }
 
 
@@ -1399,8 +1305,23 @@ background-size: cover;
 .projinfo-container{
     display: block;
 }
- .projcolumns article {
+ .projcolumns article,
+ .projcolumns section {
     width: 35%;
+}
+
+/* Fullscreen Bilder */
+#management,
+#E1,
+#E2,
+#ml1,
+#ml2,
+#lw12,
+#lw22,
+#lw32,
+#Mockup,
+#lucieresearch{
+    background-size: cover;
 }
 }
 
@@ -1409,8 +1330,10 @@ background-size: cover;
 /* Kleiner Bildschirm */
 @media screen and (max-width: 700px) {
 
+
     /* Vorschau Projekte */
-    .columns article {
+    .columns article,
+    .columns section {
         width: 100%;
         /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
         float: left;
@@ -1418,13 +1341,23 @@ background-size: cover;
         padding-right: 2%;
         /* border-left: 1px solid #bfb6a8; */
     }
+
+    /* Index Bilderkasten */
+    #background2 {
+        height: 50vh;
+    }
     
-/* Veränderung Videos  --> Funktionert nur wenn an erster Stell*/
+/* Veränderung Videos wenn 2 videos oder Bilder nebeneinander  --> Funktionert nur wenn an erster Stell*/
 .videokasten{
     float: left;
     width: 100%;
     height: 400px; 
 }
+   /* Singlevideo */
+   .col-sm-12 video {
+    width: 100%;
+}
+
 
   /*Veränderung der Navbar */
 .bignav {
@@ -1494,9 +1427,9 @@ cursor:pointer;
 }
 
 
-.smallprojects{
+/* .smallprojects{
     margin-top: 155%;
-}
+} */
 
 /*Projektnavbar*/
 .projnav {
@@ -1509,9 +1442,9 @@ cursor:pointer;
     height: 300px; 
 }​
 
-
     /* Veränderrung der Projektansicht */
-    .columns article {
+    .columns article,
+    .columns section {
         width: 100%;
         /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 1 Spalte*/
     }
@@ -1541,13 +1474,13 @@ cursor:pointer;
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  { 
 
+    #background2 {
+        height: 50vh;
+    }
 
     /* Landing Page */
     #rect1 {
         display: none;
-    }
-    #responsive {
-        display: block;
     }
 }
 
@@ -1556,30 +1489,24 @@ and (max-device-width : 1024px)  {
 /* Handyansicht */
 @media only screen 
     and (min-device-width: 300px) 
-    and (max-device-width: 768px) 
+    and (max-device-width: 767px) 
     and (-webkit-device-pixel-ratio: 2) {
 
-
  /*Rolle, Zeit, etc. Ansicht*/
- .projcolumns article {
+ .projcolumns article,
+ .projcolumns section {
     width: 50%;
+}
+
+#hello {
+    padding-right: 20%;
+    padding-top: 40px;
+
 }
 
     /* Landing Page */
     #rect1 {
         display: none;
-    }
-    #responsive {
-        display: block;
-    }
-
-    #hello {
-        color: black; 
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 80px;
-        font-size: 120px;
-        font-weight: 450;
     }
 
 .intro-container {
@@ -1596,7 +1523,10 @@ and (max-device-width : 1024px)  {
         padding-right: 20px;
         padding-left: 20px;
     }
-
+    .columns-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
 /*Navbar  */
 .main-header-container {
@@ -1621,10 +1551,7 @@ and (max-device-width : 1024px)  {
 
 /*intropic*/
 .intropic {
-    margin-top: 35px;
-    position: relative;
-    height: 400px; 
-    width: 100%;
+    height: 250px; 
 }
 .uxintro {
     background-size: 90%;

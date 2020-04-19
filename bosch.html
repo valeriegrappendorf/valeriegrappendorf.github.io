@@ -21,7 +21,7 @@
   <!-- Header     -->
   <div class="main-header-container" id="myHeader">
     <!-- Allgmeine Box des Headers -->
-    <header class="main-header clearfix">
+    <header class="main-header">
       <!-- Definition der Inhalte des Headers -->
       <div class="logo">
         <ul>
@@ -32,7 +32,6 @@
       <div class="bignav">
         <nav>
           <ul>
-            <li><a href="index.html#work">Work</a></li>
             <li><a href="method.html">Toolset</a></li>
             <li><a href="aboutme.html">About</a></li>
             <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
@@ -44,9 +43,9 @@
         <div id="myNav" class="overlay">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <div class="overlay-content">
-            <a href="index.html#work">Work</a>
+            <a href="method.html">Toolset</a>
             <a href="aboutme.html">About</a>
-            <a href="img/CV.pdf" target="_blank">CV</a>
+            <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
           </div>
         </div>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -67,35 +66,53 @@
 
   <!-- Einführungsinfos -->
   <!-- Spaltenansicht -->
-  <div class="projinfo-container">
-    <section class="projcolumns clearfix">
-      <article>
-        <div class="projinfo">
-          <h3>Role</h3>
-          <p>Wireframes, <br>CSS frontend support</p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Timeline</h3>
-          <p>Mai-July 2019<br>(3 month Project)</p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Team</h3>
-          <p>Developers of Bosch Software Innovations
-          </p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Tools</h3>
-          <p>Figma, CSS</p>
-        </div>
-      </article>
-    </section>
-  </div>
+  <div class="projcolumns2 col-sm-12">
+    <div class="projinfo2">
+      <h3>Role</h3>
+      <p>Wireframes, <br>CSS frontend support</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Timeline</h3>
+      <p>Mai-July 2019<br>(3 month Project)</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Team</h3>
+          <p>Developers of Bosch <br> Software Innovations
+    </div>
+    <div class="projinfo3">
+      <h3>Tools</h3>
+      <p>Figma, CSS</p>
+    </div>
+</div>
+<!-- Mobil -->
+<div class="projinfo-container">
+<section class="projcolumns clearfix">
+  <article>
+    <div class="projinfo">
+      <h3>Role</h3>
+      <p>Wireframes, <br>CSS frontend support</p>
+    </div>
+  </article>
+  <article>
+    <div class="projinfo">
+      <h3>Timeline</h3>
+      <p>Mai-July 2019<br>(3 month Project)</p>
+    </div>
+  </article>
+  <article>
+    <div class="projinfo">
+      <h3>Team</h3>
+      <p>Developers of Bosch <br> Software Innovations
+    </div>
+  </article>
+  <article>
+    <div class="projinfo">
+      <h3>Tools</h3>
+      <p>Figma, CSS</p>
+    </div>
+  </article>
+</section>
+</div>
 
 
   <!-- Grauer Task Kasten  -->
@@ -122,6 +139,12 @@
     </nav>
   </div>
 
+   <!-- Bildmodal -->
+   <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
   <!-- Researchkapitel -->
   <div id="1"></div>
   <div class="chapter">
@@ -131,26 +154,27 @@
     </p>
   </div>
   <div class="contentProjects">
-    <div class="col-sm-12 mittelbild">
-      <img src="img/bosch/management.JPG" alt="management">
+      <div class="col-sm-12">
+      <div<div class="crop" id="management"></div>
     </div>
-    <div class="col-sm-12 abstandoben">
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12 abstandobennormal">
       <p>
         To get a first impression of the current interface, a UX analyze was made. With this, the pain points and
         inefficient flows were recognized. Interviews with the developers and contact persons of the farmers enabled
         important user stories and led to the main interactions which have to be made in this interface.
       </p>
     </div>
-    <div class="col-sm-12 abstandoben">
-      <div class="crop">
-        <img src="img/bosch/research.jpg" alt="research">
+  </div>
+  <div class="contentProjects abstandobennormal">
+    <div class="col-sm-12">
+      <div class="crop" id="boschresearch">
       </div>
-      <div class="crop">
-        <img src="img/bosch/research2.jpg" alt="research2">
+      <div class="crop" id="boschresearch2">
       </div>
     </div>
   </div>
-
 
   <!-- Kapitelübersicht -->
   <div id="2"></div>
@@ -161,12 +185,12 @@
     </p>
   </div>
   <div class="contentProjects">
-    <div class="col-sm-12 mittelbild">
+    <div class="col-sm-12">
         <video src="img/bosch/V2.mov" autobuffer controls>
       </div>
     <div class="col-sm-12 abstandobennormal">
       <p>
-        The above and following videos show the iterations of the interface up to the final version.
+        The above and following videos show the iterations of the interface up to the final.
       </p>
     </div>
     <div class="col-sm-12 mittelbild abstandobennormal">
@@ -200,9 +224,10 @@
       <span class="chaptername boschborder">Explorer UI</span>
     </p>
   </div>
+</div>
   <div class="contentProjects">
-    <div class="col-sm-12 mittelbild">
-      <img src="img/bosch/E1.png" alt="V2">
+    <div class="col-sm-12">
+      <div class="crop" id="E1"></div>
     </div>
     <div class="col-sm-12 abstandobennormal">
       <p>
@@ -210,15 +235,16 @@
         one needs action and where alarms are triggered.
       </p>
     </div>
-    <div class="col-sm-12 mittelbild abstandobennormal">
-      <img src="img/bosch/E2.png" alt="V2">
+    <div class="col-sm-12 abstandobennormal">
+      <div class="crop" id="E2"></div>
     </div>
+
     <div class="col-sm-12 abstandobennormal">
       <p>
         For a more stable and easier implementation, a discussion with the developers let to this interface.
       </p>
     </div>
-    <div class="col-sm-12 mittelbild abstandobennormal">
+    <div class="col-sm-12 abstandobennormal">
       <video src="img/bosch/E3.mov" autobuffer controls>
     </div>
     <div class="col-sm-12 abstandobennormal">
@@ -259,47 +285,56 @@
 
 
 
-  <!-- further projects -->
-  <div class="more clearfix">
-    <div id="projects"></div>
-    <div class="columns-container">
-      <section class="columns clearfix">
-        <a href="ux.html">
-          <article>
-            <div class="proj mainpagekastenschrift ux">
-              <div class="overlayproj uxhover">
-                <h2>Connectivity for local crafts</h2>
-                <h3>Demonstration model for optometrists</h3>
-              </div>
+ <!-- further projects -->
+ <div class="columns-container further">
+  <h3> <span>Further Projects</span></h3>
+  <section class="columns clearfix">
+   <a href="cart.html">
+        <article>
+          <div class="proj mainpagekastenschrift projbackground cart">
+            <div  class="overlayproj carthover">
             </div>
-          </article>
-        </a>
-        <a href="letztewerbung.html">
-            <article>
-              <div class="proj mainpagekastenschrift letztwerbung">
-                <div class="overlayproj letztwerbunghover">
-                  <h2>Letzte Werbung</h2>
-                  <h3>Prohibition of advertisement trash</h3>
-                </div>
-              </div>
-            </article>
-          </a>
-      </section>
-    </div>
-    <div class="credit">
-      <div class="pos-center">
-        <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
-        <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
-        <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
-            alt="Linkedin"></a>
+            <h2> <span>... enable wheelchair user to shop more independent?</span></h2>
+            <!-- <h3><span>Smart Shopping Helper</span></h3> -->
+            <h4><span>#CaseStudy #DesignThinking #Arduino</span></h4>
+          </div>
+        </article>
+      </a>
+  <a href="ux.html">
+    <section>
+      <div class="proj mainpagekastenschrift projbackground ux">
+        <div  class="overlayproj uxhover">
+        </div>
+        <h2> <span>... support the customers to find their perfect glasses?</span></h2>
+        <!-- <h3><span>Smart Shopping Helper</span></h3> -->
+        <h4><span>#CaseStudy #UserResearch #Arduino</span></h4>
       </div>
-      <div class="pos-center">
-        <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
-      </div>
-    </div>
-  </div>
+    </section>
+  </a>
+  </section>
+</div>
+
+<!-- credit -->
+<div class="credit clearfix">
+<div class="pos-center">
+  <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+  <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+  <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+      alt="Linkedin"></a>
+</div>
+<div class="pos-center">
+  <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
+</div>
+</div>
 
 
+<script>
+document.getElementById('boschresearch').addEventListener("mousedown", modal);
+document.getElementById('boschresearch2').addEventListener("mousedown", modal);
+document.getElementById('management').addEventListener("mousedown", modal);
+document.getElementById('E1').addEventListener("mousedown", modal);
+document.getElementById('E2').addEventListener("mousedown", modal);
+</script>
 
 
   <!-- JQuery muss in eine extra Script Datei! :)  -->

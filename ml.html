@@ -3,7 +3,7 @@
 
 <head>
   <title>Valerie Grappendorf | Machine Learning</title>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
   <!-- Schritft einbinden -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
@@ -21,7 +21,7 @@
   <!-- Header     -->
   <div class="main-header-container" id="myHeader">
     <!-- Allgmeine Box des Headers -->
-    <header class="main-header clearfix">
+    <header class="main-header">
       <!-- Definition der Inhalte des Headers -->
       <div class="logo">
         <ul>
@@ -32,27 +32,26 @@
       <div class="bignav">
         <nav>
           <ul>
-            <li><a href="index.html#work">Work</a></li>
             <li><a href="method.html">Toolset</a></li>
             <li><a href="aboutme.html">About</a></li>
             <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
           </ul>
         </nav>
       </div>
-      <!-- Navbar für mobile Geräte -->
-      <div class="navphone">
-        <div id="myNav" class="overlay">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="overlay-content">
-            <a href="index.html#work">Work</a>
-            <a href="aboutme.html">About</a>
-            <a href="img/CV.pdf" target="_blank">CV</a>
-          </div>
+     <!-- Navbar für mobile Geräte -->
+     <div class="navphone">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="method.html">Toolset</a>
+          <a href="aboutme.html">About</a>
+          <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
         </div>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
       </div>
-    </header>
-  </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+  </header>
+</div>
 
 
   <!-- Projektintro -->
@@ -65,38 +64,58 @@
   <div class="intropic mlintro">
   </div>
 
-  <!-- Einführungsinfos -->
-  <!-- Spaltenansicht -->
-  <div class="projinfo-container">
-    <section class="projcolumns clearfix">
-      <article>
-        <div class="projinfo">
-          <h3>Role</h3>
-          <p>Ideation,<br>coding/prototyping</p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Timeline</h3>
-          <p>June 2019<br>(3 weeks Project)<br>4th Semester</p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Team</h3>
-          <p> <a href="https://ethanguenther.de/index.html">Ethan Günther</a>
-            </p>
-        </div>
-      </article>
-      <article>
-        <div class="projinfo">
-          <h3>Tools</h3>
-          <p>Javascript, p5.js,<br>Wekinator, Arduino<br>Websocket, Node.js<br>Processing, OSC</p>
-        </div>
-      </article>
-    </section>
-  </div>
 
+<!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projcolumns2 col-sm-12">
+    <div class="projinfo2">
+      <h3>Role</h3>
+          <p>Ideation,<br>coding/prototyping</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Timeline</h3>
+      <p>June 2019<br>(3 weeks Project)<br>4th Semester</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Team</h3>
+      <p> <a href="https://ethanguenther.de/index.html">Ethan Günther</a>
+        </p>
+    </div>
+    <div class="projinfo3">
+      <h3>Tools</h3>
+      <p>Javascript, p5.js,<br>Wekinator, Arduino<br>Websocket, Node.js<br>Processing, OSC</p>
+    </div>
+</div>
+<!-- Mobil -->
+<div class="projinfo-container">
+<section class="projcolumns clearfix">
+  <article>
+    <div class="projinfo">
+      <h3>Role</h3>
+      <p>Ideation,<br>coding/prototyping</p>
+    </div>
+  </article>
+  <article>
+    <div class="projinfo">
+      <h3>Timeline</h3>
+      <p>June 2019<br>(3 weeks Project)<br>4th Semester</p>
+    </div>
+  </article>
+  <article>
+    <div class="projinfo">
+      <h3>Team</h3>
+      <p> <a href="https://ethanguenther.de/index.html">Ethan Günther</a>
+        </p>
+    </div>
+  </article>
+  <article>
+    <div class="projinfo">
+      <h3>Tools</h3>
+      <p>Javascript, p5.js,<br>Wekinator, Arduino<br>Websocket, Node.js<br>Processing, OSC</p>
+    </div>
+  </article>
+</section>
+</div>
 
   <!-- Grauer Task Kasten  -->
   <div class="taskcontainer clearfix">
@@ -115,6 +134,12 @@
       </nav>
     </div>
 
+     <!-- Bildmodal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
   <!-- Researchkapitel -->
   <div id="1"></div>
   <div class="chapter">
@@ -124,11 +149,15 @@
     </p>
   </div>
   <div class="contentProjects">
-    <div class="col-sm-12 mittelbild">
-      <img id="researchpic" src="img/ml/1.png" alt="Lucie">
-      <img id="researchpic" src="img/ml/2.png" alt="Lucie">
-    </div>
+    <div class="col-sm-12">
+    <div<div class="crop" id="ml1"></div>
   </div>
+</div>
+<div class="contentProjects">
+  <div class="col-sm-12">
+  <div<div class="crop" id="ml2"></div>
+</div>
+</div>
   <div class="contentProjects description">
     <div class="col-sm-12">
       <h3>Speech Recognition</h3>
@@ -152,15 +181,13 @@
     </p>
   </div>
   <div class="contentProjects">
-      <div class="col-sm-12">
-        <div class="crop">
-          <img  src="img/ml/p1.JPG" alt="p1">
-        </div>
-        <div class="crop">
-          <img  src="img/ml/p2.JPG" alt="p2">
-        </div>
+    <div class="col-sm-12">
+      <div class="crop" id="p1">
+      </div>
+      <div class="crop" id="p2">
       </div>
     </div>
+  </div>
     <div class="result">
         <div class="resulttext">
           <p>Find the code on Github to rebuild it yourself and more technical information!</p>
@@ -178,49 +205,55 @@
 
 
 
-  <!-- further projects -->
-  <div class="more clearfix">
-    <div id="projects"></div>
-    <div class="columns-container">
-      <section class="columns clearfix">
-          <a href="lucie.html">
-              <article>
-                <div class="proj mainpagekastenschrift lucie">
-                  <div class="overlayproj luciehover">
-                    <h2>Lucies Diamond</h2>
-                    <h3>An interactive mirror experience</h3>
-                    <!-- <h4>Focus on technical implementation & prototyping</h4> -->
-                  </div>
-                </div>
-              </article>
-            </a>
-        <a href="cart.html">
+   <!-- further projects -->
+   <div class="columns-container further">
+    <h3> <span>Further Projects</span></h3>
+    <section class="columns clearfix">
+     <a href="cart.html">
           <article>
-            <div class="proj mainpagekastenschrift cart">
-              <div class="overlayproj carthover">
-                <h2>Smart Shopping Cart</h2>
-                <h3>Independence for wheelchair users</h3>
+            <div class="proj mainpagekastenschrift projbackground cart">
+              <div  class="overlayproj carthover">
               </div>
+              <h2> <span>... enable wheelchair user to shop more independent?</span></h2>
+              <!-- <h3><span>Smart Shopping Helper</span></h3> -->
+              <h4><span>#CaseStudy #DesignThinking #Arduino</span></h4>
             </div>
           </article>
         </a>
+    <a href="ux.html">
+      <section>
+        <div class="proj mainpagekastenschrift projbackground ux">
+          <div  class="overlayproj uxhover">
+          </div>
+          <h2> <span>... support the customers to find their perfect glasses?</span></h2>
+          <!-- <h3><span>Smart Shopping Helper</span></h3> -->
+          <h4><span>#CaseStudy #UserResearch #Arduino</span></h4>
+        </div>
       </section>
-    </div>
-    <div class="credit">
-      <div class="pos-center">
-        <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
-        <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
-        <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
-            alt="Linkedin"></a>
-      </div>
-      <div class="pos-center">
-        <p>&copy;Valerie Grappendorf 2019<a href="impressum.html"> Impressum</a></p>
-      </div>
-    </div>
+    </a>
+    </section>
   </div>
+  
+  <!-- credit -->
+<div class="credit clearfix">
+  <div class="pos-center">
+    <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+    <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+    <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+        alt="Linkedin"></a>
+  </div>
+  <div class="pos-center">
+    <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
+  </div>
+</div>
 
 
-
+<script>
+document.getElementById('p1').addEventListener("mousedown", modal);
+document.getElementById('p2').addEventListener("mousedown", modal);
+document.getElementById('ml1').addEventListener("mousedown", modal);
+document.getElementById('ml2').addEventListener("mousedown", modal);
+</script>
 
  <!-- JQuery muss in eine extra Script Datei! :)  -->
   <!-- JQuery -->
