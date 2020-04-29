@@ -163,6 +163,13 @@ a {
     background-image: url("../img/ux/ideation.png");
     width: 100%;
 }
+#post1 {
+    background-image: url("../img/ux/1.png");
+}
+#post2 {
+    background-image: url("../img/ux/2.JPG");
+}
+
 
 /* Cart */
 #TestObi{
@@ -178,15 +185,21 @@ a {
     background-image: url("../img/cart/Crazy8.png");
 }
 #Konzept2 {
-    background-image: url("../img/cart/Konzept2.png");
+    background-image: url("../img/cart/HMW.png");
 }
 #cart {
     background-image: url("../img/cart/cart.jpg");
 }
+#Low1 {
+    background-image: url("../img/cart/Low1.png");
+}
+#high {
+    background-image: url("../img/cart/High.png");
+}
 #Low2 {
     background-image: url("../img/cart/Low2.png");
 }
-#Mockup {
+#Mockup2 {
     background-image: url("../img/cart/Mockup.png");
     width: 100%;
 }
