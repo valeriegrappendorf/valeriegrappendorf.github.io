@@ -236,7 +236,7 @@ a {
     height: 300px;
 }
 #health {
-    background-image: url("../img/aboutme/health.jpeg");
+    background-image: url("../img/aboutme/health.jpg");
     height: 300px;
 }
 #energy {
@@ -360,7 +360,24 @@ a {
     width: 100%;
     background-size: contain;
 }
-
+/* gtg */
+#accident {
+    background-image: url("../img/gtg/accident.JPG");
+}
+#streetscooters {
+    background-image: url("../img/gtg/streetscooters.JPG");
+}
+#gtgflow {
+    background-image: url("../img/gtg/gtgflow.png");
+    width: 100%;
+    background-size: contain;
+}
+#gtgoutlook {
+    background-image: url("../img/gtg/gtgoutlook.jpg");
+}
+#gtgwin {
+    background-image: url("../img/gtg/gtgwin.jpg");
+}
 
 /* The Modal (background) */
 .modal {
@@ -963,14 +980,8 @@ background-size: cover;
 }
 
 .boschintro {
-    margin-top: 5%;
-    position: relative;
-    height: calc((100vw - 20px) * 0.32);
-    width: 100%;
-    background: white url(../img/bosch/feld.jpg) no-repeat fixed 50%; /*durch fixed bewegt sich Bild nicht mit*/
-/*  background: transparent url(../img/layout/laptop.png) center center  no-repeat;*/
-    background-size: cover;
-    background-size: 100%;
+    background: #005898 url(../img/bosch/tractor.png) center no-repeat;
+    background-size: 20%;
 }
 .boschborder {
     border-bottom-color: #005898;
@@ -991,6 +1002,14 @@ background-size: cover;
 .mlborder {
     border-bottom-color: #478C6B;
 }
+.gtgintro {
+    background: #22D727 url(../img/gtg/scooter.png) center no-repeat;
+    background-size: 20%;
+
+}
+.gtgborder {
+    border-bottom-color: #22D727;
+}
 
 .lwintro {
     background: #CF0132 url(../img/letztewerbung/werbung3.png) center no-repeat;
@@ -1002,7 +1021,7 @@ background-size: cover;
 
 .cartintro {
     background: #A180FF url(../img/cart/intro.png) center no-repeat;
-    background-size: contain;
+    background-size: 20%;
 }
 .cartborder {
     border-bottom-color: #A180FF;
@@ -1010,7 +1029,7 @@ background-size: cover;
 
 .uxintro {
     background: #3193FE url(../img/ux/ok.png) center no-repeat;
-    background-size: 50%;
+    background-size: 20%;
 }
 .uxborder {
     border-bottom-color: #3193FE;
@@ -1031,7 +1050,6 @@ background-size: cover;
 .methodborder {
     border-bottom-color: #75B4FE;
 }
-
 .botintro {
     background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
     background-size: contain;

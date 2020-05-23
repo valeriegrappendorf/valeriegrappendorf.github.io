@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Valerie Grappendorf | Good To Go</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script>
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header     -->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="method.html">Toolset</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für mobile Geräte -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="method.html">Toolset</a>
+            <a href="aboutme.html">About</a>
+            <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- Projektintro -->
+  <div class="intro">
+    <h1>Good To Go</h1>
+    <p>Towards responsible mobility in cities</p>
+  </div>
+
+  <!-- Bildkasten -->
+  <div class="intropic gtgintro">
+  </div>
+
+
+  <!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projcolumns2 col-sm-12">
+    <div class="projinfo2">
+      <h3>Role</h3>
+      <p>Ideation,<br>prototyping, <br>wireframes</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Timeline</h3>
+      <p>Oktober 2019<br>(3 days project)<br>Nordic Health Hackathon</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Team</h3>
+      <p>Johannes Reiche, <br> Villads Stokbro, <br>Sofus Steenberger
+      </p>
+    </div>
+    <div class="projinfo3">
+      <h3>Tools</h3>
+      <p>Figma, <br> Keynote, <br> AI studies</p>
+    </div>
+  </div>
+  <!-- Mobil -->
+  <div class="projinfo-container">
+    <section class="projcolumns clearfix">
+      <article>
+        <div class="projinfo">
+          <h3>Role</h3>
+          <p>Ideation,<br>prototyping, <br>wireframes</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Timeline</h3>
+          <p>Oktober 2019<br>(3 days project)<br>Nordic Health Hackathon</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Team</h3>
+          <p>Johannes Reiche, <br> Villads Stokbro, <br>Sofus Steenberger
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Tools</h3>
+          <p>Figma, <br> Keynote, <br> AI studies</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <!-- Grauer Task Kasten  -->
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <p>E-scooters are an increasing trend in shared transportation in the big urban areas of the
+        Western part of the world. In Copenhagen, 6 operators and approximately 3500 scooters have
+        already moved into operation since January 2019. As the popularity of those e-scooters in larger cities is
+        increasing,
+        so is the rate of accidents they cause. During the Nordic Health Hackathon my team and I developed a solution to
+        contriubute to a future of responsible mobility. </p>
+    </div>
+  </div>
+
+  <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a id="uxnav1" href="#1">Problem</a></li>
+        <li><a id="uxnav2" href="#2">Solution</a></li>
+        <li><a id="uxnav3" href="#3">Outlook</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Bildmodal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
+  <!-- Researchkapitel -->
+  <div id="1"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">01</span>
+      <span class="chaptername gtgborder">Problem</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="streetscooters">
+      </div>
+      <div class="crop" id="accident">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Status Quo</h3>
+      <p>
+        A third of the accidents caused while riding e-sccoters are estimated to be due to drunk driving,
+        and the operators are searching for ways to solve this problem.
+        Riding an e-scooter while being drunk is as illegal as driving in a car while being drunk
+        but nevertheless, it is estimated that a third of the
+        serious accidents are due to people driving while being drunk.
+        <br>
+        To combat this issue, some operators shut down the service of the e-scooters by night,
+        either by collecting them to charge or by remotely shutting down the system. Collecting
+        the e-scooters represent unwanted costs and the long periods of inactivity also results
+        in sunk costs for the operators. It's also a disadvantage for the sober customers who
+        wants to use the service at night.
+
+      </p>
+      <h3>Personal Experience</h3>
+      <p>
+        Unfortunately, I have to admit that I am also guilty. After an evening out with my colleagues
+        I thought I would be still perfectly able to take a scooter and woke up the next day in the hospital
+        with brokes teeth and itches on my chin.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="2"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">02</span>
+      <span class="chaptername gtgborder">Solution</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="gtgflow">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Our solution</h3>
+      <p>
+        Good to go delivers an AI-based software plug-in for the e-scooter operators’
+        mobile applications. With our software in operation, in certain high risk periods
+        of time such as Friday and Saturday nights, the e-scooter users will have to pass a
+        drunk test to access the booking system of the operator. The test requires the users to
+        record 5 seconds of audio and video, where they speak a statement out loud. The software
+        evaluates the voice and the video of the face to determine if the user is drunk.
+      </p>
+      <h3>Technology</h3>
+      <p>
+        In a <a href="https://arxiv.org/pdf/1805.10030.pdf" target="_blank">paper</a> proposed by Metha et al. 2019,
+        known and open-source deep learning models trained on
+        Youtube-videos can detect drunkenness through a combination of audio and video with an accuracy
+        of almost 90 %. Thus, we aim to train the model on open-source data and then tune it with test data
+        gathered from real-life situations to make the model fit our case.
+      </p>
+      <h3>Challenges</h3>
+      <p>
+        The implementation of Good to go presents a few dilemmas that arise in the core of the solution,
+        that is, when a computer has to make the decision between drunk or sober. Depending on the stability
+        of the model, the possible actions for the user after a finished test have to be tuned accordingly.
+        For a more in-depth information on which scenarios unfold with our software solution and how we plan to
+        tackle them, check out our blog-post. <br> <br>
+      </p>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <video src="img/gtg/GoodToGo.m4v" autobuffer controls>
+    </div>
+  </div>
+
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">03</span>
+      <span class="chaptername gtgborder">Outlook</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="gtgwin">
+      </div>
+      <div class="crop" id="gtgoutlook">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Business Model</h3>
+      <p>
+        We offer e-scooter suppliers an integratable software to eliminate both real and sunk
+        cost associated with accidents and the actions currently taken to prevent them. Furthermore,
+        a better public image is valuable and crucial for the continuous growth of the e-scooter concept.
+        This justifies our revenues, which are generated by a monthly license payment for the software
+        including support and continuous development.
+      </p>
+      <h3>Five unique value propositions</h3>
+      <p>
+        1. Drastically reducing the number of accidents on e-scooters related to drunkenness <br>
+        2. Contributing to a better public image of e-scooter operators <br>
+        3. Helping e-scooter operators and municipalities to take a stand against drunk driving. <br>
+        4. Creating awareness on the topic of drunk driving by giving it a physical presence on the streets. <br>
+        5. Making the streets safer for everyone.
+      </p>
+      <h3>Next Steps</h3>
+      <p>
+        With this solution we won the 3rd price of the Nordic Health Hackathon 2019.
+        The next step is to develop and test the software in collaboration with Vejle Kommune
+        and their e-scooter supplier, Voi. Jette Vindum is in charge of the deployment of e-scooters
+        in the city of Vejle, and has agreed to make Vejle Kommune a testing platform for our solution.
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <!-- Sonst funktioniert jquery scroll nicht -->
+  <div id="4"></div>
+  <div id="5"></div>
+  <div id="6"></div>
+
+
+
+  <!-- further projects -->
+  <div class="columns-container further">
+    <h3> <span>Further Projects</span></h3>
+    <section class="columns clearfix">
+      <a href="cart.html">
+        <article>
+          <div class="proj mainpagekastenschrift projbackground cart">
+            <div class="overlayproj carthover">
+            </div>
+            <h2> <span>... enable wheelchair user to shop more independent?</span></h2>
+            <!-- <h3><span>Smart Shopping Helper</span></h3> -->
+            <h4><span>#CaseStudy #DesignThinking #Arduino</span></h4>
+          </div>
+        </article>
+      </a>
+      <a href="ux.html">
+        <section>
+          <div class="proj mainpagekastenschrift projbackground ux">
+            <div class="overlayproj uxhover">
+            </div>
+            <h2> <span>... support the customers to find their perfect glasses?</span></h2>
+            <!-- <h3><span>Smart Shopping Helper</span></h3> -->
+            <h4><span>#CaseStudy #UserResearch #Arduino</span></h4>
+          </div>
+        </section>
+      </a>
+    </section>
+  </div>
+
+  <!-- credit -->
+  <div class="credit clearfix">
+    <div class="pos-center">
+      <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+      <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+      <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+          alt="Linkedin"></a>
+    </div>
+    <div class="pos-center">
+      <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
+    </div>
+  </div>
+
+
+  <script>
+    document.getElementById('accident').addEventListener("mousedown", modal);
+    document.getElementById('streetscooters').addEventListener("mousedown", modal);
+    document.getElementById('gtgoutlook').addEventListener("mousedown", modal);
+    document.getElementById('gtgflow').addEventListener("mousedown", modal);
+    document.getElementById('gtgwin').addEventListener("mousedown", modal);
+  </script>
+
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+</body>
+
+</html>
