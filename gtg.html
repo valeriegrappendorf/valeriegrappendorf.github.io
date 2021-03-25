@@ -56,15 +56,17 @@
   </div>
 
 
+
+
+
   <!-- Projektintro -->
   <div class="intro">
     <h1>Good To Go</h1>
     <p>Towards responsible mobility in cities</p>
   </div>
 
-  <!-- Bildkasten -->
-  <div class="intropic gtgintro">
-  </div>
+
+  <div id="introgtg"></div>
 
 
   <!-- Einführungsinfos -->
@@ -131,7 +133,7 @@
     </div>
   </div>
 
-  <div class="projnav">
+  <!-- <div class="projnav">
     <nav>
       <ul>
         <h3>Overview</h3>
@@ -140,7 +142,7 @@
         <li><a id="uxnav3" href="#3">Outlook</a></li>
       </ul>
     </nav>
-  </div>
+  </div> -->
 
   <!-- Bildmodal -->
   <div id="myModal" class="modal">
@@ -152,8 +154,7 @@
   <div id="1"></div>
   <div class="chapter">
     <p>
-      <span id="chapternumber">01</span>
-      <span class="chaptername gtgborder">Problem</span>
+      <span id="chapternumber">Problem</span>
     </p>
   </div>
   <div class="contentProjects">
@@ -195,8 +196,7 @@
   <div id="2"></div>
   <div class="chapter">
     <p>
-      <span id="chapternumber">02</span>
-      <span class="chaptername gtgborder">Solution</span>
+      <span id="chapternumber">Solution</span>
     </p>
   </div>
   <div class="contentProjects">
@@ -235,16 +235,19 @@
     </div>
   </div>
   <div class="contentProjects description">
-    <div class="col-sm-12">
-      <video src="img/gtg/GoodToGo.m4v" autobuffer controls>
+    <!-- <div id="nofigmaheader"></div> -->
+    <div id="figmavideoframe">
+      <div class="responsive-video">
+        <iframe src="https://player.vimeo.com/video/522310107" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+          allowFullScreen></iframe>
+      </div>
     </div>
-  </div>
+    </div>
 
   <div id="3"></div>
   <div class="chapter">
     <p>
-      <span id="chapternumber">03</span>
-      <span class="chaptername gtgborder">Outlook</span>
+      <span id="chapternumber">Outlook</span>
     </p>
   </div>
   <div class="contentProjects">
@@ -267,10 +270,10 @@
       </p>
       <h3>Five unique value propositions</h3>
       <p>
-        1. Drastically reducing the number of accidents on e-scooters related to drunkenness <br>
+        1. Reducing the number of accidents on e-scooters related to drunkenness <br>
         2. Contributing to a better public image of e-scooter operators <br>
-        3. Helping e-scooter operators and municipalities to take a stand against drunk driving. <br>
-        4. Creating awareness on the topic of drunk driving by giving it a physical presence on the streets. <br>
+        3. Helping operators and municipalities to take a stand against drunk driving. <br>
+        4. Creating awareness on the topic of drunk driving. <br>
         5. Making the streets safer for everyone.
       </p>
       <h3>Next Steps</h3>
@@ -303,7 +306,6 @@
             <div class="overlayproj carthover">
             </div>
             <h2> <span>... enable wheelchair user to shop more independent?</span></h2>
-            <!-- <h3><span>Smart Shopping Helper</span></h3> -->
             <h4><span>#CaseStudy #DesignThinking #Arduino</span></h4>
           </div>
         </article>
@@ -314,7 +316,6 @@
             <div class="overlayproj uxhover">
             </div>
             <h2> <span>... support the customers to find their perfect glasses?</span></h2>
-            <!-- <h3><span>Smart Shopping Helper</span></h3> -->
             <h4><span>#CaseStudy #UserResearch #Arduino</span></h4>
           </div>
         </section>

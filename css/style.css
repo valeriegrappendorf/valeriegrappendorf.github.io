@@ -85,7 +85,7 @@ body {
 
 
 h1 {
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 500;
     margin-top: 5%;
     margin-bottom: 0;
@@ -97,15 +97,15 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 800;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 350;
-    line-height: 1.8;
+    line-height: 2.1;
     margin-top: 0;
 }
 
@@ -117,8 +117,57 @@ a {
 .abstandobennormal {
     margin-top: 4rem;
 }
+.abstandobengroß {
+    margin-top: 10rem;
+}
 
 
+
+/*Introbild*/
+#introbild {
+    margin-top: 50px;
+    position: relative;
+    stroke: black;
+    height: 80vh;
+    opacity: 1;
+    background-image: url("../img/home/scooter.png"); 
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+#introcart {
+    margin-top: 50px;
+    position: relative;
+    stroke: black;
+    height: 60vh;
+    opacity: 1;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/home/smart.png"); 
+
+}
+#introgtg {
+    margin-top: 50px;
+    position: relative;
+    stroke: black;
+    height: 80vh;
+    opacity: 1;
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/home/scooter.png"); 
+    background-attachment: fixed;
+}
+
+
+
+
+
+#Hello {
+    width: 200px;
+    float: right;
+}
 
 /* UX Opto VR */
 #uxresearchpic {
@@ -136,17 +185,7 @@ a {
 #protvr{
     background-image: url("../img/ux/protovr.png");
 }
-#protovr{
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    width: auto; 
-    height: 100%;
-    z-index: -1000; 
-    overflow: hidden;
-}
+
 #protoersteideen{
     background-image: url("../img/ux/protoersteideen.png");
 }
@@ -227,6 +266,9 @@ a {
     z-index: -1000; 
     overflow: hidden;
 }
+#testpng {
+    background-image: url("../img/method/Test/test1.png");
+}
 #test2 {
     background-image: url("../img/method/Test/test2.png");
 }
@@ -243,11 +285,24 @@ a {
     background-image: url("../img/aboutme/energy.png");
     height: 300px;
 }
+#port {
+    margin-top: 150px;
+    background-image: url("../img/aboutme/port.png");
+    background-size: contain;
+    height: 400px; 
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
 #blockchain {
     background-image: url("../img/aboutme/blockchain.png");
-    background-size: contain;
     height: 300px;
 }
+#dyp {
+    background-image: url("../img/aboutme/dyp.JPG");
+    height: 300px;
+}
+
+
 .vimeo-wrapper {
     position: absolute;
     width: 100%;
@@ -263,11 +318,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
  }
- .MeVideo {
-    margin-top: 50px;
-    position: relative;
-    height: 790px;
-}
+
 /* Bosch */
 #boschresearch{
     background-image: url("../img/bosch/research.jpg");
@@ -424,11 +475,7 @@ a {
 
 
 
-.videokasten{
-    float: left;
-    width: 50%;
-    height: 400px; 
-}
+
 .crop {
     cursor: pointer;
     float: left;
@@ -451,10 +498,7 @@ a {
     padding-left: 60px;
 }
 
-.col-sm-12 video {
-    width: 80%;
-    margin: 0 auto;
-}
+
 
 .col-sm-12 {
     overflow: hidden;
@@ -470,7 +514,7 @@ a {
 }
 
 .contentProjects span {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .contentProjects img,
@@ -493,7 +537,7 @@ a {
 }
 
 #bold {
-    font-weight: 500;
+    font-weight: 600;
     color: black;
 }
 .quote p {
@@ -572,7 +616,7 @@ a {
 
 .main-header nav ul a {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 350;
     /*Dicke der Schrift*/
     display: block;
     color: grey;
@@ -641,38 +685,8 @@ a {
     background-position: center;
 }
 
-/*Introkasten*/
-.intro-container2 {
-    position: relative;
-    background: white;
-    margin-top: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
 
-}
-.intro-container3 {
-    background: transparent;
-}
-
-.landing2 {
-    margin-top: 100px;
-    margin-bottom: 200px;
-    border-radius: 10px;
-    background-color: transparent;
-    background-image: none;
-}
-#background2 {
-    position: relative;
-    stroke: black;
-    height: 100vh;
-    opacity: 1;
-    background-image: url("../img/home/scooter.png"); 
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-}
-
-#rect2 img {
+/* #rect2 img {
     position: absolute;
     width: 60%;
     height: auto;
@@ -690,30 +704,10 @@ a {
     left: 60px;
     padding: 5px 10px 5px 5px;
     /* border-radius: 10px; */
-}
+/* }
 #rect2 a:hover {
     color: #0075FF; 
-}
-
-
-#hello {
-    color: black; 
-    padding-left: 10%;
-    padding-right: 35%;
-    padding-top: 80px;
-    font-size: 120px;
-    font-weight: 450;
-}
-
-#hello span {
-    color: black; 
-    display: block;
-    margin-top: -30px;
-    font-size: 30px;
-    font-weight: 100;
-    line-height: 1.2;
-}
-
+} */ 
 
 
 /*Projektansicht*/
@@ -725,9 +719,7 @@ a {
     padding-right: 60px;
     /* Hier 2 weniger, weil bei columns article nochmal right +2% */
 }
-.further {
-    margin-top: 150px;
-}
+
 
 .columns-container a {
     stroke: solid black 2px;
@@ -785,17 +777,39 @@ height: 150px;
 .columns-container h3{
     color: black;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 30px;
 }
+
+
 .mainpagekastenschrift h2 {
     margin-top: 15%;
 }
 
 .mainpagekastenschrift h4 {
+    margin-top: 5%;
     font-size: 20px;
     font-weight: 500;
     color: black;
 }
+
+
+.introduction {
+    margin-top: 300px;
+    margin-bottom: 300px;
+      }
+    
+    .introduction h3 span{
+        background-image: linear-gradient(transparent 0%, transparent 65%, yellow 60%, yellow 90%, transparent 90%, transparent);
+        display: inline;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 1.5;
+    }
+    .introduction h3{
+        font-weight: 700;
+        font-size: 45px;
+    }
+
 
 
 /* Speziell für Projekte */
@@ -834,21 +848,21 @@ height: 150px;
 
 /*Für einzelne Projekte*/
 .gtghover {
-    background-color: #0A192D;
-    background:linear-gradient(0deg, rgba(34, 220, 39, 0.2), rgba(34, 220, 39,  0.2)), url(../img/home/scooter.png) center no-repeat;
+    background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/scooter.png) center no-repeat;
     background-size: cover;
 }
 .gtg:hover  h2 span{
-    background: rgba(34, 220,  39);
+    background: rgba(255, 255,  0);
+    opacity: 80%;
 }
 
 .luciehover {
-    background-color: #0A192D;
-    background:linear-gradient(0deg, rgba(10, 25, 45, 0.6), rgba(10, 25, 45,  0.6)), url(../img/home/lucie.png) center no-repeat;
+    background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/lucie.png) center no-repeat;
     background-size: cover;
 }
 .lucie:hover  h2 span{
-    background: rgba(79, 114, 158,  1)
+    background: rgba(255, 255,  0);
+    opacity: 80%;
 }
 
 .uxhover {
@@ -856,32 +870,36 @@ height: 150px;
     background-size: cover;
 }
 .ux:hover  h2 span{
-    background: rgba(49, 147, 254, 1)
+    background: rgba(255, 255,  0);
+    opacity: 80%;
 }
 
 .letztwerbunghover {
-    background:linear-gradient(0deg, rgba(414, 34, 77, 0.2), rgba(414, 34, 77, 0.2)), url(../img/home/post.png) center no-repeat;
+    background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/post.png) center no-repeat;
     background-size: cover;
 }
 .werbung:hover  h2 span{
-    background: rgba(414, 34, 77, 1)
+    background: rgba(255, 255,  0);
+    opacity: 80%;
 }
 
 .carthover {
-background:linear-gradient(0deg, rgba(190, 180, 255, 0.2), rgba(190, 180, 255, 0.2)), url(../img/home/smart.png) center no-repeat;
+background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/smart.png) center no-repeat;
 /* background: url(../img/home/smart.png) center no-repeat; */
 background-size: cover;
 }
 .cart:hover  h2 span{
-    background: rgba(190, 180, 255, 1);
+    background: rgba(255, 255,  0);
+    opacity: 80%;
 }
 
 .boschhover {
-    background:linear-gradient(0deg, rgba(0, 88, 152, 0.2), rgba(0, 88, 152, 0.2)), url(../img/home/bosch.png) center no-repeat;
+    background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/bosch.png) center no-repeat;
     background-size: cover;
 }
 .bosch:hover  h2 span{
-    background: rgba(4, 126, 215, 1)
+    background: rgba(255, 255,  0);
+    opacity: 80%;
 }
 
 
@@ -891,28 +909,21 @@ background-size: cover;
 /*Kapitelüberschrift*/
 .chapter {
     padding-left: 60px;
-    margin-top: 70px;
-    padding-bottom: 2%;
+    margin-top: 150px;
+    padding-bottom: 1%;
     vertical-align: baseline
-}
-.chapter1 {
-    margin-top: 0px;
 }
 
 #chapternumber {
     vertical-align: middle;
-    font-size: 45px;
-    font-weight: 600;
-    margin-right: 5px;
+    background-image: linear-gradient(transparent 0%, transparent 65%, yellow 60%, yellow 90%, transparent 90%, transparent);
+    display: inline;
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
 }
 
-.chaptername {
-    vertical-align: middle;
-    font-size: 30px;
-    font-weight: 600;
-    border-bottom: solid 3px;
-    border-bottom-color: #75B4FE;
-}
+
 
 
 
@@ -965,14 +976,20 @@ background-size: cover;
 }
 
 .intro h1 {
+    background-image: linear-gradient(transparent 0%, transparent 65%, yellow 60%, yellow 90%, transparent 90%, transparent);
+    display: inline;
     color: black;
     font-weight: 700;
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.intro p {
+    margin-top: 5px;
+    font-weight: 500;
 }
 
 /*intropic*/
-.intropic {
+/* .intropic {
     margin-top: 35px;
     position: relative;
     height: 400px; 
@@ -983,73 +1000,55 @@ background-size: cover;
     background: #005898 url(../img/bosch/tractor.png) center no-repeat;
     background-size: 20%;
 }
-.boschborder {
-    border-bottom-color: #005898;
-}
 
 .lucieintro {
     background: #101926 url(../img/lucie/lucie.png) center no-repeat;
     background-size: contain;
 }
-.lucieborder {
-    border-bottom-color: #101926;
-}
+
 
 .mlintro {
     background: #478C6B url(../img/ml/speak.png) center no-repeat;
     background-size: contain;
 }
-.mlborder {
-    border-bottom-color: #478C6B;
-}
+
 .gtgintro {
     background: #22D727 url(../img/gtg/scooter.png) center no-repeat;
     background-size: 20%;
 
 }
-.gtgborder {
-    border-bottom-color: #22D727;
-}
+
 
 .lwintro {
     background: #CF0132 url(../img/letztewerbung/werbung3.png) center no-repeat;
     background-size: contain;
 }
-.lwborder {
-    border-bottom-color: #CF0132;
-}
+
 
 .cartintro {
     background: #A180FF url(../img/cart/intro.png) center no-repeat;
     background-size: 20%;
 }
-.cartborder {
-    border-bottom-color: #A180FF;
-}
+
 
 .uxintro {
     background: #3193FE url(../img/ux/ok.png) center no-repeat;
     background-size: 20%;
 }
-.uxborder {
-    border-bottom-color: #3193FE;
-}
+
 
 .whattintro {
     background: #FDB056 url(../img/whatt/whatt.png) center no-repeat;
     background-size: contain;
 }
-.whattborder {
-    border-bottom-color: #FDB056;
-}
+
 
 .methodintro {
     background: #75B4FE url(../img/method/toolset.png) center no-repeat;
     background-size: 20%;
 }
-.methodborder {
-    border-bottom-color: #75B4FE;
-}
+
+
 .botintro {
     background: #0ACE82 url(../img/bot/bot.png) center no-repeat;
     background-size: contain;
@@ -1057,10 +1056,8 @@ background-size: cover;
 .botgit img {
     margin-top: 2%;
     width: 3%;
-}
-.botborder {
-    border-bottom-color: #0ACE82;
-}
+} */
+
 
 
 
@@ -1103,7 +1100,7 @@ background-size: cover;
     vertical-align: top;
     display: inline-block;
     text-align: left;
-    padding-right: calc((100vw - 300px) * 0.09);
+    padding-right: calc((100vw - 900px) * 0.06);
 }
 .projinfo3 {
     display: inline-block;
@@ -1237,23 +1234,22 @@ background-size: cover;
 /*ResultKasten*/
 .responsive-video iframe {
     position: absolute;
-    top: 0%;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
-    width: 93%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 60%;
     height: 100%;
 }
 
 .responsive-video {
     position: relative;
     height: 0;
-    padding-bottom: 40%;
+    padding-bottom: 35%;
     /* Default for 1600x900 videos 16:9 ratio*/
     overflow: hidden;
 }
 
 .resulttext {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1305,29 +1301,41 @@ background-size: cover;
 
 
 
+#halfvideo{
+    position: absolute;
+    top: 50%; 
+    left: 25%; 
+    -webkit-transform: translateX(0%) translateY(-50%);
+    transform: translateX(0%) translateY(-50%);
+    height: 100%;
+    z-index: -1000; 
+}
+
+.col-sm-12 video {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
 
 /* Mediaqueries */
 
 /*Veränderungen bei unterschiedlichen Screen Größen*/
 
+
 /*Großer Bildschirm (wie bei Bosch)*/
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1300px) {
 
     .main-header-container {
-        padding-left: 140px;
-        padding-right: 140px;
+        padding-left: 20vw;
+        padding-right: 20vw;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #hello {
-        padding-left: 20%;
-        padding-right: 40%;
-    }
-
 /*Projekte*/
 .intro {
-    margin-left: 140px;
+    margin-left: 20vw;
 }
     
 .col-sm-4,
@@ -1336,58 +1344,40 @@ background-size: cover;
 .col-sm-7,
 .col-sm-8,
 .col-sm-12 {
-    padding-right: 140px;
-    padding-left: 140px;
+    padding-right: 20vw;
+    padding-left: 20vw;
 }
 .columns-container {
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
 .chapter {
-    padding-left: 140px;
+    padding-left: 20vw;
 }
 .projnav {
-    padding: 4% 0% 25px 140px;
-}
-/* .catch p {
-    font-size: 30px;
-} */
+    padding: 4% 0% 25px 20vw;
 }
 
-
-/* Mittlerer Bildschirm */
-@media screen and (max-width: 1100px) {
-/*Rolle, Zeit, etc. Ansicht*/
-.projcolumns2  {
-    display:none;
-}
-.projinfo-container{
-    display: block;
-}
- .projcolumns article,
- .projcolumns section {
-    width: 35%;
+.further {
+    margin-top: 200px;
 }
 
-/* Fullscreen Bilder */
-#management,
-#E1,
-#E2,
-#ml1,
-#ml2,
-#lw12,
-#lw22,
-#lw32,
-#Mockup,
-#lucieresearch{
-    background-size: cover;
-}
-}
 
 
 
 /* Kleiner Bildschirm */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
+
+    .projcolumns2  {
+        display:none;
+    }
+    .projinfo-container{
+        display: block;
+    }
+     .projcolumns article,
+     .projcolumns section {
+        width: 35%;
+    } 
 
 
     /* Vorschau Projekte */
@@ -1400,22 +1390,6 @@ background-size: cover;
         padding-right: 2%;
         /* border-left: 1px solid #bfb6a8; */
     }
-
-    /* Index Bilderkasten */
-    #background2 {
-        height: 50vh;
-    }
-    
-/* Veränderung Videos wenn 2 videos oder Bilder nebeneinander  --> Funktionert nur wenn an erster Stell*/
-.videokasten{
-    float: left;
-    width: 100%;
-    height: 400px; 
-}
-   /* Singlevideo */
-   .col-sm-12 video {
-    width: 100%;
-}
 
 
   /*Veränderung der Navbar */
@@ -1528,39 +1502,15 @@ cursor:pointer;
 }
 
 
-/* Ipad */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-
-    #background2 {
-        height: 50vh;
-    }
-
-    /* Landing Page */
-    #rect1 {
-        display: none;
-    }
-}
-
 
 
 /* Handyansicht */
-@media only screen 
-    and (min-device-width: 300px) 
-    and (max-device-width: 767px) 
-    and (-webkit-device-pixel-ratio: 2) {
+@media screen and (max-width: 600px) {
 
  /*Rolle, Zeit, etc. Ansicht*/
  .projcolumns article,
  .projcolumns section {
     width: 50%;
-}
-
-#hello {
-    padding-right: 20%;
-    padding-top: 40px;
-
 }
 
     /* Landing Page */
@@ -1631,6 +1581,7 @@ and (max-device-width : 1024px)  {
 }
 }
 
+}
 
 
 
