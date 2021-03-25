@@ -165,7 +165,7 @@ a {
 
 
 #Hello {
-    width: 200px;
+    width: 180px;
     float: right;
 }
 
@@ -286,7 +286,7 @@ a {
     height: 300px;
 }
 #port {
-    margin-top: 150px;
+    margin-top: 100px;
     background-image: url("../img/aboutme/port.png");
     background-size: contain;
     height: 400px; 
@@ -1324,7 +1324,7 @@ background-size: cover;
 
 
 /*Großer Bildschirm (wie bei Bosch)*/
-@media screen and (min-width: 1300px) {
+@media all and (min-width: 1300px) {
 
     .main-header-container {
         padding-left: 20vw;
@@ -1361,16 +1361,23 @@ background-size: cover;
 .further {
     margin-top: 200px;
 }
-
-
+}
 
 
 /* Kleiner Bildschirm */
-@media screen and (max-width: 800px) {
+@media all and (max-width: 800px) {
 
-    .projcolumns2  {
+
+.columns article,
+.columns section {
+    width: 100%;
+}
+
+
+  .projcolumns2  {
         display:none;
     }
+
     .projinfo-container{
         display: block;
     }
@@ -1379,21 +1386,10 @@ background-size: cover;
         width: 35%;
     } 
 
-
-    /* Vorschau Projekte */
-    .columns article,
-    .columns section {
-        width: 100%;
-        /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 3 Spalten*/
-        float: left;
-        padding-top: 0%;
-        padding-right: 2%;
-        /* border-left: 1px solid #bfb6a8; */
-    }
-
+  
 
   /*Veränderung der Navbar */
-.bignav {
+  .bignav {
     display: none;
 }
 .navphone {
@@ -1437,7 +1433,8 @@ background-size: cover;
     font-size: 60px;
 }
 .overlay a {
-    font-size: 20px}
+    font-size: 20px
+}
 
 .overlay .closebtn {
     font-size: 40px;
@@ -1475,12 +1472,7 @@ cursor:pointer;
     height: 300px; 
 }​
 
-    /* Veränderrung der Projektansicht */
-    .columns article,
-    .columns section {
-        width: 100%;
-        /*Je nachdem wie viele Spalten enthalten sein sollen :) Hier folglich 1 Spalte*/
-    }
+
 
     .proj:before {
         padding-top: 60%;
@@ -1504,8 +1496,23 @@ cursor:pointer;
 
 
 
+
 /* Handyansicht */
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
+
+
+    .introduction h3 span{
+        font-size: 30px;
+    }
+    .introduction h3{
+        font-size: 30px;
+    }
+    #Hello {
+        width: 125px;
+        float: right;
+    }
+
+
 
  /*Rolle, Zeit, etc. Ansicht*/
  .projcolumns article,
@@ -1581,7 +1588,8 @@ cursor:pointer;
 }
 }
 
-}
+
+
 
 
 
