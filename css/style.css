@@ -51,6 +51,7 @@ body {
 }
 
 
+
 #figma {
     height: 1000px;
     width: 100%;
@@ -120,11 +121,14 @@ a {
 .abstandobengroß {
     margin-top: 10rem;
 }
+.abstandunten {
+    margin-bottom: 200px;
+}
 
 
 
 /*Introbild*/
-#introbild {
+.introbild {
     margin-top: 50px;
     position: relative;
     stroke: black;
@@ -134,31 +138,27 @@ a {
     background-repeat: none;
     background-size: cover;
     background-position: center;
-}
-#introcart {
-    margin-top: 50px;
-    position: relative;
-    stroke: black;
-    height: 60vh;
-    opacity: 1;
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../img/home/smart.png"); 
-
-}
-#introgtg {
-    margin-top: 50px;
-    position: relative;
-    stroke: black;
-    height: 80vh;
-    opacity: 1;
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../img/home/scooter.png"); 
     background-attachment: fixed;
 }
+.introcart {
+    background-image: url("../img/home/smart.png"); 
+}
+.introgtg {
+    background-image: url("../img/home/scooter.png"); 
+}
+.introux {
+    background-image: url("../img/home/opto.png"); 
+}
+.introbosch {
+    background-image: url("../img/home/bosch.png"); 
+}
+.introlw {
+    background-image: url("../img/home/post2.png"); 
+}
+.introlucie {
+    background-image: url("../img/home/lucie.png"); 
+}
+
 
 
 
@@ -185,7 +185,9 @@ a {
 #protvr{
     background-image: url("../img/ux/protovr.png");
 }
-
+#protoview{
+    background-image: url("../img/ux/prototyp.png");
+}
 #protoersteideen{
     background-image: url("../img/ux/protoersteideen.png");
 }
@@ -213,6 +215,9 @@ a {
 /* Cart */
 #TestObi{
     background-image: url("../img/cart/TestObi.png");
+}
+#Pain2{
+    background-image: url("../img/cart/Pain2.png");
 }
 #Brainstorming {
     background-image: url("../img/cart/Brainstorming.JPG");
@@ -275,15 +280,15 @@ a {
 /* About */
 #speak {
     background-image: url("../img/aboutme/speak.png");
-    height: 300px;
+    height: 400px;
 }
 #health {
     background-image: url("../img/aboutme/health.jpg");
-    height: 300px;
+    height: 400px;
 }
 #energy {
     background-image: url("../img/aboutme/energy.png");
-    height: 300px;
+    height: 400px;
 }
 #port {
     margin-top: 100px;
@@ -295,29 +300,30 @@ a {
 }
 #blockchain {
     background-image: url("../img/aboutme/blockchain.png");
-    height: 300px;
+    height: 400px;
 }
 #dyp {
     background-image: url("../img/aboutme/dyp.JPG");
-    height: 300px;
+    height: 400px;
 }
 
 
-.vimeo-wrapper {
+/* .vimeo-wrapper {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 3;
  }
  .vimeo-wrapper iframe {
-    height: 100vh; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    height: 100vh; 
     min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    min-width: 177.77vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
- }
+ } */
+ 
 
 /* Bosch */
 #boschresearch{
@@ -507,6 +513,10 @@ a {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+}
+.col-sm-12 video {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .contentProjects {
@@ -712,7 +722,7 @@ a {
 
 /*Projektansicht*/
 .columns-container {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 0%;
     /* ist bereits in dem oberen Intro Container drin*/
     padding-left: 60px;
@@ -723,7 +733,7 @@ a {
 
 .columns-container a {
     stroke: solid black 2px;
-    cursor: url('cross.png'), default;
+    cursor: url('hand.svg'), default;
 }
 
 .columns article,
@@ -971,7 +981,7 @@ background-size: cover;
 
 /*Projekte*/
 .intro {
-    margin-top: 200px;
+    padding-top: 200px;
     margin-left: 60px;
 }
 
@@ -1234,19 +1244,21 @@ background-size: cover;
 /*ResultKasten*/
 .responsive-video iframe {
     position: absolute;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    width: 60%;
+    width: 100%;
     height: 100%;
 }
 
 .responsive-video {
     position: relative;
     height: 0;
-    padding-bottom: 35%;
-    /* Default for 1600x900 videos 16:9 ratio*/
+    padding-bottom: 60%;
     overflow: hidden;
+    max-width: 100%;
 }
+
+
+
+
 
 .resulttext {
     margin-top: 1rem;
@@ -1299,25 +1311,6 @@ background-size: cover;
 
 
 
-
-
-#halfvideo{
-    position: absolute;
-    top: 50%; 
-    left: 25%; 
-    -webkit-transform: translateX(0%) translateY(-50%);
-    transform: translateX(0%) translateY(-50%);
-    height: 100%;
-    z-index: -1000; 
-}
-
-.col-sm-12 video {
-    width: 80%;
-    margin: 0 auto;
-}
-
-
-
 /* Mediaqueries */
 
 /*Veränderungen bei unterschiedlichen Screen Größen*/
@@ -1347,6 +1340,9 @@ background-size: cover;
     padding-right: 20vw;
     padding-left: 20vw;
 }
+
+
+
 .columns-container {
     padding-left: 20vw;
     padding-right: 20vw;
@@ -1364,8 +1360,15 @@ background-size: cover;
 }
 
 
+
 /* Kleiner Bildschirm */
 @media all and (max-width: 800px) {
+    
+
+   /* Singlevideo */
+   .col-sm-12 video {
+    width: 100%;
+}
 
 
 .columns article,
@@ -1385,11 +1388,69 @@ background-size: cover;
      .projcolumns section {
         width: 35%;
     } 
+    .columns article{
+        padding-right: 0%;
+        /* border-left: 1px solid #bfb6a8; */
+    }
+    
 
-  
+.open {
+margin-top: 0px;
+font-size: 30px;
+cursor:pointer; 
+} 
 
-  /*Veränderung der Navbar */
-  .bignav {
+.chapter1 {
+    margin-top: 70px;
+}
+
+/*Projektnavbar*/
+.projnav {
+    display: none; 
+}
+
+/* Veränderung der Bilder & Videos */
+.crop {
+    width: 100%;
+    height: 300px; 
+}​
+
+
+    .proj:before {
+        padding-top: 60%;
+    }
+
+    /*About Me Page*/
+    .aboutmebild img {
+        margin-left: 4%;
+        float: right;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .credit {
+        margin-top: 10%;
+    }
+}
+
+
+
+
+
+/* Handyansicht */
+@media all and (max-width: 600px) {
+
+
+    /*Navbar  */
+.main-header-container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+ /*Veränderung der Navbar */
+ .bignav {
     display: none;
 }
 .navphone {
@@ -1429,76 +1490,14 @@ background-size: cover;
 }
 .overlay .closebtn {
     position: absolute;
+    top: 10px;
     right: 20px;
-    font-size: 60px;
+    font-size: 40px;
 }
 .overlay a {
     font-size: 20px
 }
 
-.overlay .closebtn {
-    font-size: 40px;
-    top: 10px;
-}
-
-/*Navbar  */
-.main-header-container {
-    padding-top: 20px;
-    padding-bottom: 0px;
-}
-
-.open {
-margin-top: 0px;
-font-size: 30px;
-cursor:pointer; 
-} 
-.chapter1 {
-    margin-top: 70px;
-}
-
-
-/* .smallprojects{
-    margin-top: 155%;
-} */
-
-/*Projektnavbar*/
-.projnav {
-    display: none; 
-}
-
-/* Veränderung der Bilder & Videos */
-.crop {
-    width: 100%;
-    height: 300px; 
-}​
-
-
-
-    .proj:before {
-        padding-top: 60%;
-    }
-
-    /*About Me Page*/
-    .aboutmebild img {
-        margin-left: 4%;
-        float: right;
-        width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-
-    }
-
-    .credit {
-        margin-top: 10%;
-    }
-}
-
-
-
-
-
-/* Handyansicht */
-@media all and (max-width: 600px) {
 
 
     .introduction h3 span{
@@ -1544,11 +1543,6 @@ cursor:pointer;
         padding-right: 20px;
     }
 
-/*Navbar  */
-.main-header-container {
-        padding-right: 20px;
-        padding-left: 20px;
-}
 .open {
     margin-top: -10px;
     font-size: 45px;

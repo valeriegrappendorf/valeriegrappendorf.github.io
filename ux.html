@@ -62,9 +62,7 @@
     <p>Demonstration model for optometrists</p>
   </div>
 
-  <!-- Bildkasten -->
-  <div class="intropic uxintro">
-  </div>
+  <div class="introbild introux"></div>
 
 
   <!-- Einführungsinfos -->
@@ -344,9 +342,8 @@
     <div class="col-sm-12">
       <div class="crop" id="protvr">
       </div>
-        <video autoplay muted loop id="halfvideo">
-          <source src="img/ux/prototyp.m4v" autoplay loop muted type="video/mp4">
-      </video>
+      <div class="crop" id="protoview">
+      </div>
     </div>
   </div>
   <div class="contentProjects">
@@ -391,7 +388,7 @@
   <div class="contentProjects">
     <div class="result"></div>
     <!-- <div id="nofigmaheader"></div> -->
-    <div id="figmavideoframe">
+    <div class="col-sm-12" id="figmavideoframe">
       <div class="responsive-video">
         <iframe src="https://player.vimeo.com/video/347672090" frameborder="0" webkitAllowFullScreen mozallowfullscreen
           allowFullScreen></iframe>
@@ -400,7 +397,7 @@
     <iframe id="figmaipad"
       src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfxoPMd9VNgRRU8Si39jpnUpM%2FUX-Optik%3Fnode-id%3D679%253A3536%26scaling%3Dscale-down"
       allowfullscreen></iframe>
-    <div class="center description">
+    <div class="center">
       <button class="buttonselect" id="videobutton" onclick="Video()">Usecase</button>
       <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Interface</button>
     </div>
@@ -485,6 +482,7 @@
     document.getElementById('uxempathypic').addEventListener("mousedown", modal);
     document.getElementById('uxresearchpic').addEventListener("mousedown", modal);
     document.getElementById('protvr').addEventListener("mousedown", modal);
+    document.getElementById('protoview').addEventListener("mousedown", modal);
     document.getElementById('protovr').addEventListener("mousedown", modal);
     document.getElementById('protoersteideen').addEventListener("mousedown", modal);
     document.getElementById('brille2').addEventListener("mousedown", modal);
