@@ -30,7 +30,7 @@ body {
     border-color: white;
     margin-left: 0;
     border-radius: 10px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     text-align: center;
     text-decoration: none;
 
@@ -44,7 +44,7 @@ body {
     font-size: 20px;
     margin-left: 0;
     border-radius: 10px;
-    padding: 15px 20px;
+    padding: 15px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -119,6 +119,9 @@ a {
 
 .abstandobennormal {
     margin-top: 4rem;
+}
+.abstandobenmittel {
+    margin-top: 6rem;
 }
 .abstandobengroß {
     margin-top: 10rem;
@@ -464,9 +467,13 @@ a {
 }
 #maze1 {
     background-image: url("../img/esid/maze1.jpg");
+    background-size: contain;
+    height: 300px;
 }
 #maze2 {
     background-image: url("../img/esid/maze2.jpg");
+    background-size: contain;
+    height: 300px;
 }
 #esid1{
     display: none;
@@ -524,8 +531,6 @@ a {
 
 
 
-
-
 .crop {
     cursor: pointer;
     float: left;
@@ -535,6 +540,8 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }​
+
+
 
 
 
@@ -1267,6 +1274,10 @@ background-size: cover;
 .methodscontainer {
     height: 100%;
     background: #FAFAFA;
+}
+.methodscontainer2 {
+    height: 100%;
+    background: white;
 }
 
 .mySlides1 {
