@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Valerie Grappendorf | Good To Go</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script>
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header     -->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="method.html">Toolset</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für mobile Geräte -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="method.html">Toolset</a>
+            <a href="aboutme.html">About</a>
+            <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+
+  <!-- Projektintro -->
+  <div class="intro">
+    <h1>ESID</h1>
+    <p>Epidemiologisches Simulationstool für den Infektionsschutz in Deutschland</p>
+  </div>
+
+
+  <div class="introbild introesid"></div>
+
+
+  <!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projcolumns2 col-sm-12">
+    <div class="projinfo2">
+      <h3>Role</h3>
+      <p>User research, <br>concept dvelopment,<br>prototyping</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Timeline</h3>
+      <p>October to February 2021<br>(4 months project)<br>Bachelor's thesis</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Team</h3>
+      <p>Julien Stoll,<br>DLR HPC Team
+      </p>
+    </div>
+    <div class="projinfo3">
+      <h3>Tools</h3>
+      <p>Figma, Maze,<br>After Effects,<br>Miro, Notion</p>
+    </div>
+  </div>
+  <!-- Mobil -->
+  <div class="projinfo-container">
+    <section class="projcolumns clearfix">
+      <article>
+        <div class="projinfo">
+          <h3>Role</h3>
+          <p>Ideation,<br>prototyping, <br>wireframes</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Timeline</h3>
+          <p>Oktober 2019<br>(3 days project)<br>Nordic Health Hackathon</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Team</h3>
+          <p>Johannes Reiche, <br> Villads Stokbro, <br>Sofus Steenberger
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Tools</h3>
+          <p>Figma, <br> Keynote, <br> AI studies</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <!-- Grauer Task Kasten  -->
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+<p>Diese Bachelorarbeit befasst sich mit der nutzerzentrierten Gestaltung eines User Interfaces für ein SIR-type Modell des DLR und HZI. Das User Interface wurde auf Grundlage der Publikation <a href="https://www.medrxiv.org/content/10.1101/2020.12.18.20248509v1.full" target="_blank" >Assessment of effective mitigation and prediction of the spread of SARS-CoV-2 in Germany using demographic information and spatial resolution</a> von Martin J. Kühn et al. (2020) gestaltet. Mit ESID können politische Eindämmungsmaßnahmen rückblickend sowie vorausschauend in Form von Szenarien auf Grundlage eines intuitiv interagierbaren mathematischen Modells bewertet, verglichen und nachvollzogen werden.</p> 
+   </div>
+  </div>
+
+  <!-- <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a id="uxnav1" href="#1">Problem</a></li>
+        <li><a id="uxnav2" href="#2">Solution</a></li>
+        <li><a id="uxnav3" href="#3">Outlook</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <!-- Bildmodal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
+  <div class="contentProjects abstandobengroß">
+    <!-- <div id="nofigmaheader"></div> -->
+    <div class="col-sm-12"  id="figmavideoframe">
+      <div class="responsive-video">
+        <iframe src="https://player.vimeo.com/video/510236665" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+          allowFullScreen></iframe>
+      </div>
+    </div>
+    </div>
+
+
+  <!-- Researchkapitel -->
+  <div id="1"></div>
+  <div class="chapter abstanduntenklein">
+    <p>
+      <span id="chapternumber">Kontext</span>
+    </p>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>COVID-19 Pandemie</h3>
+      <p>
+        Die COVID-19 Pandemie stellt Staaten weltweit vor große Herausforderungen. Ein Werkzeug, das dank der Wissenschaft in dieser Krise zur Verfügung steht, ist die mathemathische Modellrechnung. Aufgrund der aktuellen Unsicherheit sind für Politiker und Bürger  vor allem Simulationen spannend, welche den weiteren Verlauf der Pandemie prognostizieren können. 
+      </p>
+      <h3>Marktanalyse</h3>
+      <p>
+        Bisher bestehenden Simulationstool richten sich jedoch entweder an Experten mit fundiertem Hintergrundwissen oder haben einen pädagogischen Hintergrund und sind daher stark vereinfacht. Politische Entscheider benötigen jedoch ein Tool, welches auf fundierten mathematischen Modellen mit aktuellen Daten basiert und gleichzeitig aber auch eine einfach zugängliche und intuitive Benutzeroberfläche bietet.
+      </p>
+      <h3>Kooperation</h3>
+      <p>
+        In Kooperation mit dem  Deutsche Zentrum für Luft- und Raumfahrt (DLR) und das Helmholtz-Zentrum für Infektionsforschung (HZI)  gestalteten wir im Rahmen unserer Bachelorarbeit einen Entwurf für die Nutzeroberfläche für das Simulationsmodell mit dem Namen „HPC against Corona”. Dieser Entwurfsvorschlag trägt den Namen ESID. Unser Fokus in dieser Arbeit lag auf der Nutzerrecherche, Konzeptentwicklung und nutzerzentrierten Gestaltung des Interfaces.       </p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="2"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Nutzerrecherche</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="esidinterview">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p>
+        Während unseres Prozesses standen wir im konstanten Austausch mit Politikern und anderen Entscheidungsträger. Wir wollten herausfinden, welche Herausforderungen diese während der Pandemie begegnen und was ihre Erwartungen / Anforderungen an ein Simulationstool sind. Auf Basis der in der Recherche gewonnenen Erkenntnisse konzipierten wir die Inhalte und Funktionen des Simulationstools. Diese haben wir nach Priorität sortiert und die technische Realisierbarkeit eingeschätzt.      <div class="quote">
+        <p>
+          Es wäre spannend, die Auswirkung des Ergreifens und nicht Ergreifens verschiedener Maßnahmen zu sehen. - Dr. Joachim Bläse <br>
+        </p>
+      </div>
+      <div class="quote">
+        <p>
+          Hätte man gewusst, wie sich die Situation im November / Dezember entwickelt, hätte man vieles anders gemacht. - Dr. Janosch Dahmen<br>
+        </p>
+      </div>
+      <div class="crop abstandobengroß" id="esidrecherche">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Funktionsumfang</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop abstandobenklein abstanduntenklein" id="esidprozess">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Konzeptdefinition</h3>
+      <p>
+        Das als Webapplikation konzipierte Online-Simulationstool ermöglicht den Nutzern eigene Szenarien zu erstellen, diese miteinander zu vergleichen und Faktoren wie Eindämmungsmaßnahmen zu definieren. Entscheidungsträgern und deren Beratern sowie aber auch interessierten Laien soll so ermöglicht werden, die Entwicklung der Pandemie besser zu verstehen und anhand szenarienbasierter Simulationen verschiedene Optionen im Krisenmanagement abzuwägen.
+          </p>
+          <h3>Design Decisions</h3>
+          <p>
+            Für unsere Design Entscheidungen lag unsere Priorität darauf, das Tool trotz seiner Komplexität so intuitiv und nutzerfreundlich wie möglich zu gestalten, um es für eine breite Masse an Nutzern zugänglich zu machen. Da die fehlende Transparenz der politischen Entscheidungen aktuell ein Problem in der Bevölkerung darstellt, war es uns sehr wichtig, das dem Tool zugrundeliegene Modell zugänglich und einsehbar in die Nutzeroberfläche zu integrieren. Eine weitere Priorität war, dass Nutzer alle wichtigen Informationen auf einen Blick und im Vergleich betrachten können sollten. Das Interface sollte nicht aus zu vielen Ebenen bestehen.
+          </p>
+      <h3>Five unique value propositions</h3>
+      <p>
+        1. Bewertung von Eindämmungsmaßnahmen <br>
+        2. Szenariobasierte Entscheidungsfindung<br>
+        3. Mathematisches Modell als Grundlage, welches intuitiv bedient werden kann <br>
+        4. Schnittstelle von Politik, Wissenschaft und Bevölkerung <br>
+      </p>
+    </div>
+  </div>
+
+
+  <div id="4"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Umsetzung</span>
+    </p>
+  </div>
+
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Onboarding</h3>
+      <p>This video demonstrates the szenario which the optometrist and customer experience with
+        our product. Feel free to have a deeper look at the interface to understand the master view of the
+        optometrist better.
+      </p>
+    </div>
+
+    <div class="col-sm-12 abstandobengroß">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Szenarien Betrachten</h3>
+      <p>Im Szenarien-Panel findet der Nutzer die Übersicht aller aktuell ausgewählten Szenarien. Durch Klicken auf eine Szenario-Karte kann der Nutzer dem Szernario zugehörige Kennzahlen anzeigen oder ausblenden.
+      </p>
+    </div>
+
+    <div class="col-sm-12 abstandobengroß">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="center">
+      <button class="buttonselect" id="videobutton" onclick="Video()">Übersicht</button>
+      <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Szenario erstellen</button>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Szenarien Übersicht</h3>
+      <p>In der Szenarien-Übersicht können weitere Szenarien aktiviert und  neue Szenarien erstellt werden.
+      </p>
+    </div>
+
+    <div class="col-sm-12 abstandobengroß">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="center">
+      <button class="buttonselect" id="videobutton" onclick="Video()">Verändern</button>
+      <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Neue definieren</button>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Kontaktraten</h3>
+      <p>
+        Politische Maßnahmen können durch Kontaktraten beschrieben werden. Durch das Anlegen einer Maßnahme verändert sich die Prognose des Szenarios. Bestehende Kontaktraten können jedoch auch verändert werden. 
+      </p>
+    </div>
+
+    <div class="col-sm-12 abstandobengroß">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Modellparamter</h3>
+      <p>
+        Auch die dem SIR-type Modells  zugrundeliegenden Paramter können eingesehen und konfiguriert werden. Sie werden dort nach den sechs Altersgruppen des Modells abgebildet.
+      </p>
+    </div>
+
+    <div class="col-sm-12 abstandobengroß">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="center">
+      <button class="buttonselect" id="videobutton" onclick="Video()">Historie</button>
+      <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Details</button>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Side Panel </h3>
+      <p>
+        In dem Sidepanel findet der Nutzer zusätzliche Informationen. Diese beziehen sich, wie bereits durch die Farbe erkennbar, immer auf das ausgewählte Szenario. Die Historie listet alle von der Politik getroffenen Maßnahmen chronologisch auf. Unter dem Menüpunkt „Details“ finden sich Daten bezüglich der Schweregrade der Verläufe und der Altersverteilung zur aktuell ausgewählten Kennzahl.       </p>
+    </div>
+
+    <div class="col-sm-12 abstandobengroß">
+      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
+    </div>
+    <div class="col-sm-12 description nomarging">
+      <h3>Admin Zugang</h3>
+      <p>
+        Bestimmte Nutzer wie bspw. Entscheidungsträger, Experten oder Behördenmitarbeiter können Zugang zum Simulationstool erhalten.</p>
+    </div>
+
+  </div>
+
+  <div id="5"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Nutzertests</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="maze1">
+      </div>
+      <div class="crop" id="maze2">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p> 
+        Bereits früh präsentierten wir Politikern verschiedene Prototypen um ihre Reaktionen, Eindrücke und Anmerkungen zu
+dem Simulationstool zu erfahren. Über zwei Gesprächsrunden sprachen wir mit Politikern persönlich und präsentierten verschiedene Prototypen. Dabei beobachteten wir ihre Reaktionen und stellten gezielte Fragen um ihren Eindruck hinsichtlich des User Interfaces in Erfahrungen zu bringen und mögliche Unklarheiten aufzudecken.
+</p>
+        <div class="quote">
+        <p>
+          Ich kann mir gut vorstellen, das Tool zu benutzen. Vor allem als weitere Entscheidungsgrundlage und zur Entscheidungsbegründung. Finde es schön übersichtlich. Auch zur nachträglichen Betrachtung finde ich es hilfreich: Damit ich sehen kann, was passiert wäre, wenn man anders entschieden hätte. - Leni Breymaier          <br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="6"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Rückblick</span>
+    </p>
+  </div>
+  <div class="contentProjects abstandobenklein">
+    <div class="col-sm-12 description">
+      <h3>Reflektion</h3>
+      <p> 
+        Die Entwicklung eines Produkts ist ein ständiger Prozess. Durch einen iterativen Gestaltungsprozess erhielten wir kontinuierlich Feedback der Nutzergruppe und zogen daraus neue Erkenntnisse, aus welchen wir neue Ideen und Konzepte entwickelten. Zu Beginn des Projekts stellten wir selbst fest, wie komplex epidemiologische Simulationstools für Laien sein können und haben eine gewisse Einarbeitungszeit benötigt um die dahinterliegen- den Modelle besser zu verstehen. In engem Austausch mit unseren Betreuern am DLR und dem Feedback der Nutzergruppen, trugen wir in diesem Projekt die Rolle der Schnittstelle zwischen Wissenschaft und Nutzern.
+        Dieser Austausch war essenziel, um einerseits die Bedürfnisse und Erwartungen der Nutzer in das Konzept einfließen zu lassen und um andererseits die technischen Rahmenbedingungen des SIR-type Modells einzuhalten. Nach abschließenden Nutzertests mit den Zielgruppen wurde deutlich, dass das User Interface die Bedürfnisse der Zielgruppen erfüllt und somit in Hinblick auf die Gestaltung sein Ziel erreicht hat.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Sonst funktioniert jquery scroll nicht -->
+  <div id="6"></div>
+
+
+
+  <!-- further projects -->
+  <div class="columns-container further">
+    <h3> <span>Further Projects</span></h3>
+    <section class="columns clearfix">
+      <a href="cart.html">
+        <article>
+          <div class="proj mainpagekastenschrift projbackground cart">
+            <div class="overlayproj carthover">
+            </div>
+            <h2> <span>... enable wheelchair user to shop more independent?</span></h2>
+            <h4><span>#CaseStudy #DesignThinking #Arduino</span></h4>
+          </div>
+        </article>
+      </a>
+      <a href="ux.html">
+        <section>
+          <div class="proj mainpagekastenschrift projbackground ux">
+            <div class="overlayproj uxhover">
+            </div>
+            <h2> <span>... support the customers to find their perfect glasses?</span></h2>
+            <h4><span>#CaseStudy #UserResearch #Arduino</span></h4>
+          </div>
+        </section>
+      </a>
+    </section>
+  </div>
+
+  <!-- credit -->
+  <div class="credit clearfix">
+    <div class="pos-center">
+      <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+      <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+      <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+          alt="Linkedin"></a>
+    </div>
+    <div class="pos-center">
+      <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
+    </div>
+  </div>
+
+
+  <script>
+     //Prototype Video und Figma Live
+    //Hide Figma
+    function Figma() {
+      document.getElementById("esid1").style.display = "block";
+      document.getElementById("esid2").style.display = "none";
+      document.getElementById("figmabutton").className = "buttonselect";
+      document.getElementById("videobutton").className = "buttonnotselect";
+    }
+    function Video() {
+      document.getElementById("esid2").style.display = "block";
+      document.getElementById("esid1").style.display = "none";
+      document.getElementById("videobutton").className = "buttonselect";
+      document.getElementById("figmabutton").className = "buttonnotselect";
+    }
+
+
+    //Bilder Fullscreen anzeigen
+    document.getElementById('esidinterview').addEventListener("mousedown", modal);
+    document.getElementById('esidrecherche').addEventListener("mousedown", modal);
+    document.getElementById('esidprozess').addEventListener("mousedown", modal);
+
+
+  </script>
+
+
+
+
+
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+</body>
+
+</html>

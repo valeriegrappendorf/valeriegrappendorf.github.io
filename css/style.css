@@ -22,28 +22,29 @@ body {
 
 /* Button */
 .buttonselect {
-    background-color: grey;
-    color: white;
-    font-size: 16px;
-    border: solid 2px;
-    border-color: black;
-    margin-left: 2rem;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: solid 1.5px;
+    border-color: white;
+    margin-left: 0;
     border-radius: 10px;
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+
 }
 
 .buttonnotselect {
     background-color: white;
-    color: black;
-    border: solid 2px;
-    border-color:black;
-    font-size: 16px;
-    margin-left: 2rem;
+    color: grey;
+    border: solid 1.5px;
+    border-color:white;
+    font-size: 20px;
+    margin-left: 0;
     border-radius: 10px;
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -115,14 +116,21 @@ a {
     color: black;
 }
 
+
 .abstandobennormal {
     margin-top: 4rem;
 }
 .abstandobengroß {
     margin-top: 10rem;
 }
+.abstandobenklein {
+    margin-top: -4rem;
+}
 .abstandunten {
     margin-bottom: 200px;
+}
+.abstanduntenklein {
+    margin-bottom: -50px;
 }
 
 
@@ -145,6 +153,9 @@ a {
 }
 .introgtg {
     background-image: url("../img/home/scooter.png"); 
+}
+.introesid {
+    background-image: url("../img/home/esid.png"); 
 }
 .introux {
     background-image: url("../img/home/opto.png"); 
@@ -435,6 +446,39 @@ a {
 #gtgwin {
     background-image: url("../img/gtg/gtgwin.jpg");
 }
+/* esid */
+#esidinterview {
+    background-image: url("../img/esid/interview.png");
+    width: 100%;
+    background-size: contain;
+}
+#esidrecherche {
+    background-image: url("../img/esid/recherche.jpg");
+    width: 100%;
+    background-size: contain;
+}
+#esidprozess {
+    background-image: url("../img/esid/prozess.png");
+    width: 100%;
+    background-size: contain;
+}
+#maze1 {
+    background-image: url("../img/esid/maze1.jpg");
+}
+#maze2 {
+    background-image: url("../img/esid/maze2.jpg");
+}
+#esid1{
+    display: none;
+}
+#esid2{
+    display: block;
+}
+
+
+
+
+
 
 /* The Modal (background) */
 .modal {
@@ -517,6 +561,11 @@ a {
 .col-sm-12 video {
     width: 80%;
     margin: 0 auto;
+    border: 2px solid black;
+    box-shadow: 0px 5px 15px #C4C4C4;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
 }
 
 .contentProjects {
@@ -576,7 +625,7 @@ a {
 /*Header*/
 .main-header-container {
     background: white;
-    z-index: 5;
+    z-index: 20;
     position: fixed;
     top: 0;
     width: 100%;
