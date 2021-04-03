@@ -481,7 +481,9 @@ a {
 #esid2{
     display: block;
 }
-
+#esid2{
+    display: block;
+}
 
 
 
@@ -967,7 +969,10 @@ background-size: cover;
     background: rgba(255, 255,  0);
     opacity: 80%;
 }
-
+.esidhover {
+    background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/esid.png) center no-repeat;
+    background-size: cover;
+    }
 
 
 
@@ -1039,6 +1044,7 @@ background-size: cover;
 .intro {
     padding-top: 200px;
     margin-left: 60px;
+    margin-right: 100px;
 }
 
 .intro h1 {
@@ -1050,7 +1056,8 @@ background-size: cover;
 }
 
 .intro p {
-    margin-top: 5px;
+    margin-top: 20px;
+    line-height: 1.5;
     font-weight: 500;
 }
 
@@ -1425,6 +1432,13 @@ background-size: cover;
 @media all and (max-width: 800px) {
     
 
+    /*Introbild*/
+.introbild {
+    height: 50vh;
+    background-attachment: scroll;
+}
+
+
    /* Singlevideo */
    .col-sm-12 video {
     width: 100%;
@@ -1611,7 +1625,6 @@ cursor:pointer;
 
 /*Projekte*/
 .intro {
-    margin-top: 200px;
     margin-left: 20px;
 }
 
