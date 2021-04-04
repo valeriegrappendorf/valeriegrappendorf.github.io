@@ -1,0 +1,399 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Valerie Grappendorf | VS+</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Schritft einbinden -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width"> <!-- Korrekte Darstellung bei mobilen Geräten -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- es stellt bessere browserübergreifend konsistente Stile für die standardmäßigen Stile von HTML Elementen bereit.  -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="all.js"></script>
+</head>
+
+<!-- SHift + Alt + F formats the code! :)  -->
+
+<body>
+  <!-- Header     -->
+  <div class="main-header-container" id="myHeader">
+    <!-- Allgmeine Box des Headers -->
+    <header class="main-header">
+      <!-- Definition der Inhalte des Headers -->
+      <div class="logo">
+        <ul>
+          <li><a href="index.html">Valerie Grappendorf</a></li>
+        </ul>
+      </div>
+      <!-- Navbar für Computer -->
+      <div class="bignav">
+        <nav>
+          <ul>
+            <li><a href="method.html">Toolset</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar für mobile Geräte -->
+      <div class="navphone">
+        <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="method.html">Toolset</a>
+            <a href="aboutme.html">About</a>
+            <a href="img/ValerieGrappendorf_CV.pdf" target="_blank">CV</a>
+          </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      </div>
+    </header>
+  </div>
+
+
+
+  <!-- Projektintro -->
+  <div class="intro">
+    <h1>VS+</h1>
+    <p>Towards more effective student participation in university politics</p>
+  </div>
+
+
+  <div class="introbild introvs"></div>
+
+
+  <!-- Einführungsinfos -->
+  <!-- Spaltenansicht -->
+  <div class="projcolumns2 col-sm-12">
+    <div class="projinfo2">
+      <h3>Role</h3>
+      <p>User research,<br>concept development, <br>UX and UI design</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Timeline</h3>
+      <p>April to July 2020<br>(4 months project)<br>6th semester</p>
+    </div>
+    <div class="projinfo2">
+      <h3>Team</h3>
+      <p>Hannes Maurer,<br>Florian Nagel,<br>Julien Stoll
+      </p>
+    </div>
+    <div class="projinfo3">
+      <h3>Tools</h3>
+      <p>Figma,<br>Notion,<br>Miro</p>
+    </div>
+  </div>
+  <!-- Mobil -->
+  <div class="projinfo-container">
+    <section class="projcolumns clearfix">
+      <article>
+        <div class="projinfo">
+          <h3>Role</h3>
+          <p>User research,<br>concept development, <br>UX and UI design</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Timeline</h3>
+          <p>April to July 2020<br>(4 months project)<br>6th semester</p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Team</h3>
+          <p>Hannes Maurer,<br>Florian Nagel,<br>Julien Stoll
+          </p>
+        </div>
+      </article>
+      <article>
+        <div class="projinfo">
+          <h3>Tools</h3>
+          <p>Figma,<br>Notion,<br>Miro</p>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <!-- Grauer Task Kasten  -->
+  <div class="taskcontainer clearfix">
+    <div class="col-sm-12 contentProjects small-padding-h3-p">
+      <p>
+        In order to represent their interests in university politics, students organize themselves in the "Verfasste Studierendenschaft" (VS). The goal of our project was to create a service concept for the VS that makes it easier and more attractive for students to get involved in university life. In addition, the position of students in university politics should be strengthened.
+      </p>
+    </div>
+  </div>
+
+  <!-- <div class="projnav">
+    <nav>
+      <ul>
+        <h3>Overview</h3>
+        <li><a id="uxnav1" href="#1">Problem</a></li>
+        <li><a id="uxnav2" href="#2">Solution</a></li>
+        <li><a id="uxnav3" href="#3">Outlook</a></li>
+      </ul>
+    </nav>
+  </div> -->
+
+  <!-- Bildmodal -->
+  <div id="myModal" class="modal">
+    <img class="modal-content close" id="img01">
+  </div>
+
+
+  <!-- Researchkapitel -->
+  <div id="1"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Research</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="vsresearch1">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p>
+        In order to represent their interests in university politics, students organize themselves in the "Verfasste Studierendenschaft" (VS). The goal of our project was to create a service concept for the VS that makes it easier and more attractive for students to get involved in university life. In addition, the position of students in university politics should be strengthened.
+      </p>
+      <h3>VS members</h3>
+      <p>
+        1. Onboarding for new VS members has been poor. <br>
+        2. There is no medium where all info can be accessed. <br>
+        3. The terms of office are very short. <br>
+      </p>
+      <h3>Non-members</h3>
+      <p>
+        1. One-way communication - pure information for students.        <br>
+        2. Current communication is inflexible and there is an oversupply. <br>
+        3. Contact persons for questions regarding the VS are unknown or missing. <br>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Kapitelübersicht -->
+  <div id="2"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Concept</span>
+    </p>
+  </div>
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="vsresearch2">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p>
+        Our concept targets three groups of people: active VS members, non-members, and first-year students. Three guiding principles address the biggest problems:
+      </p>
+      <h3>Technology</h3>
+      <p>
+        In a <a href="https://arxiv.org/pdf/1805.10030.pdf" target="_blank">paper</a> proposed by Metha et al. 2019,
+        known and open-source deep learning models trained on
+        Youtube-videos can detect drunkenness through a combination of audio and video with an accuracy
+        of almost 90 %. Thus, we aim to train the model on open-source data and then tune it with test data
+        gathered from real-life situations to make the model fit our case.
+      </p>
+      <h3>How might we ...</h3>
+      <p>
+        1. Structure, standardize processes and make information digitally accessible?       <br>
+        2. Achieve more effective communication between VS and students? <br>
+        3. Helping first-year students and non-members get started at VS? <br>
+      </p>
+    </div>
+  </div>
+
+  <div id="3"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Implementation</span>
+    </p>
+  </div>
+
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="vsnotion">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>VS Notion Workspace</h3>
+      <p>
+        Based on numerous interviews, we developed a Notion template that structures information and work processes within the VS and makes them digitally accessible. The VS Workspace serves as the basis for all further concept ideas.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="contentProjects abstandobengroß">
+    <div class="col-sm-12">
+      <div class="crop" id="vsbrett">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Digital bulletin board</h3>
+  <p>
+    A digital bulletin board informs about the activities of the VS, thereby information of the VS motion platform is represented. It will include announcements of dates, calls, photo stories of past events and team presentations. The information is supplemented with QR codes. If the QR codes are scanned, the user gets more information about the respective tile and the possibility to interact with it via the VS app.
+  </p>
+    </div>
+  </div>
+
+  <div class="contentProjects abstandobengroß">
+    <div class="col-sm-12">
+      <div class="crop" id="vsnotion">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Public Notion page of the VS</h3>
+  <p>
+    A public part of the VS-Notion-Workspace informs about the activities, the dates and about the teams of the VS. Students can use it to get specific information and contact according to their preferences.
+  </p>
+    </div>
+  </div>
+
+  <div class="contentProjects abstandobengroß">
+    <div class="col-sm-12">
+      <div class="crop" id="vsapp">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>VS+ app</h3>
+  <p>
+    The VS+ app opens up a new communication channel between VS and students. The VS communicates with the student via info tiles. These can be filtered according to personal interests. With the help of a QR scanner, the user can add events to a personal collection. It also enables interactions with posters and the digital bulletin board.     
+   </p>
+    </div>
+  </div>
+
+
+  <div class="contentProjects abstandobengroß">
+    <div class="col-sm-12">
+      <div class="crop" id="vsquiz">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Personality test</h3>
+      <p>
+        The first contact with the VS currently takes place in the form of a long lecture. Experience shows that the first-year students take little away from it. The personality test should be fun and arouse interest - two important prerequisites for motivation and for staying in the memory. Once the test is completed, the app is referred to. With the result from the test, students can learn more about their type and personalize the app. A first contact to the VS is thus established.
+        We used an MVP to check whether students were interested in such a test at all. With 384 participants, we reached more than half of the university students.
+      </p>
+    </div>
+  </div>
+ 
+  <div class="contentProjects abstandobengroß">
+    <!-- <div id="nofigmaheader"></div> -->
+    <div class="col-sm-12"  id="figmavideoframe">
+      <div class="responsive-video">
+        <iframe src="https://player.vimeo.com/video/442437700?autoplay=1&loop=1" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      </div>
+    </div>
+    </div>
+
+
+ 
+
+  <div id="4"></div>
+  <div class="chapter">
+    <p>
+      <span id="chapternumber">Outlook</span>
+    </p>
+  </div>
+
+  <div class="contentProjects">
+    <div class="col-sm-12">
+      <div class="crop" id="vstesting">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <p>
+        The focus of this project was the feasibility of the concepts developed. From the winter semester 2020, the VS-Notion-Space is to go live as a basis. In this course, it will be tested whether an implementation of the digital bulletin board or the VS+ app is also desired. The students' interest has been aroused and the foundation for a continuation of the project has thus been laid.
+      </p>
+    </div>
+  </div>
+
+
+  <!-- Sonst funktioniert jquery scroll nicht -->
+  <div id="5"></div>
+  <div id="6"></div>
+
+
+ 
+
+  <!-- further projects -->
+  <div class="columns-container further">
+    <h3> <span>Further Projects</span></h3>
+    <section class="columns clearfix">
+      <a href="esid.html">
+        <article>
+          <div class="proj mainpagekastenschrift projbackground introesid">
+            <div class="overlayproj esidhover">
+            </div>
+            <h2><span>... develop an intuitive interface for COVID-19 simulations?</span></h2>
+            <h4><span>#Bachelor #UX #DLR</span></h4>
+          </div>
+        </article>
+      </a>
+      <a href="cart.html">
+        <section>
+          <div class="proj mainpagekastenschrift projbackground cart">
+            <div class="overlayproj carthover">
+            </div>
+            <h2> <span>... enable wheelchair user to shop more independent?</span></h2>
+            <h4><span>#CaseStudy #DesignThinking #Arduino</span></h4>
+          </div>
+        </section>
+      </a>
+    </section>
+  </div>
+
+  <!-- credit -->
+  <div class="credit clearfix">
+    <div class="pos-center">
+      <a href="https://github.com/ValGrapp" target="_blank"><img src="img/icons/github.png" alt="Github"></a>
+      <a href="mailto:valerie.grappendorf@arcor.de?subject=Hello there!"><img src="img/icons/mail.png" alt="Mail"></a>
+      <a href="https://www.linkedin.com/in/valerie-grappendorf/" target="_blank"><img src="img/icons/linkedin.png"
+          alt="Linkedin"></a>
+    </div>
+    <div class="pos-center">
+      <p>&copy;Valerie Grappendorf 2020<a href="impressum.html"> Impressum</a></p>
+    </div>
+  </div>
+
+
+  <script>
+    document.getElementById('accident').addEventListener("mousedown", modal);
+    document.getElementById('streetscooters').addEventListener("mousedown", modal);
+    document.getElementById('gtgoutlook').addEventListener("mousedown", modal);
+    document.getElementById('gtgflow').addEventListener("mousedown", modal);
+    document.getElementById('gtgwin').addEventListener("mousedown", modal);
+  </script>
+
+  <!-- JQuery muss in eine extra Script Datei! :)  -->
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="jquery.js"></script>
+</body>
+
+</html>

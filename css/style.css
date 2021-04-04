@@ -160,6 +160,9 @@ a {
 .introesid {
     background-image: url("../img/home/esid.png"); 
 }
+.introvs {
+    background-image: url("../img/home/vs2.png"); 
+}
 .introux {
     background-image: url("../img/home/opto.png"); 
 }
@@ -484,7 +487,34 @@ a {
 #esid2{
     display: block;
 }
-
+#vsresearch1 {
+    background-image: url("../img/vs+/research.png");
+    width: 100%;
+}
+#vsresearch2 {
+    background-image: url("../img/vs+/ideate.png");
+    width: 100%;
+}
+#vsnotion {
+    background-image: url("../img/vs+/notion.png");
+    width: 100%;
+}
+#vsapp {
+    background-image: url("../img/vs+/app.png");
+    width: 100%;
+}
+#vsbrett {
+    background-image: url("../img/vs+/brett.png");
+    width: 100%;
+}
+#vsquiz {
+    background-image: url("../img/vs+/quiz.png");
+    width: 100%;
+}
+#vstesting {
+    background-image: url("../img/vs+/testing.jpeg");
+    width: 100%;
+}
 
 
 
@@ -973,6 +1003,10 @@ background-size: cover;
     background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/esid.png) center no-repeat;
     background-size: cover;
     }
+.vshover {
+        background:linear-gradient(0deg, rgba(49, 147, 254, 0.2), rgba(49, 147, 254, 0.2)), url(../img/home/vs2.png) center no-repeat;
+        background-size: cover;
+        }
 
 
 
