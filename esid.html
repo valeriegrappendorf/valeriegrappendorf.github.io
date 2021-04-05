@@ -3,6 +3,20 @@
 
 <head>
   <title>Valerie Grappendorf | ESID</title>
+
+
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -149,7 +163,7 @@
     <!-- <div id="nofigmaheader"></div> -->
     <div class="col-sm-12"  id="figmavideoframe">
       <div class="responsive-video">
-        <iframe src="https://player.vimeo.com/video/510236665" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+        <iframe src="https://player.vimeo.com/video/533118588" frameborder="0" webkitAllowFullScreen mozallowfullscreen
           allowFullScreen></iframe>
       </div>
     </div>
@@ -257,18 +271,18 @@
   </div>
 
   <div class="contentProjects">
-    <div class="col-sm-12">
-      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
-    </div>
+    <!-- <div class="col-sm-12">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div> -->
     <div class="col-sm-12 description nomarging">
       <h3>Onboarding</h3>
       <p>
         Onboarding aims to explain the most important functions to the user in an easily understandable way. </p>
     </div>
 
-    <div class="col-sm-12 abstandobengroß">
-      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
-    </div>
+    <!-- <div class="col-sm-12 abstandobengroß">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div> -->
     <div class="col-sm-12 description nomarging">
       <h3>View scenarios</h3>
       <p>
@@ -291,12 +305,12 @@
       </p>
     </div>
 
-    <div class="col-sm-12 abstandobengroß">
+    <!-- <div class="col-sm-12 abstandobengroß">
       <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
     </div>
     <div class="col-sm-12">
       <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
-    </div>
+    </div> -->
     <div class="center">
       <button class="buttonselect" id="videobutton" onclick="Video()">Change</button>
       <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Add</button>
@@ -308,21 +322,21 @@
       </p>
     </div>
 
-    <div class="col-sm-12 abstandobengroß">
-      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
-    </div>
+    <!-- <div class="col-sm-12 abstandobengroß">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div> -->
     <div class="col-sm-12 description nomarging">
       <h3>Model parameters</h3>
       <p>
         The underlying parameters of the SIR-type model can also be viewed and configured. They are mapped there according to the six age groups of the model.      </p>
     </div>
 
-    <div class="col-sm-12 abstandobengroß">
+    <!-- <div class="col-sm-12 abstandobengroß">
       <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
     </div>
     <div class="col-sm-12">
       <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
-    </div>
+    </div> -->
     <div class="center">
       <button class="buttonselect" id="videobutton" onclick="Video()">History</button>
       <button class="buttonnotselect" id="figmabutton" onclick="Figma()">Details</button>
@@ -332,9 +346,9 @@
       <p>
         In the side panel, the user will find additional information. This always relates to the selected scenario, as already indicated by the color. The history lists all measures taken by the policy in chronological order. Under the menu item "Details", data regarding the severity of the courses and the age distribution for the currently selected key figure can be found.      </div>
 
-    <div class="col-sm-12 abstandobengroß">
-      <video id="esid2" src="img/esid/esid2.mp4" autobuffer autoplay loop>
-    </div>
+    <!-- <div class="col-sm-12 abstandobengroß">
+      <video id="esid1" src="img/esid/esid1.mp4" autobuffer autoplay loop>
+    </div> -->
     <div class="col-sm-12 description nomarging">
       <h3>Admin access</h3>
       <p>
@@ -469,14 +483,14 @@
      //Prototype Video und Figma Live
     //Hide Figma
     function Figma() {
-      document.getElementById("esid1").style.display = "block";
-      document.getElementById("esid2").style.display = "none";
+      document.getElementById("esid2").style.display = "block";
+      document.getElementById("esid1").style.display = "none";
       document.getElementById("figmabutton").className = "buttonselect";
       document.getElementById("videobutton").className = "buttonnotselect";
     }
     function Video() {
-      document.getElementById("esid2").style.display = "block";
-      document.getElementById("esid1").style.display = "none";
+      document.getElementById("esid1").style.display = "block";
+      document.getElementById("esid2").style.display = "none";
       document.getElementById("videobutton").className = "buttonselect";
       document.getElementById("figmabutton").className = "buttonnotselect";
     }

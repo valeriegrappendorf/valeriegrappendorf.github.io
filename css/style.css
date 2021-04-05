@@ -479,13 +479,10 @@ a {
     height: 300px;
 }
 #esid1{
+    display: block;
+}
+#esid2{
     display: none;
-}
-#esid2{
-    display: block;
-}
-#esid2{
-    display: block;
 }
 #vsresearch1 {
     background-image: url("../img/vs+/research.png");
