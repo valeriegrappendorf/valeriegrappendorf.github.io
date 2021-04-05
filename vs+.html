@@ -223,7 +223,7 @@
 
   <div class="contentProjects">
     <div class="col-sm-12">
-      <div class="crop" id="vsnotion">
+      <div class="crop" id="vsnotion2">
       </div>
     </div>
   </div>
@@ -239,21 +239,6 @@
 
   <div class="contentProjects abstandobengroß">
     <div class="col-sm-12">
-      <div class="crop" id="vsbrett">
-      </div>
-    </div>
-  </div>
-  <div class="contentProjects description">
-    <div class="col-sm-12">
-      <h3>Digital bulletin board</h3>
-  <p>
-    A digital bulletin board informs about the activities of the VS, thereby information of the VS motion platform is represented. It will include announcements of dates, calls, photo stories of past events and team presentations. The information is supplemented with QR codes. If the QR codes are scanned, the user gets more information about the respective tile and the possibility to interact with it via the VS app.
-  </p>
-    </div>
-  </div>
-
-  <div class="contentProjects abstandobengroß">
-    <div class="col-sm-12">
       <div class="crop" id="vsnotion">
       </div>
     </div>
@@ -263,6 +248,22 @@
       <h3>Public Notion page of the VS</h3>
   <p>
     A public part of the VS-Notion-Workspace informs about the activities, the dates and about the teams of the VS. Students can use it to get specific information and contact according to their preferences.
+  </p>
+    </div>
+  </div>
+
+
+  <div class="contentProjects abstandobengroß">
+    <div class="col-sm-12">
+      <div class="crop" id="vsbrett">
+      </div>
+    </div>
+  </div>
+  <div class="contentProjects description">
+    <div class="col-sm-12">
+      <h3>Digital bulletin board</h3>
+  <p>
+    A digital bulletin board informs about the activities of the VS, thereby information of the VS motion platform is represented. It will include announcements of dates, calls, photo stories of past events and team presentations. The information is supplemented with QR codes. If the QR codes are scanned, the user gets more information about the respective tile and the possibility to interact with it via the VS app.
   </p>
     </div>
   </div>
@@ -296,7 +297,27 @@
         The first contact with the VS currently takes place in the form of a long lecture. Experience shows that the first-year students take little away from it. The personality test should be fun and arouse interest - two important prerequisites for motivation and for staying in the memory. Once the test is completed, the app is referred to. With the result from the test, students can learn more about their type and personalize the app. A first contact to the VS is thus established.
         We used an MVP to check whether students were interested in such a test at all. With 384 participants, we reached more than half of the university students.
       </p>
-    </div>
+
+      <div class="methodscontainer2 abstandobengroß">
+        <div class="w3-content w3-display-container">
+         <img class="mySlides2" src="img/vs+/notion.png">
+          <img class="mySlides2" src="img/vs+/brett.png">
+          <img class="mySlides2" src="img/vs+/app.png">
+          <img class="mySlides2" src="img/vs+/quiz.png">
+          <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-text-black methodenanpassung w3-hover-text-grey" onclick="plusDivs2(-1)">&#10094;</div>
+            <div class="w3-right w3-text-black w3-hover-text-grey" onclick="plusDivs2(1)">&#10095;</div>
+          </div>
+          <div class="kreisanzeige">
+            <span class="w3-badge demo2 w3-border w3-transparent w3-hover-white" onclick="currentDiv2(1)"></span>
+            <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(2)"></span>
+            <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(3)"></span>
+            <span class="w3-badge demo2 w3-border w3-transparent" onclick="currentDiv2(4)"></span>
+          </div>
+        </div>
+      </div>
+
+  </div>
   </div>
  
   <div class="contentProjects abstandobengroß">
@@ -382,11 +403,41 @@
 
 
   <script>
-    document.getElementById('accident').addEventListener("mousedown", modal);
-    document.getElementById('streetscooters').addEventListener("mousedown", modal);
-    document.getElementById('gtgoutlook').addEventListener("mousedown", modal);
-    document.getElementById('gtgflow').addEventListener("mousedown", modal);
-    document.getElementById('gtgwin').addEventListener("mousedown", modal);
+    document.getElementById('vsresearch1').addEventListener("mousedown", modal);
+    document.getElementById('vsresearch2').addEventListener("mousedown", modal);
+    document.getElementById('vsnotion2').addEventListener("mousedown", modal);
+    document.getElementById('vsnotion').addEventListener("mousedown", modal);
+    document.getElementById('vsbrett').addEventListener("mousedown", modal);
+    document.getElementById('vsapp').addEventListener("mousedown", modal);
+    document.getElementById('vsquiz').addEventListener("mousedown", modal);
+
+
+
+    var slideIndex = 1;
+  showDivs2(slideIndex);
+
+  function plusDivs2(n) {
+    showDivs2(slideIndex += n);
+  }
+  function currentDiv2(n) {
+    showDivs2(slideIndex = n);
+  }
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    var dots = document.getElementsByClassName("demo2");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-black", "");
+    }
+    x[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " w3-black";
+  }
+  
   </script>
 
   <!-- JQuery muss in eine extra Script Datei! :)  -->

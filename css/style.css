@@ -496,24 +496,34 @@ a {
     width: 100%;
 }
 #vsnotion {
-    background-image: url("../img/vs+/notion.png");
+    background-image: url("../img/vs+/notion1.png");
     width: 100%;
+    background-size: contain;
+}
+#vsnotion2 {
+    background-image: url("../img/vs+/notion2.png");
+    width: 100%;
+    background-size: contain;
 }
 #vsapp {
-    background-image: url("../img/vs+/app.png");
+    background-image: url("../img/vs+/app1.png");
     width: 100%;
+    background-size: contain;
 }
 #vsbrett {
-    background-image: url("../img/vs+/brett.png");
+    background-image: url("../img/vs+/brett1.png");
     width: 100%;
+    background-size: contain;
 }
 #vsquiz {
-    background-image: url("../img/vs+/quiz.png");
+    background-image: url("../img/vs+/quiz1.png");
     width: 100%;
+    background-size: contain;
 }
 #vstesting {
     background-image: url("../img/vs+/testing.jpeg");
     width: 100%;
+    background-size: contain;
 }
 
 
