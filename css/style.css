@@ -295,6 +295,10 @@ a {
     background-image: url("../img/method/Test/test2.png");
 }
 /* About */
+#doordao {
+    background-image: url("../img/aboutme/doordao.JPG");
+    height: 400px;
+}
 #speak {
     background-image: url("../img/aboutme/speak.png");
     height: 400px;
