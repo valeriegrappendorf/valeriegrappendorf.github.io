@@ -101,6 +101,7 @@ h2 {
 h3 {
     font-size: 20px;
     font-weight: 800;
+    line-height: 1.25;
     margin-bottom: 10px;
 }
 
@@ -912,7 +913,7 @@ height: 150px;
         display: inline;
         font-weight: 700;
         font-size: 45px;
-        line-height: 1.5;
+        line-height: 1.25;
     }
     .introduction h3{
         font-weight: 700;
